@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--Html sub directory -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Classification</title>
+	<link rel="stylesheet" type="text/css" href="../css/item-style.css">
+
+	<style>
+       .selected {
+            color: darkred; /* 设置当前选定的颜色，你可以更改为你想要的颜色 */
+       }
+       .selected a {
+            color: darkred;
+       }
+   </style>
+	<script>
+	  window.addEventListener('load', function() {
+	    //var listItems = document.querySelectorAll('li.alg');
+	    var olElement = document.querySelector('ol.alg'); // 获取类名为 "A" 的 <ol> 元素
+        var listItems = olElement.querySelectorAll('li');
+
+	    listItems.forEach(function(item) {
+	      item.addEventListener('click', function() {
+	        // 移除所有列表项的选定状态
+	        listItems.forEach(function(li) {
+	          li.classList.remove('selected');
+	        });
+
+	        // 将当前点击的列表项标记为选定
+	        item.classList.add('selected');
+	      });
+	    });
+	  });
+	</script>
+
+</head>
+<body>
+    <button>
+        <a href="../index.html" class="button-link">Home</a>
+    </button>
+	<h1>Time Series Prediction</h1>
+	<header>
+		<div class="header">
+            <div class="head_left">
+                <img src="../img/time-series.png" alt="Time Series Prediction" class="width80-image"/>
+            </div>
+            <div class="head_right">
+            	<p>Time series prediction, a critical application of machine learning, focuses on forecasting future data points based on historical observations that are collected over time. This field plays a pivotal role in understanding and predicting trends, patterns, and behaviors in sequential data. Time series data is prevalent in various domains, including finance, weather forecasting, stock market analysis, and epidemiology. Machine learning algorithms, such as autoregressive integrated moving average (ARIMA) models, recurrent neural networks (RNNs), and Long Short-Term Memory (LSTM) networks, have revolutionized time series prediction by capturing complex dependencies and providing accurate forecasts. These models are instrumental in optimizing resource allocation, demand forecasting, and decision-making across industries. The ability to anticipate future events and trends from historical data empowers organizations to make informed decisions, reduce risks, and enhance operational efficiency. Time series prediction is an indispensable tool for data-driven insights, enabling businesses and researchers to extract valuable information from temporal data patterns.</p>
+            </div>
+        </div>
+    </header>
+	
+	<article role="banner">
+		<div class="layout">
+			<div class="navigation-bar" id="algorithm-list">
+				<h2>Algorithms</h2>
+				<ol class="alg">
+					<li data-json="../timeseries/Time-01.json"><a href="#">AR</a></li>
+					<li data-json="../timeseries/Time-02.json"><a href="#">MA</a></li>
+					<li data-json="../timeseries/Time-03.json"><a href="#">ARMA</a></li>
+					<li data-json="../timeseries/Time-04.json"><a href="#">ARIMA</a></li>
+					<li data-json="../timeseries/Time-05.json"><a href="#">SARIMA</a></li>
+					<li data-json="../timeseries/Time-06.json"><a href="#">SARIMAX</a></li>
+					<li data-json="../timeseries/Time-07.json"><a href="#">VAR</a></li>
+					<li data-json="../timeseries/Time-08.json"><a href="#">VARMA</a></li>
+					<li data-json="../timeseries/Time-09.json"><a href="#">VARMAX</a></li>
+					<li data-json="../timeseries/Time-10.json"><a href="#">SES</a></li>
+					<li data-json="../timeseries/Time-11.json"><a href="#">HWES</a></li>
+					<li data-json="../timeseries/Time-12.json"><a href="#">Exponential Smoothing</a></li>
+					<li data-json="../timeseries/Time-13.json"><a href="#">Naïve, SNaïve</a></li>
+					<li data-json="../timeseries/Time-14.json"><a href="#">Time-Series Decomposition</a></li>
+					<li data-json="../timeseries/Time-15.json"><a href="#">Time-Series Regression Models</a></li>
+					<li data-json="../timeseries/Time-16.json"><a href="#">TBATS</a></li>
+				</ol>
+			</div>
+
+			<div class="content" id="algorithm-details">
+				<h2 id="algorithm-title">AR</h2>
+				<h3 id="sum">Summary</h3>
+			    <p id="algorithm-summary">Augmented Reality (AR) Time Series Prediction is the application of time series forecasting techniques within the context of augmented reality technology. It involves using AR to visualize and interact with predicted time series data, enabling real-time decision-making and insights in various domains.</p>
+
+				<h3 id="adv">Advantages</h3>
+				<div id="algorithm-advantages">
+				    <p><span style="color: darkblue; font-weight: bold;">Visual Context:</span> AR provides a visual context for time series data, making it easier to understand complex temporal patterns and trends.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Real-Time Insights:</span> AR enables real-time visualization of predictions, allowing users to make timely decisions and adjustments based on forecasted data.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Interactivity:</span> Users can interact with AR visualizations, exploring different scenarios and gaining deeper insights into time series data.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Enhanced Collaboration:</span> AR can facilitate collaborative data analysis, with multiple users interacting with and discussing forecasts simultaneously.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Immersive Learning:</span> AR time series prediction can be used for immersive educational and training purposes, helping users grasp forecasting concepts.</p>
+			    </div>
+
+			    <h3 id="dis">Disadvantages</h3>
+			    <div id="algorithm-disadvantages">
+				    <p><span style="color: darkblue; font-weight: bold;">Hardware and Infrastructure:</span> AR systems require specific hardware, like headsets or devices, which may limit accessibility and add to implementation costs.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Complexity:</span> Developing AR applications and integrating time series prediction models can be complex, requiring expertise in both domains.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Limited Field of View:</span> The field of view in AR devices may limit the amount of data that can be visualized at once, potentially reducing the comprehensiveness of the insights.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Data Quality:</span> Accurate time series prediction relies on high-quality input data, and errors or noise in the data can affect the reliability of forecasts.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Privacy and Security:</span> AR systems may raise concerns about data privacy and security, particularly if sensitive time series data is involved.</p>
+			    </div>
+
+			    <h3 id="example">Example</h3>
+            	<p id="algorithm-example">Examples of Augmented Reality usage...</p>
+			</div>
+			<div class="location" id="algorithm-index">
+				<h2>Index</h2>
+				<ul class="index" id="algorithm-index-list">
+					<li><a href="#sum">Summary</a></li>
+					<li><a href="#adv">Advantages</a></li>
+					<li><a href="#dis">Disadvantages</a></li>
+					<li><a href="#example">Example</a></li>
+				</ul>
+			</div>
+		</div>       
+	</article>
+	<script src="../js/sub-page.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+"Title": "Quantile Regression", 
+"Summary": "Linear regression is a statistical method used to model the relationship between a dependent variable and one or more independent variables. It assumes that this relationship is linear, meaning that a change in the independent variable(s) corresponds to a proportional change in the dependent variable. Linear regression aims to find the best-fitting linear equation that describes this relationship, allowing for prediction and understanding of the data.",
+"Advantages": {
+"Robustness": " Quantile regression is less sensitive to outliers compared to traditional regression methods, as it estimates quantiles rather than means.",
+"Captures Heterogeneity": " It captures variations in the data at different quantiles, providing a more complete understanding of the relationships between variables.",
+"Flexibility": " Quantile regression can handle asymmetric and non-normal data distributions, making it suitable for a wide range of data types.",
+"Comprehensive Insights": " It provides insights into how the effects of independent variables vary across different quantiles of the dependent variable, which can be valuable in various applications."
+},
+"Disadvantages": {
+"Complex Interpretation": " Quantile regression models may be more challenging to interpret compared to traditional regression models that estimate means.",
+"Increased Computational Burden": " Estimating multiple quantiles can be computationally intensive, especially when dealing with large datasets or high-dimensional data.",
+"Requirement for Larger Sample Sizes": " Quantile regression may require larger sample sizes to obtain stable estimates for less common quantiles.",
+"Assumption Sensitivity": " Like any regression method, the quality of quantile regression results relies on the appropriateness of model assumptions."
+}
+}

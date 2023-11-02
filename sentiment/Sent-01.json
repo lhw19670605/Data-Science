@@ -1,0 +1,18 @@
+{
+"Title": "Lexicon-based Approach", 
+"Summary": "The Lexicon-based Approach to Sentiment Analysis is a text analysis technique that determines the sentiment or emotional tone of a piece of text by using a predefined lexicon or dictionary of words and phrases associated with sentiment or emotions. Each word or phrase in the text is assigned a sentiment score (positive, negative, or neutral) based on its presence in the lexicon. The overall sentiment of the text is calculated by aggregating these scores. This approach is particularly useful for analyzing sentiment in large volumes of text data quickly.",
+"Advantages": {
+"Simplicity": " It is relatively straightforward to implement and understand, making it accessible for users with limited experience in natural language processing.",
+"Quick Analysis": " Lexicon-based sentiment analysis is fast and can handle large volumes of text data in real-time or near real-time.",
+"Transparency": " The approach provides transparency as the sentiment score for each word or phrase can be traced back to the lexicon, allowing users to interpret the analysis.",
+"Adaptability": " Lexicons can be customized and expanded to include domain-specific terms, making the approach adaptable to specific industries or contexts.",
+"Useful for Basic Sentiment Analysis": " Lexicon-based methods are suitable for simple sentiment analysis tasks where a quick assessment of sentiment is sufficient."
+},
+"Disadvantages": {
+"Limited Context Understanding": " This approach may not capture the nuances and context-specific meanings of words, leading to inaccuracies in sentiment analysis.",
+"Difficulty with Sarcasm and Irony": " Lexicon-based methods can struggle with detecting sarcasm, irony, or sentiment expressed in a subtle or indirect manner.",
+"Handling Negations": " Negations, such as \"not happy,\" can reverse the sentiment, and lexicon-based methods might not always handle them correctly.",
+"Lack of Emotion Recognition": " The approach is limited to sentiment analysis and does not capture more nuanced emotions like fear, joy, or surprise.",
+"Maintenance Overhead": " Maintaining and updating lexicons can be time-consuming, as language evolves, and new terms and meanings emerge."
+}
+}

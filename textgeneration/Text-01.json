@@ -1,0 +1,18 @@
+{
+"Title": "Markov", 
+"Summary": "Markov Text Generation is a probabilistic language modeling technique that generates text based on the principles of Markov chains. It uses a statistical model to predict the next word in a sequence of words based on the previous words, allowing for the generation of coherent and contextually relevant text.",
+"Advantages": {
+"Simple Model": " Markov Text Generation is conceptually straightforward and easy to implement, making it accessible for various text generation tasks.",
+"Contextual Coherence": " It maintains contextual coherence by considering the preceding words when predicting the next word, resulting in more coherent and contextually relevant text.",
+"Resource Efficiency": " It typically requires less memory and computational resources compared to more complex text generation methods.",
+"Customization": " Markov models can be customized with different orders (degree of history) to control the level of context considered in text generation.",
+"No Training Required": " Markov models do not require training on large datasets, as they derive probabilities from the input text directly."
+},
+"Disadvantages": {
+"Limited Context": " Markov models have limited memory and may not capture long-range dependencies or complex contextual nuances found in the text.",
+"Lack of Semantic Understanding": " They do not inherently understand the semantics of language or the meanings of words, resulting in occasional incoherent or nonsensical output.",
+"Over-Reliance on Past Text": " The generation process heavily relies on the immediately preceding words, making it sensitive to the quality and characteristics of the training data.",
+"Limited Creativity": " Markov-generated text may lack creativity and originality, often replicating patterns found in the training data.",
+"Poor Handling of Rare Phrases": " Generating rare or uncommon phrases or words not present in the training data can be challenging for Markov models."
+}
+}

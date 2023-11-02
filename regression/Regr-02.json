@@ -1,0 +1,16 @@
+{
+"Title": "Polynomial Regression", 
+"Summary": "Polynomial regression is a type of regression analysis used to model the relationship between a dependent variable and one or more independent variables. It extends linear regression by introducing polynomial terms, allowing for the modeling of non-linear relationships. In polynomial regression, the model equation is a polynomial function of the independent variable(s).",
+"Advantages": {
+"Flexibility": " Polynomial regression can capture non-linear relationships between variables, making it suitable for a wider range of data patterns.",
+"Accuracy": " It can provide more accurate predictions when the underlying data has a non-linear structure.",
+"Interpretability": " The coefficients of the polynomial terms can still provide insights into the relationships between variables.",
+"Versatility": " Polynomial regression can be adapted to various degrees of complexity by adjusting the polynomial degree."
+},
+"Disadvantages": {
+"Overfitting": " Using a high-degree polynomial can lead to overfitting, where the model fits the training data too closely and performs poorly on new data.",
+"Model Complexity": " Higher-degree polynomials can lead to complex models that are difficult to interpret and explain.",
+"Sensitivity to Outliers": " Like linear regression, polynomial regression is sensitive to outliers, which can have a strong impact on the model.",
+"Extrapolation Issues": " Extrapolating beyond the range of the data can be problematic, as it may lead to unreliable predictions."
+}
+}

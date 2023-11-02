@@ -1,0 +1,16 @@
+{
+"Title": "Cox Regression", 
+"Summary": "Cox regression, also known as the proportional hazards regression, is a statistical technique used for survival analysis. It models the relationship between the time to an event (survival time) and one or more independent variables. Cox regression is commonly used in medical and epidemiological studies to analyze survival data.",
+"Advantages": {
+"Survival Analysis": " Cox regression is specifically designed for analyzing survival data, making it the preferred choice when the outcome variable represents time to an event, such as time until death or failure.",
+"Censoring Handling": " It effectively handles censored data, where not all subjects have experienced the event of interest by the end of the study. This feature is crucial for survival analysis.",
+"Covariate Adjustment": " Cox regression allows for the adjustment of covariates, which helps in understanding the impact of independent variables on survival times while controlling for confounding factors.",
+"Hazard Ratios": " The results of Cox regression are expressed in terms of hazard ratios, which provide insights into how the risk of the event changes with changes in the independent variables."
+},
+"Disadvantages": {
+"Proportional Hazards Assumption": " Cox regression assumes that the hazard ratios are constant over time (proportional hazards assumption). Violations of this assumption can affect the validity of the model.",
+"Complex Interpretation": " Interpreting the results of Cox regression can be complex, especially when analyzing multiple independent variables, time-dependent effects, or interactions.",
+"Data Requirements": " Adequate sample sizes and follow-up durations are required for reliable survival analysis using Cox regression. Smaller datasets or short follow-up times may limit the model's effectiveness.",
+"Selection Bias": " Selection bias, where the sample may not be representative of the population, can impact the results of Cox regression."
+}
+}

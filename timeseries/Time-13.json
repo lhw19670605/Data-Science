@@ -1,0 +1,17 @@
+{
+"Title": "Na夫e, SNa夫e", 
+"Summary": "Na夫e and Seasonal Na夫e (SNa夫e) Time Series Prediction are two basic and straightforward forecasting methods used to make univariate time series forecasts. They rely on simple rules and patterns within the data to make predictions.",
+"Advantages": {
+"Simplicity": " Na夫e and SNa夫e methods are incredibly simple and easy to understand, making them accessible to users with little to no statistical or technical expertise.",
+"Quick Implementation": " These methods are quick to implement and require minimal computational resources, making them suitable for short-term predictions.",
+"Baseline Forecast": " They can serve as baseline models for comparison with more complex forecasting techniques, helping to establish a simple reference point.",
+"Low Complexity": " Na夫e and SNa夫e methods have minimal model parameters, and the forecast is solely based on past values, which can be advantageous in certain situations."
+},
+"Disadvantages": {
+"Limited Forecasting Power": " These methods are highly simplistic and do not capture complex patterns or relationships in time series data, leading to limited forecasting accuracy.",
+"Lack of Precision": " Na夫e and SNa夫e methods may lack precision, particularly when dealing with data that exhibits irregular patterns or trends.",
+"Short-Term Focus": " They are primarily suitable for short-term forecasting, and their performance is likely to deteriorate when applied to longer forecast horizons.",
+"Ineffectiveness with Seasonality": " SNa夫e may not account for seasonality effectively, as it relies solely on the previous season's value to make forecasts.",
+"Data Quality Sensitivity": " The methods are sensitive to data quality, and the presence of outliers or errors can significantly impact forecast reliability."
+}
+}

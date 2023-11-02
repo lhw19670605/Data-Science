@@ -1,0 +1,18 @@
+{
+"Title": "Time-Series Decomposition", 
+"Summary": "Time-Series Decomposition is a time series forecasting method that involves breaking down a time series data set into its constituent components, typically trend, seasonality, and residuals. Once these components are identified, various forecasting methods can be applied to make predictions.",
+"Advantages": {
+"Component Separation": " Time-Series Decomposition helps in separating the underlying components of a time series, making it easier to analyze and understand the individual patterns contributing to the data.",
+"Effective Seasonal Modeling": " It is particularly useful for modeling seasonality, as it explicitly identifies seasonal patterns, allowing for more accurate forecasts of cyclical variations.",
+"Adaptability": " After decomposition, different forecasting techniques can be applied to the individual components, enabling tailored and potentially more accurate predictions.",
+"Data Interpretation": " The decomposed components are interpretable, aiding in understanding how trends and seasonality influence the data.",
+"Smoothing and Noise Reduction": " Decomposition often leads to the removal of noise and short-term fluctuations in the data, making long-term trends more apparent."
+},
+"Disadvantages": {
+"Complexity": " Time-Series Decomposition can be a complex process, requiring expertise in time series analysis and the selection of appropriate decomposition methods.",
+"Stationarity Assumption": " Some decomposition methods assume stationarity in the time series, which may not always hold, necessitating data transformations.",
+"Data Quality": " The quality of decomposition results is sensitive to the quality of the input data, and the presence of outliers or errors can impact the decomposition and, subsequently, the forecasts.",
+"Component Interaction": " The independence of the decomposed components may not always hold, leading to challenges in modeling their interaction.",
+"Modeling Choices": " Selecting the right decomposition method and forecasting technique for each component requires careful consideration and expertise."
+}
+}

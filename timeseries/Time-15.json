@@ -1,0 +1,18 @@
+{
+"Title": "Time-Series Regression Models", 
+"Summary": "Time-Series Regression Models are a class of forecasting techniques used for making predictions in time series data by incorporating one or more predictor variables that are believed to influence the dependent variable over time. These models extend traditional regression analysis to the time domain, considering the temporal aspects of data.",
+"Advantages": {
+"Incorporation of Predictors": " Time-Series Regression Models can incorporate external predictor variables, which can improve forecasting accuracy by considering additional information that influences the time series.",
+"Handling of Complex Relationships": " They are capable of modeling complex relationships between the time series data and predictor variables, allowing for the capture of more nuanced patterns and trends.",
+"Explanatory Power": " Time-Series Regression Models provide insight into how the predictor variables impact the dependent variable over time, aiding in interpretation and understanding.",
+"Customization": " These models are versatile, as they can be adapted to a wide range of time series data and predictor variables, making them suitable for various applications.",
+"Heteroscedasticity Handling": " They can accommodate heteroscedasticity, allowing for modeling situations where the variance of the errors changes over time."
+},
+"Disadvantages": {
+"Data Quality Requirements": " The quality of predictions is highly dependent on the quality and availability of predictor variables, and the presence of outliers or errors can impact the results.",
+"Complexity": " The introduction of predictor variables can increase model complexity, which may require careful model selection and validation.",
+"Multicollinearity": " Multicollinearity among predictor variables can affect model stability and interpretability, making it necessary to address this issue.",
+"Stationarity Assumption": " Some regression models assume stationarity, which may not hold for certain time series data, necessitating data transformations.",
+"Data Lagging": " In some cases, lagged values of predictor variables might be required to capture the temporal relationship, which can increase the dimensionality of the data and the complexity of the model."
+}
+}

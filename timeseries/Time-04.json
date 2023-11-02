@@ -1,0 +1,18 @@
+{
+"Title": "ARIMA", 
+"Summary": "ARIMA (AutoRegressive Integrated Moving Average) Time Series Prediction is a popular statistical method used for forecasting future values in time series data. It combines auto-regressive (AR), differencing (I), and moving average (MA) components to capture and predict patterns and dependencies in time series data.",
+"Advantages": {
+"Pattern Recognition": " ARIMA models are effective at recognizing and modeling underlying patterns, including trends and seasonality, in time series data.",
+"Adaptability": " They are suitable for a wide range of time series data, including those with or without trends and seasonality, making them versatile for various applications.",
+"Interpretability": " ARIMA model parameters are interpretable, allowing users to understand and explain the forecasting process.",
+"Smoothing and Noise Reduction": " ARIMA models can effectively smooth out short-term fluctuations and reduce noise in the data, making long-term trends more apparent.",
+"Historical Data Dependence": " ARIMA models utilize historical data, which is particularly useful when past performance is a reliable indicator of future behavior."
+},
+"Disadvantages": {
+"Model Selection Complexity": " Choosing the appropriate ARIMA model order (p, d, q) can be complex, and incorrect order selection can result in inaccurate forecasts.",
+"Assumption of Linearity": " ARIMA models assume linear dependencies and may not perform well in cases where the underlying relationships are nonlinear.",
+"Stationarity Requirement": " ARIMA models assume that the time series is stationary, which may require data differencing or transformation, adding complexity to the modeling process.",
+"Sensitivity to Outliers": " ARIMA models can be sensitive to outliers in the data, and extreme values may affect the quality of predictions.",
+"Limited for Non-Linear Patterns": " ARIMA models may not capture complex non-linear patterns in the data, limiting their suitability for certain applications."
+}
+}

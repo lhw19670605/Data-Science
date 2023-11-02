@@ -1,0 +1,15 @@
+{
+"Title": "ElasticNet Regression", 
+"Summary": "ElasticNet regression is a linear regression technique that combines the L1 (Lasso) and L2 (Ridge) regularization terms in the linear regression model. It was developed to address the limitations of Lasso and Ridge regression by offering a balance between variable selection and regularization. ElasticNet includes both L1 and L2 penalty terms, providing more flexibility in controlling the complexity of the model.",
+"Advantages": {
+"Variable Selection and Regularization": " ElasticNet combines the benefits of both Lasso and Ridge regression, allowing for variable selection while also controlling the magnitude of the coefficients. This makes it a versatile choice for handling correlated predictors.",
+"Flexibility": " ElasticNet introduces an additional hyperparameter, alpha, that allows for fine-tuning the trade-off between L1 and L2 regularization. This flexibility allows you to adjust the model to your specific needs.",
+"Handles Multicollinearity": " ElasticNet is effective at handling multicollinearity and preventing overfitting, making it suitable for datasets with correlated variables.",
+"Interpretability": " While not as interpretable as simple linear regression, ElasticNet models can be more interpretable than purely Lasso-regularized models."
+},
+"Disadvantages": {
+"Complexity": " The introduction of an additional hyperparameter (alpha) makes the modeling process more complex, as it requires tuning to achieve the desired balance between L1 and L2 regularization.",
+"Loss of Some Information": " Similar to Lasso, ElasticNet may set some coefficients to zero, potentially resulting in the loss of relevant information.",
+"Computational Overhead": " The presence of an additional hyperparameter makes the optimization process slightly more computationally intensive compared to standard linear regression."
+}
+}

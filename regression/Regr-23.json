@@ -1,0 +1,16 @@
+{
+"Title": "Locally Estimated Scatterplot Smoothing", 
+"Summary": "Locally Estimated Scatterplot Smoothing (LOESS) is a non-parametric data analysis technique used for modeling the relationship between variables, particularly in regression tasks. LOESS fits a locally weighted regression line to a scatterplot, providing a flexible way to capture non-linear relationships in data by emphasizing the data points closest to the point of interest.",
+"Advantages": {
+"Flexibility": " LOESS is highly flexible and can model complex, non-linear relationships in data, making it suitable for various regression and data analysis tasks.",
+"Local Adaptation": " It adapts to the data by considering only nearby data points when fitting the regression line, allowing it to handle changing relationships within the dataset.",
+"Interpretability": " LOESS models are relatively easy to interpret, as they provide insight into local trends within the data.",
+"Outlier Robustness": " LOESS is robust to outliers, as it assigns less weight to distant data points, reducing their influence on the model."
+},
+"Disadvantages": {
+"Computational Intensity": " For large datasets, the computational complexity of LOESS can be high, particularly when using a small neighborhood of data points.",
+"Bandwidth Selection": " Choosing the appropriate smoothing parameter (bandwidth) can be challenging and may impact the model's performance.",
+"Local Focus": " While local adaptation is a strength, LOESS may not capture global trends as effectively as some other models, especially when the relationships are complex.",
+"Data-Dependent": " LOESS results can vary depending on the distribution of data points and the chosen bandwidth, making it sensitive to data properties."
+}
+}

@@ -1,0 +1,15 @@
+{
+"Title": "Ridge Regression", 
+"Summary": "Ridge regression is a type of linear regression that is used to address the issue of multicollinearity (high correlation between independent variables) in predictive modeling. It adds a regularization term to the linear regression equation, which helps prevent overfitting and improves the stability of the model. Ridge regression is especially useful when dealing with datasets with many correlated predictors.",
+"Advantages": {
+"Multicollinearity Mitigation": " Ridge regression effectively handles multicollinearity by adding a penalty term to the model, which reduces the impact of correlated variables and leads to more stable coefficient estimates.",
+"Prevention of Overfitting": " Ridge regression helps prevent overfitting by introducing a regularization term that encourages the model to have smaller coefficient values, reducing model complexity.",
+"Robustness": " It can handle situations where the number of predictors (independent variables) exceeds the number of observations without becoming unstable, making it suitable for high-dimensional datasets.",
+"Improved Generalization": " Ridge regression often results in models with better generalization to new, unseen data, particularly when multicollinearity is present."
+},
+"Disadvantages": {
+"Model Interpretability": " The introduction of the regularization term can make the model less interpretable compared to standard linear regression.",
+"Loss of Some Information": " The penalty term in ridge regression can shrink some coefficients toward zero, potentially leading to a loss of information.",
+"Selection of Regularization Parameter": " The choice of the regularization parameter (alpha) must be determined through techniques like cross-validation, which can add complexity to the modeling process."
+}
+}

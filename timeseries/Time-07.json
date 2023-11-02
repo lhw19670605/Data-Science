@@ -1,0 +1,18 @@
+{
+"Title": "VAR", 
+"Summary": "Vector AutoRegressive (VAR) Time Series Prediction is a multivariate time series forecasting technique that models the interdependencies between multiple time series variables. VAR models are commonly used in econometrics and other fields to predict how changes in one variable can affect others within a system.",
+"Advantages": {
+"Multivariate Analysis": " VAR models allow for the simultaneous modeling of multiple time series variables, making them well-suited for situations where variables are interrelated and influence each other.",
+"Dynamic Modeling": " VAR models capture dynamic relationships by considering lagged values of all variables, enabling the modeling of complex interactions over time.",
+"Causality Analysis": " VAR models can be used to explore causal relationships between variables, helping to identify which variables directly affect others in the system.",
+"Granger Causality": " VAR models incorporate the concept of Granger causality, which helps in understanding the direction and strength of causal relationships between variables.",
+"Error Correction": " VAR models can be extended to include error correction terms, making them useful for modeling non-stationary time series data and long-term equilibrium relationships."
+},
+"Disadvantages": {
+"Complexity": " VAR models can become complex as the number of variables increases, and model order selection can be challenging, requiring statistical expertise.",
+"Stationarity Requirement": " VAR models assume that all variables are stationary, which may not hold in all cases and can require data differencing or transformations.",
+"Data Quality": " VAR models are sensitive to outliers and irregularities in the data, potentially leading to unreliable forecasts.",
+"Large Parameter Space": " With multiple lag terms for each variable, VAR models may have a large number of parameters, which can make estimation computationally intensive.",
+"Lack of Exogeneity": " VAR models assume that all variables are endogenous, which may not always hold true, and this limitation can affect model performance in certain applications."
+}
+}

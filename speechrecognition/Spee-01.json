@@ -1,0 +1,18 @@
+{
+"Title": "Hidden Markov Models ", 
+"Summary": "Hidden Markov Models (HMMs) in Speech Recognition are probabilistic models that have been widely used to transcribe and recognize spoken language. HMMs model the acoustic and linguistic aspects of speech, allowing for the conversion of spoken words or phrases into written text.",
+"Advantages": {
+"Temporal Modeling": " HMMs excel at modeling temporal dependencies in speech, making them suitable for speech recognition tasks where the order of phonemes and words is crucial.",
+"State-of-the-Art Performance": " HMM-based systems have demonstrated excellent performance in large vocabulary continuous speech recognition tasks.",
+"Versatility": " HMMs can be used for a wide range of speech recognition applications, from voice commands to transcription and automatic speech recognition.",
+"Noise Robustness": " They can be designed to be robust against various types of noise, making them suitable for applications in noisy environments.",
+"Interpretability": " HMMs are relatively interpretable, which can be advantageous for understanding and debugging the recognition process."
+},
+"Disadvantages": {
+"Sensitivity to Training Data": " HMMs require large amounts of diverse training data to achieve high performance, which may be challenging for under-resourced languages or domains.",
+"Limited Modeling of Context": " HMMs do not capture context well beyond the local context, making it challenging to model global dependencies and long-range relationships in speech.",
+"Overlapping States": " The need to define distinct states for different phonemes can result in state explosion, particularly for languages with large phoneme inventories.",
+"Language Variability": " HMM-based systems may struggle with handling language variations, dialects, and accents, requiring extensive adaptation for different speaking styles.",
+"Transition Modeling": " Modeling transitions between states can be complex, and fine-tuning transition probabilities can be challenging."
+}
+}

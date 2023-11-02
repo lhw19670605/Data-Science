@@ -1,0 +1,16 @@
+{
+"Title": "Robust Regression", 
+"Summary": "Robust regression is a statistical technique used to model the relationship between variables when the assumptions of traditional linear regression are not met. It aims to provide more reliable parameter estimates in the presence of outliers, influential data points, and violations of normality and homoscedasticity assumptions.",
+"Advantages": {
+"Outlier Resistance": " Robust regression is less sensitive to outliers and influential data points, making it suitable for data with extreme values that can disproportionately affect traditional regression models.",
+"Resilience to Violations": " It can handle violations of key assumptions in linear regression, such as non-normality and heteroscedasticity, without compromising the integrity of the analysis.",
+"Reliable Parameter Estimates": " Robust regression can provide more reliable parameter estimates in challenging data situations, reducing the impact of influential observations.",
+"Improved Model Fit": " In situations where traditional regression models provide poor fit due to outliers or non-constant variance, robust regression can offer improved model fit."
+},
+"Disadvantages": {
+"Reduced Efficiency": " While robust regression provides more reliable parameter estimates in the presence of outliers, it may be less efficient than ordinary least squares (OLS) when the assumptions of OLS are met.",
+"Complex Interpretation": " The results of robust regression models may be less intuitive to interpret compared to traditional linear regression.",
+"Variability in Robust Methods": " There are various robust regression methods available, and the choice of method can impact results. Careful selection is required to match the specific characteristics of the data.",
+"Limited to Continuous Variables": " Robust regression is primarily designed for continuous variables, and it may not be as suitable for categorical or discrete data."
+}
+}

@@ -1,0 +1,15 @@
+{
+"Title": "Lasso regression", 
+"Summary": "Lasso (Least Absolute Shrinkage and Selection Operator) regression is a linear regression technique that incorporates a regularization term to the linear regression model. Lasso adds a penalty based on the absolute values of the coefficient estimates, which encourages sparse solutions, meaning it can set some coefficients to exactly zero. This feature makes Lasso useful for variable selection and feature reduction.",
+"Advantages": {
+"Variable Selection": " Lasso regression automatically selects a subset of the most relevant variables, effectively performing feature selection. This simplifies the model and enhances interpretability.",
+"Multicollinearity Mitigation": " Lasso handles multicollinearity, similar to ridge regression, by shrinking the coefficients of correlated variables, but with the additional benefit of variable selection.",
+"Improved Model Interpretation": " The sparse nature of the coefficient estimates makes Lasso models more interpretable and easier to explain.",
+"Regularization": " Lasso helps prevent overfitting by adding a regularization term to the model, reducing the risk of overly complex models."
+},
+"Disadvantages": {
+"Unstable with Many Features": " Lasso can be unstable when dealing with a large number of predictors, as it may arbitrarily choose some variables to be exactly zero while others remain non-zero.",
+"Loss of Some Information": " The selection of variables to be zero can result in the loss of potentially important information.",
+"Parameter Selection": " Similar to ridge regression, selecting the optimal regularization parameter (alpha) in Lasso often requires cross-validation, adding complexity to the modeling process."
+}
+}

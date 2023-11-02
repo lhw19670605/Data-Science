@@ -1,0 +1,18 @@
+{
+"Title": "SES", 
+"Summary": "Simple Exponential Smoothing (SES) is a basic time series forecasting method that is used to predict future values in univariate time series data. SES is straightforward and relies on a weighted average of past observations to make forecasts, making it accessible for beginners in time series analysis.",
+"Advantages": {
+"Ease of Use": " SES is a simple and easy-to-understand forecasting method, making it accessible to users with limited statistical or technical expertise.",
+"Quick Implementation": " SES models are quick to implement and require minimal computational resources, making them suitable for making short-term predictions.",
+"Smoothed Forecasts": " SES effectively smoothes out short-term fluctuations and noise in time series data, making underlying trends more visible.",
+"Adaptability": " While designed for univariate data, SES can be extended with variations (e.g., Holt's Exponential Smoothing) to handle trends and seasonality.",
+"Baseline Forecast": " SES can serve as a baseline model for more complex forecasting techniques, helping users establish a simple reference point."
+},
+"Disadvantages": {
+"Limited Forecasting Power": " SES is less capable of capturing complex patterns, such as seasonality and non-linear trends, which can limit its forecasting accuracy.",
+"Lack of Precision": " SES models may lack precision, particularly when dealing with data that exhibits irregular patterns.",
+"Short-Term Focus": " SES is better suited for short-term forecasting, and its performance may deteriorate when applied to longer forecast horizons.",
+"Data Transformation": " In some cases, data transformation or differencing may be required to make the time series stationary, adding complexity to the modeling process.",
+"Data Quality Sensitivity": " The performance of SES models is sensitive to data quality, and the presence of outliers or errors can impact forecast reliability."
+}
+}

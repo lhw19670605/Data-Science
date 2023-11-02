@@ -1,0 +1,16 @@
+{
+"Title": "Mars Algorithm", 
+"Summary": "MARS, or Multivariate Adaptive Regression Splines, is a non-parametric machine learning algorithm used for regression and classification tasks. MARS builds a model by breaking the feature space into small, interpretable segments, combining linear regression equations within these segments. It adapts to the data's complexity by creating a piecewise linear representation of the relationships between input variables and the target variable.",
+"Advantages": {
+"Flexibility": " MARS can capture both linear and nonlinear relationships in the data, making it suitable for a wide range of regression and classification problems.",
+"Interpretability": " The resulting model consists of a set of simple linear equations for each segment, which are easy to interpret and understand.",
+"Variable Selection": " MARS performs automatic feature selection by determining which variables are relevant in different segments of the data.",
+"Robustness": " MARS is robust to outliers and noise in the data, as it creates separate segments to accommodate variations."
+},
+"Disadvantages": {
+"Complex Model Selection": " Determining the optimal model complexity (i.e., the number of segments and knots) can be challenging and requires tuning.",
+"Overfitting": " MARS models can be prone to overfitting if the complexity is not properly controlled, which may necessitate regularization techniques.",
+"Computationally Intensive": " The search for optimal segments and knots can be computationally intensive, especially for large datasets.",
+"Lack of Global View": " MARS focuses on local relationships within segments, making it less suitable for capturing global patterns in the data."
+}
+}

@@ -1,0 +1,18 @@
+{
+"Title": "SARIMA", 
+"Summary": "Seasonal AutoRegressive Integrated Moving Average (SARIMA) Time Series Prediction is an extension of the ARIMA model that incorporates seasonality and trend components for forecasting future values in time series data. It is widely used in various domains to capture and predict complex patterns and dependencies in time series data.",
+"Advantages": {
+"Seasonal Pattern Recognition": " SARIMA models are highly effective at capturing and modeling seasonal patterns in time series data, making them suitable for tasks with recurring patterns.",
+"Adaptability": " They are versatile and can handle time series data with or without trends and seasonality, making them suitable for a wide range of applications.",
+"Interpretability": " SARIMA model parameters are interpretable, which aids in understanding and explaining the forecasting process.",
+"Historical Data Dependence": " SARIMA models utilize historical data, which is particularly useful when past performance is a reliable indicator of future behavior.",
+"Accurate Seasonal Forecasting": " SARIMA's ability to account for seasonal patterns makes it well-suited for applications that exhibit pronounced periodic behavior."
+},
+"Disadvantages": {
+"Complex Model Selection": " Determining the appropriate SARIMA model order can be complex, requiring expertise in time series analysis, and an incorrect order selection can lead to suboptimal forecasts.",
+"Assumption of Linearity": " SARIMA models assume linear relationships, which may limit their suitability for capturing non-linear patterns in data.",
+"Stationarity Requirement": " SARIMA models assume stationarity and may require data differencing or transformations, adding complexity to the modeling process.",
+"Sensitivity to Outliers": " Like other time series models, SARIMA models can be sensitive to outliers, which can impact the quality of predictions.",
+"Resource-Intensive": " SARIMA modeling can be computationally intensive, particularly for large or high-frequency time series data, requiring significant computing resources."
+}
+}

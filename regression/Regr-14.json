@@ -1,0 +1,16 @@
+{
+"Title": "Ordinal Regression", 
+"Summary": "Ordinal regression, also known as ordered logistic regression or proportional odds model, is a statistical method used to model and analyze the relationships between an ordinal dependent variable (a variable with ordered categories) and one or more independent variables. It extends logistic regression to cases where the outcome variable is ordered or ranked.",
+"Advantages": {
+"Appropriate for Ordinal Data": " Ordinal regression is specifically designed for modeling ordinal dependent variables, making it a suitable choice when dealing with ranked or ordered categories.",
+"Flexibility": " It allows for the modeling of various types of ordinal data, such as Likert scales, educational levels, or income brackets.",
+"Interpretability": " Ordinal regression models produce interpretable results, including odds ratios, which help in understanding the impact of independent variables on the ordinal outcome.",
+"No Assumption of Linearity": " Unlike linear regression, ordinal regression does not assume a linear relationship between the independent variables and the ordinal outcome."
+},
+"Disadvantages": {
+"Proportional Odds Assumption": " The proportional odds assumption, a key assumption in ordinal regression, may not hold in all cases. Violations of this assumption can affect the model's validity.",
+"Sample Size Requirements": " Adequate sample sizes are required to ensure the reliability of parameter estimates, especially when dealing with a large number of categories or independent variables.",
+"Complexity of Interpretation": " While ordinal regression results are interpretable, the interpretation can be complex when there are multiple independent variables, interactions, or nonlinear relationships.",
+"Lack of Predictive Accuracy": " Ordinal regression primarily focuses on understanding relationships, and it may not provide the best predictive accuracy compared to other techniques like decision trees or random forests."
+}
+}

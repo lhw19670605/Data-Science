@@ -1,0 +1,16 @@
+{
+"Title": "SVR", 
+"Summary": "Support Vector Regression (SVR) is a machine learning technique used for regression tasks. It is a variant of the Support Vector Machine (SVM) algorithm adapted for predicting continuous outcomes. SVR aims to find the best-fitting hyperplane while minimizing the error between predicted and actual values, making it suitable for various regression problems.",
+"Advantages": {
+"Effective in High-Dimensional Spaces": " SVR can handle datasets with a high number of features (high-dimensional spaces) efficiently, making it valuable for complex regression problems.",
+"Robust to Outliers": " SVR is less sensitive to outliers in the data, thanks to the use of a loss function that limits the impact of individual data points.",
+"Kernel Trick": " SVR allows for the use of kernel functions, enabling it to model nonlinear relationships between independent and dependent variables effectively.",
+"Good Generalization": " SVR often provides good generalization performance, even with limited data, when configured properly."
+},
+"Disadvantages": {
+"Complexity": " Tuning the hyperparameters of SVR, such as the choice of kernel and regularization parameters, can be complex and require domain knowledge.",
+"Computationally Intensive": " Training SVR models can be computationally intensive, particularly when dealing with large datasets or complex kernel functions.",
+"Lack of Interpretability": " SVR models are not highly interpretable, making it challenging to explain how the model arrives at its predictions.",
+"Data Scaling": " Data scaling is crucial for SVR, as it is sensitive to the scale of input features. Failure to scale data properly can result in suboptimal performance."
+}
+}

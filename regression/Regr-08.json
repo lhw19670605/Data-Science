@@ -1,0 +1,16 @@
+{
+"Title": "Bayesian Regression", 
+"Summary": "Bayesian regression is a statistical approach that incorporates Bayesian principles into the linear regression framework. It views model parameters as probability distributions and estimates these distributions based on both prior beliefs and observed data. Bayesian regression provides a probabilistic view of regression, allowing for uncertainty quantification.",
+"Advantages": {
+"Uncertainty Quantification": " Bayesian regression provides estimates of parameter uncertainty, resulting in probabilistic predictions. This is particularly valuable when dealing with limited data or when precise parameter estimates are challenging.",
+"Incorporation of Prior Knowledge": " It allows the incorporation of prior beliefs or information about model parameters, which can be especially useful in scenarios where domain expertise is available.",
+"Regularization": " Bayesian regression naturally includes regularization in the form of prior distributions, helping prevent overfitting and stabilizing model estimates.",
+"Robustness": " Bayesian regression is robust to outliers, as it estimates parameter distributions, allowing for flexibility in the face of unusual data points."
+},
+"Disadvantages": {
+"Computational Complexity": " Bayesian regression often involves complex numerical techniques, such as Markov Chain Monte Carlo (MCMC) or variational inference, which can be computationally intensive and time-consuming.",
+"Assumption of Prior Distributions": " The choice of prior distributions can affect the results, and the analyst must carefully consider and specify these priors.",
+"Interpretation Complexity": " Bayesian regression results in posterior distributions for parameters, which can be more complex to interpret than point estimates from frequentist regression.",
+"Data Requirements": " Bayesian regression may require larger sample sizes than classical regression, as it needs sufficient data to estimate parameter distributions."
+}
+}

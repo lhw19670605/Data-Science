@@ -1,0 +1,16 @@
+{
+"Title": "Multivariate regression", 
+"Summary": "Multivariate regression is a statistical technique used to analyze the relationships between multiple independent variables and multiple dependent variables simultaneously. It extends the principles of multiple regression to account for the complex interrelationships among variables.",
+"Advantages": {
+"Comprehensive Analysis": " Multivariate regression allows for the simultaneous analysis of multiple dependent variables, making it a powerful tool for examining complex relationships in multivariate datasets.",
+"Reduced Type I Errors": " By analyzing multiple dependent variables together, multivariate regression can reduce the likelihood of Type I errors (false positives) compared to running separate univariate analyses.",
+"Efficient Parameter Estimation": " It can efficiently estimate the effects of multiple independent variables on multiple dependent variables, providing a more complete understanding of the relationships.",
+"Covariate Adjustment": " Multivariate regression can account for the covariation between dependent variables, improving the precision of parameter estimates."
+},
+"Disadvantages": {
+"Complex Interpretation": " Interpreting multivariate regression results can be challenging, especially when analyzing a large number of variables, as relationships may not be straightforward.",
+"Assumption of Independence": " The method assumes independence between dependent variables, which may not always hold, leading to potential issues.",
+"Sample Size Requirements": " Analyzing multiple dependent variables typically requires a larger sample size to achieve sufficient statistical power.",
+"Increased Computational Complexity": " Multivariate regression can be computationally intensive, particularly when analyzing numerous variables."
+}
+}

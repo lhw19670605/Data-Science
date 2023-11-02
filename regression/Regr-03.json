@@ -1,0 +1,16 @@
+{
+"Title": "Stepwise Regression", 
+"Summary": "Stepwise regression is a statistical method used in the process of model selection to identify the most relevant independent variables for predicting a dependent variable. It involves a step-by-step approach to select variables based on certain criteria, typically forward selection (adding variables one at a time) or backward elimination (removing variables one at a time), to optimize the model's performance.",
+"Advantages": {
+"Automated Variable Selection": " Stepwise regression automates the process of variable selection, which can be particularly useful when dealing with a large number of potential predictor variables.",
+"Improved Model Fit": " It helps in building models that include only the most relevant variables, which can result in better model fit and reduced overfitting.",
+"Interpretability": " By selecting a subset of variables, stepwise regression can lead to simpler and more interpretable models.",
+"Computational Efficiency": " It can efficiently narrow down the variables of interest, making it useful for quick model selection."
+},
+"Disadvantages": {
+"Overfitting": " Stepwise regression can still lead to overfitting if not used carefully, as it may include variables that happen to fit the noise in the training data.",
+"Sensitivity to Criteria": " The choice of criteria (e.g., AIC, BIC, p-values) for adding or removing variables can impact the results, and different criteria may lead to different variable selections.",
+"Assumption Violation": " Stepwise regression can violate the assumption of independent observations when used with time series or spatial data.",
+"Limited to the Variables Considered": " It only selects variables that are included in the initial set for consideration, potentially missing important variables that were not included."
+}
+}

@@ -1,0 +1,18 @@
+{
+"Title": "ARMA", 
+"Summary": "ARMA (AutoRegressive Moving Average) Time Series Prediction is a statistical modeling technique used for forecasting future values in a time series data. It combines auto-regressive (AR) and moving average (MA) components to capture and predict the underlying patterns and dependencies in the data.",
+"Advantages": {
+"Pattern Recognition": " ARMA models are effective at recognizing and modeling underlying patterns, such as trends and seasonality, in time series data.",
+"Interpretability": " The model's parameters are interpretable, which allows users to understand and explain the forecasting process.",
+"Adaptability": " ARMA models can adapt to various types of time series data and are suitable for both short-term and long-term forecasting.",
+"Smoothing and Noise Reduction": " They can effectively smooth out short-term fluctuations and reduce noise in the data to make long-term trends more apparent.",
+"Historical Data Dependence": " ARMA models utilize historical data, making them useful for situations where past performance is a reliable indicator of future behavior."
+},
+"Disadvantages": {
+"Model Selection Complexity": " Choosing the appropriate ARMA model order (p, q) can be challenging, and incorrect model order selection can result in inaccurate forecasts.",
+"Limited for Non-Linear Patterns": " ARMA models assume linear dependencies and may not perform well in cases where the underlying relationships are nonlinear.",
+"Stationarity Assumption": " ARMA models assume that the time series is stationary, which may not hold for all types of data.",
+"Data Transformation": " In some cases, data transformation or differencing may be required to meet the stationarity assumption, adding complexity to the modeling process.",
+"Outliers": " ARMA models can be sensitive to outliers in the data, and the presence of extreme values may affect the quality of predictions."
+}
+}

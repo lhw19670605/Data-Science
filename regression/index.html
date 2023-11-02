@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--Html sub directory -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Regression</title>
+	<link rel="stylesheet" type="text/css" href="../css/item-style.css">
+
+	<style>
+       .selected {
+            color: darkred; /* 设置当前选定的颜色，你可以更改为你想要的颜色 */
+       }
+       .selected a {
+            color: darkred;
+       }
+   </style>
+	<script>
+	  window.addEventListener('load', function() {
+	    //var listItems = document.querySelectorAll('li.alg');
+	    var olElement = document.querySelector('ol.alg'); // 获取类名为 "A" 的 <ol> 元素
+        var listItems = olElement.querySelectorAll('li');
+
+	    listItems.forEach(function(item) {
+	      item.addEventListener('click', function() {
+	        // 移除所有列表项的选定状态
+	        listItems.forEach(function(li) {
+	          li.classList.remove('selected');
+	        });
+
+	        // 将当前点击的列表项标记为选定
+	        item.classList.add('selected');
+	      });
+	    });
+	  });
+	</script>
+
+</head>
+<body>
+    <button>
+        <a href="../index.html" class="button-link">Home</a>
+    </button>
+	<h1>Regression</h1>
+	<header>
+		<div class="header">
+            <div class="head_left">
+                <img src="../img/regression.png" alt="regression" class="width80-image"/>
+            </div>
+            <div class="head_right">
+            	<p>Regression in machine learning is a method that helps us predict numerical values based on other related data. Imagine you have data about the size and price of houses. Regression can find a pattern in this data that allows you to predict the price of a new, unseen house based on its size. It's like drawing a best-fit line through your data points to make these predictions. There are different types of regression models, but they all aim to find the most accurate way to predict numerical outcomes. Regression is used in various fields like finance, healthcare, and more for making predictions and informed decisions.</p>
+            </div>
+        </div>
+    </header>
+	
+	<article role="banner">
+		<div class="layout">
+			<div class="navigation-bar" id="algorithm-list">
+				<h2>Algorithms</h2>
+				<ol class="alg">
+					<li data-json="../regression/Regr-01.json"><a href="#">Linear Regression</a></li>
+					<li data-json="../regression/Regr-02.json"><a href="#">Polynomial regression</a></li>
+					<li data-json="../regression/Regr-03.json"><a href="#">Stepwise regression</a></li>
+					<li data-json="../regression/Regr-04.json"><a href="#">Ridge regression</a></li>
+					<li data-json="../regression/Regr-05.json"><a href="#">Lasso regression</a></li>
+					<li data-json="../regression/Regr-06.json"><a href="#">ElasticNet regression</a></li>
+					<li data-json="../regression/Regr-07.json"><a href="#">Quantile Regression</a></li>
+					<li data-json="../regression/Regr-08.json"><a href="#">Bayesian Regression</a></li>
+					<li data-json="../regression/Regr-09.json"><a href="#">Principal Components Regression</a></li>
+					<li data-json="../regression/Regr-10.json"><a href="#">Partial Least Squares Regression</a></li>
+					<li data-json="../regression/Regr-11.json"><a href="#">Ecological Regression</a></li>
+					<li data-json="../regression/Regr-12.json"><a href="#">Robust Regression</a></li>
+					<li data-json="../regression/Regr-13.json"><a href="#">Multivariate regression</a></li>
+					<li data-json="../regression/Regr-14.json"><a href="#">Ordinal Regression</a></li>
+					<li data-json="../regression/Regr-15.json"><a href="#">Poisson Regression</a></li>
+					<li data-json="../regression/Regr-16.json"><a href="#">Negative Binormial Regression</a></li>
+					<li data-json="../regression/Regr-17.json"><a href="#">Quasi Poisson Regression</a></li>
+					<li data-json="../regression/Regr-18.json"><a href="#">Cox Regression</a></li>
+					<li data-json="../regression/Regr-19.json"><a href="#">Tobit Regression</a></li>
+					<li data-json="../regression/Regr-20.json"><a href="#">RandomForestRegression</a></li>
+					<li data-json="../regression/Regr-21.json"><a href="#">Support Vector Regression</a></li>
+					<li data-json="../regression/Regr-22.json"><a href="#">Mars Algorithm</a></li>
+					<li data-json="../regression/Regr-23.json"><a href="#">Locally Estimated Scatterplot Smoothing</a></li>
+					<li data-json="../regression/Regr-24.json"><a href="#">k-Nearest Neighbors</a></li>
+				</ol>
+			</div>
+			<div class="content" id="algorithm-details">
+				<h2 id="algorithm-title">Linear Regression</h2>
+				<h3 id="sum">Summary</h3>
+			    <p id="algorithm-summary">Linear regression is a statistical method used to model the relationship between a dependent variable and one or more independent variables. It assumes that this relationship is linear, meaning that a change in the independent variable(s) corresponds to a proportional change in the dependent variable. Linear regression aims to find the best-fitting linear equation that describes this relationship, allowing for prediction and understanding of the data.</p>
+
+				<h3 id="adv">Advantages</h3>
+				<div id="algorithm-advantages">
+				    <p><span style="color: darkblue; font-weight: bold;">Simplicity:</span> Linear regression is a straightforward and easy-to-understand method. It provides a simple, interpretable model of the data.</p>
+				    <p><span style="color: darkblue; font-weight: bold;">Interpretability:</span> The coefficients of the linear equation provide insights into the strength and direction of the relationships between variables.</p>
+				    <p><span style="color: darkblue; font-weight: bold;">Quick Computation:</span> Linear regression can be computed relatively quickly, making it suitable for large datasets.</p>
+				    <p><span style="color: darkblue; font-weight: bold;">Versatility:</span>: It can be used for both simple and complex problems and can be extended to multiple regression for more complex relationships.</p>
+				    <p><span style="color: darkblue; font-weight: bold;">Baseline Model:</span> It often serves as a baseline model for comparison with more advanced machine learning algorithms.</p>
+			    </div>
+
+
+			    <h3 id="dis">Disadvantages</h3>
+			    <div id="algorithm-disadvantages">
+				    <p><span style="color: darkblue; font-weight: bold;">Assumption of Linearity:</span> Linear regression assumes a linear relationship between variables, which may not hold for all real-world data.</p>
+				    <p><span style="color: darkblue; font-weight: bold;">Sensitivity to Outliers:</span> Linear regression is sensitive to outliers, and extreme data points can strongly influence the model.</p>
+				    <p><span style="color: darkblue; font-weight: bold;">Underfitting:</span> In cases of complex relationships, linear regression may underfit the data, leading to poor predictions.</p>
+				    <p><span style="color: darkblue; font-weight: bold;">Limited to Continuous Variables:</span> It is primarily suitable for continuous variables and may not handle categorical or non-linear data well.</p>
+				    <p><span style="color: darkblue; font-weight: bold;">Model Complexity:</span> Linear regression cannot capture intricate relationships present in many real-world scenarios.</p>
+			    </div>
+
+			    <h3 id="example">Example</h3>
+            	<p id="algorithm-example">Examples...</p>
+			</div>
+			<div class="location" id="algorithm-index">
+				<h2>Index</h2>
+				<ul class="index" id="algorithm-index-list">
+					<li><a href="#sum">Summary</a></li>
+					<li><a href="#adv">Advantages</a></li>
+					<li><a href="#dis">Disadvantages</a></li>
+					<li><a href="#example">Example</a></li>
+				</ul>
+			</div>
+		</div>       
+	</article>
+	<script src="../js/sub-page.js"></script>
+</body>
+</html>

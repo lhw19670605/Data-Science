@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--Html sub directory -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Classification</title>
+	<link rel="stylesheet" type="text/css" href="../css/item-style.css">
+
+	<style>
+       .selected {
+            color: darkred; /* 设置当前选定的颜色，你可以更改为你想要的颜色 */
+       }
+       .selected a {
+            color: darkred;
+       }
+   </style>
+	<script>
+	  window.addEventListener('load', function() {
+	    //var listItems = document.querySelectorAll('li.alg');
+	    var olElement = document.querySelector('ol.alg'); // 获取类名为 "A" 的 <ol> 元素
+        var listItems = olElement.querySelectorAll('li');
+
+	    listItems.forEach(function(item) {
+	      item.addEventListener('click', function() {
+	        // 移除所有列表项的选定状态
+	        listItems.forEach(function(li) {
+	          li.classList.remove('selected');
+	        });
+
+	        // 将当前点击的列表项标记为选定
+	        item.classList.add('selected');
+	      });
+	    });
+	  });
+	</script>
+
+</head>
+<body>
+    <button>
+        <a href="../index.html" class="button-link">Home</a>
+    </button>
+	<h1>Sentiment Analysis</h1>
+	<header>
+		<div class="header">
+            <div class="head_left">
+                <img src="../img/sentiment-analysis.jpg" alt="Sentiment Analysis" class="width80-image"/>
+            </div>
+            <div class="head_right">
+            	<p>Sentiment analysis, often referred to as opinion mining, is a fascinating subfield of machine learning and natural language processing that focuses on deciphering and understanding human emotions, opinions, and sentiments expressed in text data. This technique enables computers to evaluate and determine the emotional tone and attitude within written content, whether it's from social media posts, product reviews, or customer feedback. Sentiment analysis categorizes text as positive, negative, or neutral, and sometimes further refines this classification into more nuanced emotions. This technology finds wide-ranging applications, from gauging public sentiment towards a particular product or brand to monitoring social media discussions for trends and reactions. By automating the sentiment analysis process, organizations can gain valuable insights into customer satisfaction, market trends, and brand reputation, thus aiding in data-driven decision-making and proactive response strategies.</p>
+            </div>
+        </div>
+    </header>
+	
+	<article role="banner">
+		<div class="layout">
+			<div class="navigation-bar" id="algorithm-list">
+				<h2>Algorithms</h2>
+				<ol class="alg">
+					<li data-json="../sentiment/Sent-01.json"><a href="#">Lexicon-based Approach</a></li>
+					<li data-json="../sentiment/Sent-02.json"><a href="#">Machine Learning Approach</a></li>
+					<li data-json="../sentiment/Sent-03.json"><a href="#">Hybrid Approach</a></li>
+					<li data-json="../sentiment/Sent-04.json"><a href="#">Transfer Learning Approach</a></li>
+					<li data-json="../sentiment/Sent-05.json"><a href="#">Aspect Based Approach</a></li>
+				</ol>
+			</div>
+
+			<div class="content" id="algorithm-details">
+				<h2 id="algorithm-title">Lexicon-based Approach</h2>
+				<h3 id="sum">Summary</h3>
+			    <p id="algorithm-summary">The Lexicon-based Approach to Sentiment Analysis is a text analysis technique that determines the sentiment or emotional tone of a piece of text by using a predefined lexicon or dictionary of words and phrases associated with sentiment or emotions. Each word or phrase in the text is assigned a sentiment score (positive, negative, or neutral) based on its presence in the lexicon. The overall sentiment of the text is calculated by aggregating these scores. This approach is particularly useful for analyzing sentiment in large volumes of text data quickly.</p>
+
+				<h3 id="adv">Advantages</h3>
+				<div id="algorithm-advantages">
+				    <p><span style="color: darkblue; font-weight: bold;">Simplicity:</span> It is relatively straightforward to implement and understand, making it accessible for users with limited experience in natural language processing.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Quick Analysis:</span> Lexicon-based sentiment analysis is fast and can handle large volumes of text data in real-time or near real-time.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Transparency:</span> The approach provides transparency as the sentiment score for each word or phrase can be traced back to the lexicon, allowing users to interpret the analysis.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Adaptability:</span> Lexicons can be customized and expanded to include domain-specific terms, making the approach adaptable to specific industries or contexts.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Useful for Basic Sentiment Analysis:</span> Lexicon-based methods are suitable for simple sentiment analysis tasks where a quick assessment of sentiment is sufficient.</p>
+			    </div>
+
+			    <h3 id="dis">Disadvantages</h3>
+			    <div id="algorithm-disadvantages">
+				    <p><span style="color: darkblue; font-weight: bold;">Limited Context Understanding:</span> This approach may not capture the nuances and context-specific meanings of words, leading to inaccuracies in sentiment analysis.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Difficulty with Sarcasm and Irony:</span> Lexicon-based methods can struggle with detecting sarcasm, irony, or sentiment expressed in a subtle or indirect manner.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Handling Negations:</span> Negations, such as "not happy," can reverse the sentiment, and lexicon-based methods might not always handle them correctly.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Lack of Emotion Recognition:</span> The approach is limited to sentiment analysis and does not capture more nuanced emotions like fear, joy, or surprise.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Maintenance Overhead:</span> Maintaining and updating lexicons can be time-consuming, as language evolves, and new terms and meanings emerge.</p>
+			    </div>
+
+			    <h3 id="example">Example</h3>
+            	<p id="algorithm-example">Examples of Lexicon-based Sentiment Analysis usage...</p>
+			</div>
+			<div class="location" id="algorithm-index">
+				<h2>Index</h2>
+				<ul class="index" id="algorithm-index-list">
+					<li><a href="#sum">Summary</a></li>
+					<li><a href="#adv">Advantages</a></li>
+					<li><a href="#dis">Disadvantages</a></li>
+					<li><a href="#example">Example</a></li>
+				</ul>
+			</div>
+		</div>       
+	</article>
+	<script src="../js/sub-page.js"></script>
+</body>
+</html>

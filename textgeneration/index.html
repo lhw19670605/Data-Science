@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--Html sub directory -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Classification</title>
+	<link rel="stylesheet" type="text/css" href="../css/item-style.css">
+
+	<style>
+       .selected {
+            color: darkred; /* 设置当前选定的颜色，你可以更改为你想要的颜色 */
+       }
+       .selected a {
+            color: darkred;
+       }
+   </style>
+	<script>
+	  window.addEventListener('load', function() {
+	    //var listItems = document.querySelectorAll('li.alg');
+	    var olElement = document.querySelector('ol.alg'); // 获取类名为 "A" 的 <ol> 元素
+        var listItems = olElement.querySelectorAll('li');
+
+	    listItems.forEach(function(item) {
+	      item.addEventListener('click', function() {
+	        // 移除所有列表项的选定状态
+	        listItems.forEach(function(li) {
+	          li.classList.remove('selected');
+	        });
+
+	        // 将当前点击的列表项标记为选定
+	        item.classList.add('selected');
+	      });
+	    });
+	  });
+	</script>
+
+</head>
+<body>
+    <button>
+        <a href="../index.html" class="button-link">Home</a>
+    </button>
+	<h1>Text Generation</h1>
+	<header>
+		<div class="header">
+            <div class="head_left">
+                <img src="../img/textgeneration.png" alt="Text Generation" class="width80-image"/>
+            </div>
+            <div class="head_right">
+            	<p>Text generation is a captivating application of machine learning that focuses on the creation of human-like text, often with the aim of generating coherent and contextually relevant content. This technology harnesses natural language processing and deep learning techniques to produce written material that resembles human-authored text. Text generation models, such as recurrent neural networks (RNNs) and transformer-based models like GPT (Generative Pre-trained Transformer), have gained prominence for their ability to compose anything from literary works to news articles. They can also be applied in chatbots, language translation, and content generation for various industries. Text generation is not only a fascinating field in its own right but also a powerful tool for automating content creation and enhancing human-computer interactions. Its applications are diverse, contributing to content production, customer support, and creative writing, while pushing the boundaries of what machines can achieve in terms of language and communication.</p>
+            </div>
+        </div>
+    </header>
+	
+	<article role="banner">
+		<div class="layout">
+			<div class="navigation-bar" id="algorithm-list">
+				<h2>Algorithms</h2>
+				<ol class="alg">
+					<li data-json="../textgeneration/Text-01.json"><a href="#">Markov</a></li>
+					<li data-json="../textgeneration/Text-02.json"><a href="#">LSTMs</a></li>
+					<li data-json="../textgeneration/Text-03.json"><a href="#">BART</a></li>
+					<li data-json="../textgeneration/Text-04.json"><a href="#">GPT</a></li>
+					<li data-json="../textgeneration/Text-05.json"><a href="#">GAN-based</a></li>
+				</ol>
+			</div>
+
+			<div class="content" id="algorithm-details">
+				<h2 id="algorithm-title">Markov</h2>
+				<h3 id="sum">Summary</h3>
+			    <p id="algorithm-summary">Markov Text Generation is a probabilistic language modeling technique that generates text based on the principles of Markov chains. It uses a statistical model to predict the next word in a sequence of words based on the previous words, allowing for the generation of coherent and contextually relevant text.</p>
+
+				<h3 id="adv">Advantages</h3>
+				<div id="algorithm-advantages">
+				    <p><span style="color: darkblue; font-weight: bold;">Simple Model:</span> Markov Text Generation is conceptually straightforward and easy to implement, making it accessible for various text generation tasks.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Contextual Coherence:</span> It maintains contextual coherence by considering the preceding words when predicting the next word, resulting in more coherent and contextually relevant text.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Resource Efficiency:</span> It typically requires less memory and computational resources compared to more complex text generation methods.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Customization:</span> Markov models can be customized with different orders (degree of history) to control the level of context considered in text generation.</p>
+					<p><span style="color: darkblue; font-weight: bold;">No Training Required:</span> Markov models do not require training on large datasets, as they derive probabilities from the input text directly.</p>
+			    </div>
+
+			    <h3 id="dis">Disadvantages</h3>
+			    <div id="algorithm-disadvantages">
+				    <p><span style="color: darkblue; font-weight: bold;">Limited Context:</span> Markov models have limited memory and may not capture long-range dependencies or complex contextual nuances found in the text.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Lack of Semantic Understanding:</span> They do not inherently understand the semantics of language or the meanings of words, resulting in occasional incoherent or nonsensical output.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Over-Reliance on Past Text:</span> The generation process heavily relies on the immediately preceding words, making it sensitive to the quality and characteristics of the training data.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Limited Creativity:</span> Markov-generated text may lack creativity and originality, often replicating patterns found in the training data.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Poor Handling of Rare Phrases:</span> Generating rare or uncommon phrases or words not present in the training data can be challenging for Markov models.</p>
+			    </div>
+
+			    <h3 id="example">Example</h3>
+            	<p id="algorithm-example">Examples of Markov usage...</p>
+			</div>
+			<div class="location" id="algorithm-index">
+				<h2>Index</h2>
+				<ul class="index" id="algorithm-index-list">
+					<li><a href="#sum">Summary</a></li>
+					<li><a href="#adv">Advantages</a></li>
+					<li><a href="#dis">Disadvantages</a></li>
+					<li><a href="#example">Example</a></li>
+				</ul>
+			</div>
+		</div>       
+	</article>
+	<script src="../js/sub-page.js"></script>
+</body>
+</html>

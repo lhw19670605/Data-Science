@@ -1,0 +1,18 @@
+{
+"Title": "Linear Regression", 
+"Summary": "Linear regression is a statistical method used to model the relationship between a dependent variable and one or more independent variables. It assumes that this relationship is linear, meaning that a change in the independent variable(s) corresponds to a proportional change in the dependent variable. Linear regression aims to find the best-fitting linear equation that describes this relationship, allowing for prediction and understanding of the data.",
+"Advantages": {
+"Simplicity": " Linear regression is a straightforward and easy-to-understand method. It provides a simple, interpretable model of the data.",
+"Interpretability": " The coefficients of the linear equation provide insights into the strength and direction of the relationships between variables.",
+"Quick Computation": " Linear regression can be computed relatively quickly, making it suitable for large datasets.",
+"Versatility": " It can be used for both simple and complex problems and can be extended to multiple regression for more complex relationships.",
+"Baseline Model": " It often serves as a baseline model for comparison with more advanced machine learning algorithms."
+},
+"Disadvantages": {
+"Assumption of Linearity": " Linear regression assumes a linear relationship between variables, which may not hold for all real-world data.",
+"Sensitivity to Outliers": " Linear regression is sensitive to outliers, and extreme data points can strongly influence the model.",
+"Underfitting": " In cases of complex relationships, linear regression may underfit the data, leading to poor predictions.",
+"Limited to Continuous Variables": " It is primarily suitable for continuous variables and may not handle categorical or non-linear data well.",
+"Model Complexity": " Linear regression cannot capture intricate relationships present in many real-world scenarios."
+}
+}

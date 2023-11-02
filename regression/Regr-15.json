@@ -1,0 +1,16 @@
+{
+"Title": "Poisson Regression", 
+"Summary": "Poisson regression is a statistical modeling technique used to analyze count data, where the dependent variable represents the number of events or occurrences within a specific time or space interval. It is an extension of the Poisson distribution, which is suitable for modeling rare events.",
+"Advantages": {
+"Count Data Modeling": " Poisson regression is specifically designed for modeling count data, making it an appropriate choice for situations where the outcome variable represents event occurrences.",
+"Handles Overdispersion": " Poisson regression can be adapted to handle overdispersed count data by using techniques like negative binomial regression, allowing for flexibility in modeling.",
+"Interpretable Results": " The results of Poisson regression are interpretable in terms of rate ratios or incidence rate ratios, which provide a clear understanding of the effects of independent variables on event rates.",
+"Predictive Power": " When used in situations with count data, Poisson regression can offer predictive power and be a valuable tool for estimating event rates."
+},
+"Disadvantages": {
+"Assumptions": " Poisson regression relies on assumptions, including the assumption of independence of events, homogeneity of event rates, and no zero-inflation. Violations of these assumptions can affect model validity.",
+"Limited to Count Data": " Poisson regression is primarily suitable for count data and may not be the best choice for other types of data or continuous variables.",
+"Overdispersion Handling": " While Poisson regression can handle overdispersion, it may require more advanced techniques like negative binomial regression, which can be complex.",
+"Complex Interpretation": " Interpreting results can be complex, especially when there are multiple independent variables, interactions, or nonlinear relationships."
+}
+}

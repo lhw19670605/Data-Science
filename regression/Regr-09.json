@@ -1,0 +1,16 @@
+{
+"Title": "Principal Components Regression", 
+"Summary": "Principal Components Regression is a statistical technique that combines principal component analysis (PCA) with multiple linear regression. It aims to address multicollinearity and high-dimensionality in datasets by reducing the number of predictor variables through the creation of principal components. These components are then used in a linear regression model to predict a dependent variable.",
+"Advantages": {
+"Multicollinearity Mitigation": " PCR effectively addresses multicollinearity, which occurs when independent variables in a regression model are highly correlated.",
+"Dimension Reduction": " It reduces the number of predictor variables while retaining most of the variance in the data, which can simplify the modeling process and prevent overfitting.",
+"Improved Model Performance": " PCR can lead to improved model performance by reducing the noise in the data and focusing on the most informative components.",
+"Interpretability": " While the principal components themselves may not be as interpretable as original variables, the reduction in complexity can make the model more understandable."
+},
+"Disadvantages": {
+"Loss of Variable Meaning": " PCR transforms the original variables into principal components, which may not have clear interpretations, making it harder to explain the relationships between variables.",
+"Optimal Component Selection": " Determining the appropriate number of principal components to retain can be challenging, and selecting too few or too many components may affect model performance.",
+"Linear Assumption": " PCR assumes a linear relationship between the principal components and the dependent variable, which may not hold in all cases.",
+"Increased Complexity": " While PCR can reduce dimensionality, the technique itself adds some complexity to the modeling process."
+}
+}

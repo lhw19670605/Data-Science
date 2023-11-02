@@ -1,0 +1,16 @@
+{
+"Title": "k-Nearest Neighbors", 
+"Summary": "k-Nearest Neighbors (k-NN) is a non-parametric machine learning algorithm used for classification and regression tasks. It relies on the principle that data points with similar features tend to have similar outcomes. In k-NN, predictions are made based on the majority class (for classification) or the average (for regression) of the k-nearest data points in the feature space.",
+"Advantages": {
+"Simplicity": " k-NN is easy to understand and implement, making it a good choice for introductory machine learning tasks.",
+"Non-Linearity": " It can model complex, non-linear relationships in data, as it doesn't assume any specific functional form.",
+"Adaptability": " k-NN adapts well to changes in data distribution and can handle data with irregular decision boundaries.",
+"No Training Phase": " There is no training phase in k-NN, which means it can be used for both online and offline learning."
+},
+"Disadvantages": {
+"High Computational Complexity": " For large datasets, the search for the k-nearest neighbors can be computationally intensive, especially in high-dimensional spaces.",
+"Parameter Sensitivity": " The choice of the parameter k (the number of neighbors to consider) is crucial and can significantly impact the model's performance.",
+"Curse of Dimensionality": " k-NN's performance degrades as the number of dimensions increases, due to the \"curse of dimensionality.\"",
+"Need for Data Preprocessing": " Proper data preprocessing, including feature scaling and dimensionality reduction, is often required for k-NN to perform well."
+}
+}
