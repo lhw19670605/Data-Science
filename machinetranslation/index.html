@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--Html sub directory -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Classification</title>
+	<link rel="stylesheet" type="text/css" href="../css/item-style.css">
+
+	<style>
+       .selected {
+            color: darkred; /* 设置当前选定的颜色，你可以更改为你想要的颜色 */
+       }
+       .selected a {
+            color: darkred;
+       }
+   </style>
+	<script>
+	  window.addEventListener('load', function() {
+	    //var listItems = document.querySelectorAll('li.alg');
+	    var olElement = document.querySelector('ol.alg'); // 获取类名为 "A" 的 <ol> 元素
+        var listItems = olElement.querySelectorAll('li');
+
+	    listItems.forEach(function(item) {
+	      item.addEventListener('click', function() {
+	        // 移除所有列表项的选定状态
+	        listItems.forEach(function(li) {
+	          li.classList.remove('selected');
+	        });
+
+	        // 将当前点击的列表项标记为选定
+	        item.classList.add('selected');
+	      });
+	    });
+	  });
+	</script>
+
+</head>
+<body>
+    <button>
+        <a href="../index.html" class="button-link">Home</a>
+    </button>
+	<h1>Machine Translation</h1>
+	<header>
+		<div class="header">
+            <div class="head_left">
+                <img src="../img/Machine-Translation.png" alt="Machine Translation" class="width80-image"/>
+            </div>
+            <div class="head_right">
+            	<p>Machine Translation, a prominent application of machine learning and natural language processing, is the process of automatically translating text or speech from one language to another. This technology has gained substantial attention due to its transformative impact on breaking down language barriers and facilitating global communication. Machine translation systems, ranging from rule-based approaches to more advanced neural machine translation, are designed to comprehend the nuances of different languages and produce coherent, contextually relevant translations. This capability is crucial in various domains, including international business, diplomacy, and cross-cultural information sharing. Machine translation is continuously evolving, with models like Google Translate and deep learning-based systems, such as Transformers, achieving impressive results. As the world becomes increasingly interconnected, machine translation plays a vital role in bridging linguistic gaps and making information and communication more accessible on a global scale.</p>
+            </div>
+        </div>
+    </header>
+	
+	<article role="banner">
+		<div class="layout">
+			<div class="navigation-bar" id="algorithm-list">
+				<h2>Algorithms</h2>
+				<ol class="alg">
+					<li data-json="../machinetranslation/Mach-01.json"><a href="#">Statistical Machine Translation</a></li>
+					<li data-json="../machinetranslation/Mach-02.json"><a href="#">Rule-based Machine Translation</a></li>
+					<li data-json="../machinetranslation/Mach-03.json"><a href="#">Hybrid Machine Translation</a></li>
+					<li data-json="../machinetranslation/Mach-04.json"><a href="#">Neural Machine Translation</a></li>
+				</ol>
+			</div>
+
+			<div class="content" id="algorithm-details">
+				<h2 id="algorithm-title">Statistical Machine Translation</h2>
+				<h3 id="sum">Summary</h3>
+			    <p id="algorithm-summary">Statistical Machine Translation (SMT) is a machine translation approach that uses statistical models to automatically translate text from one language to another. It relies on the analysis of bilingual text corpora to learn patterns and probabilities for translating words and phrases, making it one of the early and influential methods for automated translation.</p>
+
+				<h3 id="adv">Advantages</h3>
+				<div id="algorithm-advantages">
+				    <p><span style="color: darkblue; font-weight: bold;">Data-Driven:</span> SMT is data-driven, which means it can learn translation patterns from large bilingual corpora, allowing it to adapt to a wide range of languages and domains.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Language Independence:</span> SMT is language-independent and can be applied to multiple language pairs, making it versatile for translation between various languages.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Scalability:</span> As more bilingual data becomes available, SMT models can be improved and scaled to handle increasingly complex translation tasks.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Customization:</span> SMT can be customized for specific domains or industries by training models on specialized corpora.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Deciphering Ambiguity:</span> SMT models can use context and probabilities to decipher ambiguous terms or phrases, improving the quality of translations.</p>
+
+			    </div>
+
+			    <h3 id="dis">Disadvantages</h3>
+			    <div id="algorithm-disadvantages">
+				    <p><span style="color: darkblue; font-weight: bold;">Limited Context Understanding:</span> SMT models typically lack an understanding of context beyond simple phrase or sentence level, leading to errors in translation, especially for languages with different word orders or complex syntax.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Out-of-Vocabulary Issues:</span> SMT can struggle with out-of-vocabulary words or phrases that were not present in the training data, leading to incorrect or incomplete translations.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Handling Idioms and Cultural Nuances:</span> SMT models may not effectively capture idiomatic expressions or cultural nuances, leading to less natural-sounding translations.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Lack of Post-Editing Capabilities:</span> SMT models typically do not have built-in post-editing capabilities, which are essential for high-quality translations.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Challenges in Low-Resource Languages:</span> In languages with limited bilingual corpora, SMT may produce suboptimal translations due to a lack of training data.</p>
+
+			    </div>
+
+			    <h3 id="example">Example</h3>
+            	<p id="algorithm-example">Examples of Statistical Machine Translation usage...</p>
+			</div>
+			<div class="location" id="algorithm-index">
+				<h2>Index</h2>
+				<ul class="index" id="algorithm-index-list">
+					<li><a href="#sum">Summary</a></li>
+					<li><a href="#adv">Advantages</a></li>
+					<li><a href="#dis">Disadvantages</a></li>
+					<li><a href="#example">Example</a></li>
+				</ul>
+			</div>
+		</div>       
+	</article>
+	<script src="../js/sub-page.js"></script>
+</body>
+</html>

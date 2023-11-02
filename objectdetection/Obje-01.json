@@ -1,0 +1,17 @@
+{
+"Title": "R-CNN", 
+"Summary": "R-CNN is a pioneering object detection framework that introduced the concept of region proposal networks for more accurate object localization. It uses selective search to generate potential object regions in an image and then extracts features from these regions using a convolutional neural network (CNN). These features are subsequently used for classification and bounding box regression. R-CNN improved object detection accuracy but had limitations in terms of speed and efficiency.",
+"Advantages": {
+"Accuracy": " R-CNN significantly improved object detection accuracy by leveraging deep learning techniques and region-based proposals, making it suitable for various applications requiring high precision.",
+"Selective Search": " The use of selective search to generate region proposals allowed R-CNN to locate objects accurately, even in complex scenes with multiple objects and varying sizes.",
+"Flexibility": " R-CNN can be applied to a wide range of object detection tasks, including multi-class object recognition.",
+"Ability to Localize Objects": " R-CNN excels at localizing objects precisely, providing detailed bounding box information."
+},
+"Disadvantages": {
+"Slowness": " R-CNN is computationally expensive and relatively slow, as it requires processing each region proposal separately. This limits its use in real-time applications.",
+"Lack of End-to-End Training": " R-CNN's architecture involves a series of separate steps for region proposal, feature extraction, and classification, which makes it challenging to train the entire system end-to-end, potentially hindering optimization.",
+"High Memory Usage": " Storing and processing region proposals for each image consumes a significant amount of memory, making it memory-intensive.",
+"Difficulty with Small Objects": " R-CNN struggles with detecting small objects since the selective search may not generate accurate region proposals for tiny objects.",
+"Inefficient Deployment": " Deploying R-CNN models on embedded devices or in scenarios with limited computational resources can be problematic due to their high computational demands."
+}
+}

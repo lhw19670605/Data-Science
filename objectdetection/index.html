@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--Html sub directory -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Classification</title>
+	<link rel="stylesheet" type="text/css" href="../css/item-style.css">
+
+	<style>
+       .selected {
+            color: darkred; /* 设置当前选定的颜色，你可以更改为你想要的颜色 */
+       }
+       .selected a {
+            color: darkred;
+       }
+   </style>
+	<script>
+	  window.addEventListener('load', function() {
+	    //var listItems = document.querySelectorAll('li.alg');
+	    var olElement = document.querySelector('ol.alg'); // 获取类名为 "A" 的 <ol> 元素
+        var listItems = olElement.querySelectorAll('li');
+
+	    listItems.forEach(function(item) {
+	      item.addEventListener('click', function() {
+	        // 移除所有列表项的选定状态
+	        listItems.forEach(function(li) {
+	          li.classList.remove('selected');
+	        });
+
+	        // 将当前点击的列表项标记为选定
+	        item.classList.add('selected');
+	      });
+	    });
+	  });
+	</script>
+
+</head>
+<body>
+    <button>
+        <a href="../index.html" class="button-link">Home</a>
+    </button>
+	<h1>Object Detection</h1>
+	<header>
+		<div class="header">
+            <div class="head_left">
+                <img src="../img/objectdetection.jpg" alt="Object Detection" class="width80-image"/>
+            </div>
+            <div class="head_right">
+            	<p>CObject detection is a fundamental task in the field of machine learning and computer vision, focusing on the identification and localization of objects within images or video frames. Unlike image classification, where the goal is to assign a single label to an entire image, object detection goes a step further by not only recognizing the objects present but also precisely delineating their boundaries. This technology has a wide array of applications, from autonomous vehicles and surveillance systems to medical imaging and augmented reality. Object detection algorithms, such as Faster R-CNN, YOLO (You Only Look Once), and SSD (Single Shot MultiBox Detector), have significantly advanced the accuracy and efficiency of this task, making it indispensable in real-world scenarios. The ability to detect and locate objects in a visual scene is a pivotal capability in various industries, enhancing safety, automation, and overall user experiences.</p>
+            </div>
+        </div>
+    </header>
+	
+	<article role="banner">
+		<div class="layout">
+			<div class="navigation-bar" id="algorithm-list">
+				<h2>Algorithms</h2>
+				<ol class="alg">
+					<li data-json="../objectdetection/Obje-01.json"><a href="#">R-CNN</a></li>
+					<li data-json="../objectdetection/Obje-02.json"><a href="#">Fast R-CNN</a></li>
+					<li data-json="../objectdetection/Obje-03.json"><a href="#">Faster R-CNN</a></li>
+					<li data-json="../objectdetection/Obje-04.json"><a href="#">R-FCN</a></li>
+					<li data-json="../objectdetection/Obje-05.json"><a href="#">HOG</a></li>
+					<li data-json="../objectdetection/Obje-06.json"><a href="#">SPPNet</a></li>
+					<li data-json="../objectdetection/Obje-07.json"><a href="#">Mask R-CNN</a></li>
+					<li data-json="../objectdetection/Obje-08.json"><a href="#">Pyramid Networks/FPN</a></li>
+					<li data-json="../objectdetection/Obje-09.json"><a href="#">G-RCNN</a></li>
+					<li data-json="../objectdetection/Obje-10.json"><a href="#">YOLO</a></li>
+					<li data-json="../objectdetection/Obje-11.json"><a href="#">SSD</a></li>
+					<li data-json="../objectdetection/Obje-12.json"><a href="#">RetinaNet</a></li>
+				</ol>
+			</div>
+
+			<div class="content" id="algorithm-details">
+				<h2 id="algorithm-title">R-CNN</h2>
+				<h3 id="sum">Summary</h3>
+			    <p id="algorithm-summary">R-CNN is a pioneering object detection framework that introduced the concept of region proposal networks for more accurate object localization. It uses selective search to generate potential object regions in an image and then extracts features from these regions using a convolutional neural network (CNN). These features are subsequently used for classification and bounding box regression. R-CNN improved object detection accuracy but had limitations in terms of speed and efficiency.</p>
+
+				<h3 id="adv">Advantages</h3>
+				<div id="algorithm-advantages">
+				    <p><span style="color: darkblue; font-weight: bold;">Accuracy:</span> R-CNN significantly improved object detection accuracy by leveraging deep learning techniques and region-based proposals, making it suitable for various applications requiring high precision.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Selective Search:</span> The use of selective search to generate region proposals allowed R-CNN to locate objects accurately, even in complex scenes with multiple objects and varying sizes.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Flexibility:</span> R-CNN can be applied to a wide range of object detection tasks, including multi-class object recognition.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Ability to Localize Objects:</span> R-CNN excels at localizing objects precisely, providing detailed bounding box information.</p>
+			    </div>
+
+			    <h3 id="dis">Disadvantages</h3>
+			    <div id="algorithm-disadvantages">
+				    <p><span style="color: darkblue; font-weight: bold;">Slowness:</span> R-CNN is computationally expensive and relatively slow, as it requires processing each region proposal separately. This limits its use in real-time applications.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Lack of End-to-End Training:</span> R-CNN's architecture involves a series of separate steps for region proposal, feature extraction, and classification, which makes it challenging to train the entire system end-to-end, potentially hindering optimization.</p>
+					<p><span style="color: darkblue; font-weight: bold;">High Memory Usage:</span> Storing and processing region proposals for each image consumes a significant amount of memory, making it memory-intensive.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Difficulty with Small Objects:</span> R-CNN struggles with detecting small objects since the selective search may not generate accurate region proposals for tiny objects.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Inefficient Deployment:</span> Deploying R-CNN models on embedded devices or in scenarios with limited computational resources can be problematic due to their high computational demands.</p>
+			    </div>
+
+			    <h3 id="example">Example</h3>
+            	<p id="algorithm-example">Examples of R-CNN usage...</p>
+			</div>
+			<div class="location" id="algorithm-index">
+				<h2>Index</h2>
+				<ul class="index" id="algorithm-index-list">
+					<li><a href="#sum">Summary</a></li>
+					<li><a href="#adv">Advantages</a></li>
+					<li><a href="#dis">Disadvantages</a></li>
+					<li><a href="#example">Example</a></li>
+				</ul>
+			</div>
+		</div>       
+	</article>
+	<script src="../js/sub-page.js"></script>
+</body>
+</html>

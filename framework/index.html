@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--Html sub directory -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Classification</title>
+	<link rel="stylesheet" type="text/css" href="../css/item-style.css">
+
+	<style>
+       .selected {
+            color: darkred; /* 设置当前选定的颜色，你可以更改为你想要的颜色 */
+       }
+       .selected a {
+            color: darkred;
+       }
+   </style>
+	<script>
+	  window.addEventListener('load', function() {
+	    //var listItems = document.querySelectorAll('li.alg');
+	    var olElement = document.querySelector('ol.alg'); // 获取类名为 "A" 的 <ol> 元素
+        var listItems = olElement.querySelectorAll('li');
+
+	    listItems.forEach(function(item) {
+	      item.addEventListener('click', function() {
+	        // 移除所有列表项的选定状态
+	        listItems.forEach(function(li) {
+	          li.classList.remove('selected');
+	        });
+
+	        // 将当前点击的列表项标记为选定
+	        item.classList.add('selected');
+	      });
+	    });
+	  });
+	</script>
+
+</head>
+<body>
+    <button>
+        <a href="../index.html" class="button-link">Home</a>
+    </button>
+	<h1>Framework</h1>
+	<header>
+		<div class="header">
+            <div class="head_left">
+                <img src="../img/Frameworks.jpg" alt="Framework" class="width80-image"/>
+            </div>
+            <div class="head_right">
+            	<p>Framework is a comprehensive structure or platform that provides a set of tools, libraries, and guidelines for developing, training, and deploying machine learning models. These frameworks are essential components of the machine learning ecosystem, simplifying the process of building and implementing models across a wide range of applications. They offer a standardized and efficient way to work with data, algorithms, and model deployment, making machine learning more accessible and streamlined for data scientists and engineers. Some of the most widely used machine learning frameworks include TensorFlow, PyTorch, Scikit-Learn, and Keras. Each framework comes with its unique advantages and caters to specific needs, whether it's deep learning, traditional machine learning, or specialized applications. These frameworks have played a vital role in advancing the field of machine learning by providing the tools and resources needed to create powerful and efficient models for tasks like image recognition, natural language processing, and predictive analytics.</p>
+            </div>
+        </div>
+    </header>
+	
+	<article role="banner">
+		<div class="layout">
+			<div class="navigation-bar" id="algorithm-list">
+				<h2>Algorithms</h2>
+				<ol class="alg">
+					<li data-json="../framework/Fram-01.json"><a href="#">TensorFlow</a></li>
+					<li data-json="../framework/Fram-02.json"><a href="#">Keras</a></li>
+					<li data-json="../framework/Fram-03.json"><a href="#">PyTorch/Torch</a></li>
+					<li data-json="../framework/Fram-04.json"><a href="#">Caffe</a></li>
+					<li data-json="../framework/Fram-05.json"><a href="#">DeepLearning4j</a></li>
+					<li data-json="../framework/Fram-06.json"><a href="#">FastAI</a></li>
+					<li data-json="../framework/Fram-07.json"><a href="#">ONNX</a></li>
+					<li data-json="../framework/Fram-08.json"><a href="#">MXNET</a></li>
+					<li data-json="../framework/Fram-09.json"><a href="#">THE MICROSOFT COGNITIVE TOOLKIT/CNTK</a></li>
+					<li data-json="../framework/Fram-10.json"><a href="#">Scikit-learn</a></li>
+					<li data-json="../framework/Fram-11.json"><a href="#">Apark ML</a></li>
+					<li data-json="../framework/Fram-12.json"><a href="#">hugging face</a></li>
+					<li data-json="../framework/Fram-13.json"><a href="#">Theano</a></li>
+					<li data-json="../framework/Fram-14.json"><a href="#">Chainer</a></li>
+				</ol>
+			</div>
+
+			<div class="content" id="algorithm-details">
+				<h2 id="algorithm-title">TensorFlow</h2>
+				<h3 id="sum">Summary</h3>
+			    <p id="algorithm-summary">TensorFlow is an open-source machine learning framework developed by Google's Brain Team. It is designed to facilitate the development and deployment of machine learning and deep learning models. TensorFlow provides a comprehensive ecosystem for building and training various types of neural networks, as well as other machine learning models. It is known for its flexibility, scalability, and extensive community support.</p>
+
+				<h3 id="adv">Advantages</h3>
+				<div id="algorithm-advantages">
+				    <p><span style="color: darkblue; font-weight: bold;">Flexibility:</span> TensorFlow offers a high degree of flexibility for building and customizing machine learning models, making it suitable for a wide range of applications.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Scalability:</span> TensorFlow is designed to scale seamlessly from running on a single machine to distributed computing environments, making it suitable for large-scale projects.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Rich Ecosystem:</span> The TensorFlow ecosystem includes a vast collection of tools, libraries, and extensions, such as TensorFlow Lite for mobile applications and TensorFlow.js for web applications.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Community Support:</span> TensorFlow has a large and active user community, which means access to a wealth of tutorials, resources, and pre-trained models.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Integration:</span> TensorFlow can be integrated with other popular machine learning libraries and frameworks, such as Keras and TensorFlow Extended (TFX).</p>
+					<p><span style="color: darkblue; font-weight: bold;">Hardware Support:</span> TensorFlow provides support for various hardware accelerators, including GPUs and TPUs, enabling faster model training.</p>
+
+			    </div>
+
+			    <h3 id="dis">Disadvantages</h3>
+			    <div id="algorithm-disadvantages">
+				    <p><span style="color: darkblue; font-weight: bold;">Learning Curve:</span> TensorFlow's flexibility can also make it more challenging for beginners to learn, as it offers multiple ways to accomplish the same task.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Verbose Code:</span> Writing TensorFlow code can be verbose and complex, requiring more lines of code compared to some other frameworks.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Resource Intensive:</span> TensorFlow's scalability and support for distributed computing can be resource-intensive, making it overkill for simpler projects.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Slower Development:</span> Building models in TensorFlow may require more development time due to the need for low-level details, which may not be suitable for rapid prototyping.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Steep Hardware Requirements:</span> Utilizing TensorFlow to its full potential, especially with GPUs or TPUs, may require powerful hardware, which can be costly.</p>
+
+			    </div>
+
+			    <h3 id="example">Example</h3>
+            	<p id="algorithm-example">Examples of TensorFlow usage...</p>
+			</div>
+			<div class="location" id="algorithm-index">
+				<h2>Index</h2>
+				<ul class="index" id="algorithm-index-list">
+					<li><a href="#sum">Summary</a></li>
+					<li><a href="#adv">Advantages</a></li>
+					<li><a href="#dis">Disadvantages</a></li>
+					<li><a href="#example">Example</a></li>
+				</ul>
+			</div>
+		</div>       
+	</article>
+	<script src="../js/sub-page.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+"Title": "Keras", 
+"Summary": "Keras is an open-source deep learning framework that is designed to be user-friendly and efficient. It serves as an interface to other deep learning frameworks such as TensorFlow, Theano, and Microsoft Cognitive Toolkit. Keras simplifies the process of building and training deep neural networks, making it a popular choice among developers and researchers for rapid prototyping and building deep learning models.",
+"Advantages": {
+"User-Friendly": " Keras is known for its ease of use and high-level abstractions, which allow developers to quickly design and train deep learning models with minimal code.",
+"Modularity": " Keras promotes a modular design, making it easy to build complex neural networks by stacking or connecting various layers.",
+"Extensibility": " It can be seamlessly integrated with other popular deep learning frameworks like TensorFlow, enabling access to TensorFlow's extensive ecosystem and hardware support.",
+"Rapid Prototyping": " Keras is well-suited for rapid prototyping of deep learning models, making it an excellent choice for experimenting with different architectures and ideas.",
+"Community and Documentation": " Keras has a large and active user community, and there are abundant online resources and tutorials available.",
+"Cross-Platform Compatibility": " Keras is compatible with different operating systems and supports both CPU and GPU acceleration."
+},
+"Disadvantages": {
+"Limited Low-Level Control": " Keras abstracts many low-level details, which can limit the level of control over certain aspects of model building and training for advanced users.",
+"Reduced Flexibility": " While Keras is user-friendly, it may not be as flexible as some other deep learning frameworks when it comes to customizing models.",
+"Not a Standalone Framework": " Keras is an interface and not a standalone framework, relying on other backend frameworks like TensorFlow, which may add a layer of complexity for integration.",
+"Performance Overhead": " While Keras offers ease of use, it may introduce some performance overhead compared to writing lower-level code with other frameworks directly."
+}
+}

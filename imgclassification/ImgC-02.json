@@ -1,0 +1,18 @@
+{
+"Title": "CNN", 
+"Summary": "Convolutional Neural Networks (CNNs) used in Image Classification are a class of deep learning models specifically designed for the task of categorizing or classifying images. CNNs have revolutionized image classification by automatically learning relevant features from raw pixel data and are widely used in various computer vision applications.",
+"Advantages": {
+"High Accuracy": " CNNs have demonstrated state-of-the-art performance in image classification, achieving high accuracy levels, especially in complex tasks and large-scale datasets.",
+"Feature Learning": " CNNs automatically learn and extract relevant features from images, reducing the need for manual feature engineering.",
+"Hierarchical Representation": " CNNs capture hierarchical features, from simple edges and textures to complex object parts and shapes, making them capable of understanding objects at different levels.",
+"Generalization": " CNNs generalize well to new, unseen data, making them versatile and suitable for a wide range of image classification tasks.",
+"Scalability": " They can be scaled up or down to accommodate different data sizes and computational resources, making them adaptable to various scenarios."
+},
+"Disadvantages": {
+"Data Dependency": " CNNs are data-hungry and often require large amounts of labeled training data to achieve their full potential.",
+"Complexity": " Building and training CNNs can be complex and resource-intensive, requiring specialized knowledge in deep learning.",
+"Overfitting": " Overfitting to training data can be a challenge, especially when dealing with small datasets, necessitating regularization techniques.",
+"Hardware Demands": " CNNs can be computationally demanding, often requiring powerful GPUs or TPUs for training, which may not be accessible to all users.",
+"Lack of Interpretability": " CNNs are often considered as \"black-box\" models, making it difficult to interpret or explain the decision-making process for specific classifications."
+}
+}

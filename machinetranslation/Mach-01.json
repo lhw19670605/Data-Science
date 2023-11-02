@@ -1,0 +1,18 @@
+{
+"Title": "Statistical Machine Translation", 
+"Summary": "Statistical Machine Translation (SMT) is a machine translation approach that uses statistical models to automatically translate text from one language to another. It relies on the analysis of bilingual text corpora to learn patterns and probabilities for translating words and phrases, making it one of the early and influential methods for automated translation.",
+"Advantages": {
+"Data-Driven": " SMT is data-driven, which means it can learn translation patterns from large bilingual corpora, allowing it to adapt to a wide range of languages and domains.",
+"Language Independence": " SMT is language-independent and can be applied to multiple language pairs, making it versatile for translation between various languages.",
+"Scalability": " As more bilingual data becomes available, SMT models can be improved and scaled to handle increasingly complex translation tasks.",
+"Customization": " SMT can be customized for specific domains or industries by training models on specialized corpora.",
+"Deciphering Ambiguity": " SMT models can use context and probabilities to decipher ambiguous terms or phrases, improving the quality of translations."
+},
+"Disadvantages": {
+"Limited Context Understanding": " SMT models typically lack an understanding of context beyond simple phrase or sentence level, leading to errors in translation, especially for languages with different word orders or complex syntax.",
+"Out-of-Vocabulary Issues": " SMT can struggle with out-of-vocabulary words or phrases that were not present in the training data, leading to incorrect or incomplete translations.",
+"Handling Idioms and Cultural Nuances": " SMT models may not effectively capture idiomatic expressions or cultural nuances, leading to less natural-sounding translations.",
+"Lack of Post-Editing Capabilities": " SMT models typically do not have built-in post-editing capabilities, which are essential for high-quality translations.",
+"Challenges in Low-Resource Languages": " In languages with limited bilingual corpora, SMT may produce suboptimal translations due to a lack of training data."
+}
+}

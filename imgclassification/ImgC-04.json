@@ -1,0 +1,18 @@
+{
+"Title": "Transform Model", 
+"Summary": "Transforms used in Image Classification refer to a set of operations applied to input images before they are fed into a machine learning model. These operations can include resizing, normalization, data augmentation, and other preprocessing steps to improve the quality and suitability of images for classification.",
+"Advantages": {
+"Data Augmentation": " Transforms allow for data augmentation, which artificially increases the size of the training dataset by applying operations like rotation, translation, or cropping. This can improve the model's ability to generalize to new data.",
+"Standardization": " Transformations enable standardization of input data, ensuring that all images have the same format, size, and color characteristics, which simplifies the training process.",
+"Noise Reduction": " They can help reduce noise or unwanted artifacts in images, enhancing the quality of data input to the model.",
+"Consistency": " Transforms ensure consistent data presentation to the model, leading to more reliable and reproducible results.",
+"Efficiency": " Applying necessary operations like resizing or cropping can optimize computational resources by reducing image dimensions while retaining essential information."
+},
+"Disadvantages": {
+"Information Loss": " Aggressive transformations such as resizing or cropping can lead to information loss, potentially impacting the model's performance.",
+"Hyperparameter Tuning": " Selecting the appropriate transformations and their parameters may require manual tuning, which can be time-consuming.",
+"Overfitting Risk": " Data augmentation, if not carefully applied, may risk overfitting the model to the augmented data rather than the original dataset.",
+"Additional Computational Cost": " Complex transformations, especially those that involve heavy computations, can increase the computational cost of training.",
+"Domain Sensitivity": " Transforms may need to be domain-specific, as the choice of transformations should align with the characteristics of the image data and the classification task."
+}
+}

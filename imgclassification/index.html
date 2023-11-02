@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--Html sub directory -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Classification</title>
+	<link rel="stylesheet" type="text/css" href="../css/item-style.css">
+
+	<style>
+       .selected {
+            color: darkred; /* 设置当前选定的颜色，你可以更改为你想要的颜色 */
+       }
+       .selected a {
+            color: darkred;
+       }
+   </style>
+	<script>
+	  window.addEventListener('load', function() {
+	    //var listItems = document.querySelectorAll('li.alg');
+	    var olElement = document.querySelector('ol.alg'); // 获取类名为 "A" 的 <ol> 元素
+        var listItems = olElement.querySelectorAll('li');
+
+	    listItems.forEach(function(item) {
+	      item.addEventListener('click', function() {
+	        // 移除所有列表项的选定状态
+	        listItems.forEach(function(li) {
+	          li.classList.remove('selected');
+	        });
+
+	        // 将当前点击的列表项标记为选定
+	        item.classList.add('selected');
+	      });
+	    });
+	  });
+	</script>
+
+</head>
+<body>
+    <button>
+        <a href="../index.html" class="button-link">Home</a>
+    </button>
+	<h1>Image Classification</h1>
+	<header>
+		<div class="header">
+            <div class="head_left">
+                <img src="../img/imageclassification.webp" alt="Image Classification" class="width80-image"/>
+            </div>
+            <div class="head_right">
+            	<p>Image classification is a fundamental task in the field of machine learning and computer vision, focusing on the recognition of objects or content within images. This process involves training a machine learning model to assign predefined categories or labels to images based on their visual content. Image classification is pivotal in various real-world applications, including facial recognition, disease diagnosis in medical imaging, and content filtering on social media. The development of deep learning techniques, particularly convolutional neural networks (CNNs), has significantly improved the accuracy and efficiency of image classification. By learning and extracting hierarchical features from images, these models enable a wide range of industries to automate tasks, enhance security, and provide more personalized experiences for users. Image classification has become a cornerstone of computer vision, offering the capability to categorize images swiftly and accurately, which is integral in many domains where visual data plays a critical role.</p>
+            </div>
+        </div>
+    </header>
+	
+	<article role="banner">
+		<div class="layout">
+			<div class="navigation-bar" id="algorithm-list">
+				<h2>Algorithms</h2>
+				<ol class="alg">
+					<li data-json="../imgclassification/ImgC-01.json"><a href="#">All Traditional Algorithm</a></li>
+					<li data-json="../imgclassification/ImgC-02.json"><a href="#">CNN</a></li>
+					<li data-json="../imgclassification/ImgC-03.json"><a href="#">Pre-trained Model</a></li>
+					<li data-json="../imgclassification/ImgC-04.json"><a href="#">Transform Model</a></li>
+				</ol>
+			</div>
+
+			<div class="content" id="algorithm-details">
+				<h2 id="algorithm-title">CNN</h2>
+				<h3 id="sum">Summary</h3>
+			    <p id="algorithm-summary">Convolutional Neural Networks (CNNs) used in Image Classification are a class of deep learning models specifically designed for the task of categorizing or classifying images. CNNs have revolutionized image classification by automatically learning relevant features from raw pixel data and are widely used in various computer vision applications.</p>
+
+				<h3 id="adv">Advantages</h3>
+				<div id="algorithm-advantages">
+				    <p><span style="color: darkblue; font-weight: bold;">High Accuracy:</span> CNNs have demonstrated state-of-the-art performance in image classification, achieving high accuracy levels, especially in complex tasks and large-scale datasets.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Feature Learning:</span> CNNs automatically learn and extract relevant features from images, reducing the need for manual feature engineering.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Hierarchical Representation:</span> CNNs capture hierarchical features, from simple edges and textures to complex object parts and shapes, making them capable of understanding objects at different levels.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Generalization:</span> CNNs generalize well to new, unseen data, making them versatile and suitable for a wide range of image classification tasks.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Scalability:</span> They can be scaled up or down to accommodate different data sizes and computational resources, making them adaptable to various scenarios.</p>
+
+			    </div>
+
+			    <h3 id="dis">Disadvantages</h3>
+			    <div id="algorithm-disadvantages">
+				    <p><span style="color: darkblue; font-weight: bold;">Data Dependency:</span> CNNs are data-hungry and often require large amounts of labeled training data to achieve their full potential.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Complexity:</span> Building and training CNNs can be complex and resource-intensive, requiring specialized knowledge in deep learning.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Overfitting:</span> Overfitting to training data can be a challenge, especially when dealing with small datasets, necessitating regularization techniques.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Hardware Demands:</span> CNNs can be computationally demanding, often requiring powerful GPUs or TPUs for training, which may not be accessible to all users.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Lack of Interpretability:</span> CNNs are often considered as "black-box" models, making it difficult to interpret or explain the decision-making process for specific classifications.</p>
+			    </div>
+
+			    <h3 id="example">Example</h3>
+            	<p id="algorithm-example">Examples of CNN usage...</p>
+			</div>
+			<div class="location" id="algorithm-index">
+				<h2>Index</h2>
+				<ul class="index" id="algorithm-index-list">
+					<li><a href="#sum">Summary</a></li>
+					<li><a href="#adv">Advantages</a></li>
+					<li><a href="#dis">Disadvantages</a></li>
+					<li><a href="#example">Example</a></li>
+				</ul>
+			</div>
+		</div>       
+	</article>
+	<script src="../js/sub-page.js"></script>
+</body>
+</html>

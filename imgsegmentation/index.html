@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--Html sub directory -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Classification</title>
+	<link rel="stylesheet" type="text/css" href="../css/item-style.css">
+
+	<style>
+       .selected {
+            color: darkred; /* 设置当前选定的颜色，你可以更改为你想要的颜色 */
+       }
+       .selected a {
+            color: darkred;
+       }
+   </style>
+	<script>
+	  window.addEventListener('load', function() {
+	    //var listItems = document.querySelectorAll('li.alg');
+	    var olElement = document.querySelector('ol.alg'); // 获取类名为 "A" 的 <ol> 元素
+        var listItems = olElement.querySelectorAll('li');
+
+	    listItems.forEach(function(item) {
+	      item.addEventListener('click', function() {
+	        // 移除所有列表项的选定状态
+	        listItems.forEach(function(li) {
+	          li.classList.remove('selected');
+	        });
+
+	        // 将当前点击的列表项标记为选定
+	        item.classList.add('selected');
+	      });
+	    });
+	  });
+	</script>
+
+</head>
+<body>
+    <button>
+        <a href="../index.html" class="button-link">Home</a>
+    </button>
+	<h1>Image Segmentation</h1>
+	<header>
+		<div class="header">
+            <div class="head_left">
+                <img src="../img/imgsegmentation.jpg" alt="Image Segmentation" class="width80-image"/>
+            </div>
+            <div class="head_right">
+            	<p>Image segmentation is a fundamental computer vision task within the realm of machine learning, which involves dividing an image into distinct regions or segments, each representing a specific object, area, or feature. Unlike object detection, which identifies and localizes objects within an image, image segmentation provides a finer level of detail by precisely outlining the boundaries of these objects. This process is particularly valuable in scenarios where the goal is to understand the content and structure of an image at a pixel-level, enabling applications like medical image analysis, autonomous navigation, and content-based image retrieval. Various image segmentation techniques exist, such as semantic segmentation, instance segmentation, and panoptic segmentation, each catering to specific use cases. Through machine learning models and algorithms, image segmentation contributes to extracting meaningful information from visual data, providing invaluable insights and aiding in a broad range of industries and applications.</p>
+            </div>
+        </div>
+    </header>
+	
+	<article role="banner">
+		<div class="layout">
+			<div class="navigation-bar" id="algorithm-list">
+				<h2>Algorithms</h2>
+				<ol class="alg">
+					<li data-json="../imgsegmentation/ImgS-01.json"><a href="#">Edge-Based</a></li>
+					<li data-json="../imgsegmentation/ImgS-02.json"><a href="#">Threshold-Based</a></li>
+					<li data-json="../imgsegmentation/ImgS-03.json"><a href="#">Region-Based</a></li>
+					<li data-json="../imgsegmentation/ImgS-04.json"><a href="#">Cluster-Based</a></li>
+					<li data-json="../imgsegmentation/ImgS-05.json"><a href="#">Watershed</a></li>
+				</ol>
+			</div>
+
+			<div class="content" id="algorithm-details">
+				<h2 id="algorithm-title">Edge-Based</h2>
+				<h3 id="sum">Summary</h3>
+			    <p id="algorithm-summary">Edge-Based Image Segmentation is a technique used in computer vision to partition an image into distinct regions or objects by identifying and emphasizing the edges within the image. It is based on the premise that edges represent significant transitions in intensity, color, or texture, and these edges are used to separate and delineate objects or regions within an image.</p>
+
+				<h3 id="adv">Advantages</h3>
+				<div id="algorithm-advantages">
+				    <p><span style="color: darkblue; font-weight: bold;">Simplicity:</span> Edge-based image segmentation is a straightforward and intuitive approach that is easy to understand and implement.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Precise Object Boundaries:</span> It is effective at detecting and delineating object boundaries, providing high-precision segmentation results.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Robust to Lighting and Contrast Variations:</span> Edges tend to be less affected by lighting and contrast variations, making edge-based segmentation robust in various imaging conditions.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Suitable for a Wide Range of Objects:</span> This technique is applicable to a broad spectrum of objects and scenes, as edges are often instrumental in object recognition and interpretation.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Speed:</span> Edge-based methods are often computationally efficient, making them suitable for real-time or near-real-time applications.</p>
+
+			    </div>
+
+			    <h3 id="dis">Disadvantages</h3>
+			    <div id="algorithm-disadvantages">
+				    <p><span style="color: darkblue; font-weight: bold;">Sensitivity to Noise:</span> Edge-based segmentation can be sensitive to image noise, which may lead to erroneous edge detection and segmentation results.</p>
+					<p><span style="color: darkblue; font-weight: bold;">May Overemphasize Edges:</span> In some cases, edge-based methods may overemphasize certain features while neglecting texture and color information, potentially leading to suboptimal segmentation.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Limited to Well-Defined Edges:</span> Objects or regions without well-defined edges may not be accurately segmented using this method.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Difficulty with Complex Scenes:</span> In scenes with complex objects, occlusions, or multiple objects in close proximity, edge-based segmentation may struggle to provide accurate results.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Manual Parameter Tuning:</span> Choosing appropriate parameters for edge detection can be challenging and often requires manual tuning, which may be time-consuming.</p>
+			    </div>
+
+			    <h3 id="example">Example</h3>
+            	<p id="algorithm-example">Examples of Logistic Regression usage...</p>
+			</div>
+			<div class="location" id="algorithm-index">
+				<h2>Index</h2>
+				<ul class="index" id="algorithm-index-list">
+					<li><a href="#sum">Summary</a></li>
+					<li><a href="#adv">Advantages</a></li>
+					<li><a href="#dis">Disadvantages</a></li>
+					<li><a href="#example">Example</a></li>
+				</ul>
+			</div>
+		</div>       
+	</article>
+	<script src="../js/sub-page.js"></script>
+</body>
+</html>

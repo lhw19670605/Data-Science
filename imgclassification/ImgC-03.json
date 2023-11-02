@@ -1,0 +1,18 @@
+{
+"Title": "Pre-trained Model", 
+"Summary": "Pre-trained Models used in Image Classification refer to deep learning models that have been previously trained on large datasets, typically for tasks like object recognition, and are then fine-tuned for specific image classification tasks. These pre-trained models leverage knowledge gained from their initial training to provide efficient and accurate solutions for new image classification problems.",
+"Advantages": {
+"High Accuracy": " Pre-trained models often achieve high accuracy in image classification tasks, benefiting from the knowledge learned from extensive initial training on large datasets.",
+"Transfer Learning": " They enable transfer learning, allowing for the application of knowledge from one task to another, which is especially useful when the target task has limited training data.",
+"Efficiency": " Fine-tuning pre-trained models is computationally more efficient than training deep networks from scratch, reducing training time and resource requirements.",
+"Versatility": " Pre-trained models are versatile and can be adapted to a wide range of image classification tasks, making them a valuable resource for many applications.",
+"Continuous Improvement": " Pre-trained models are continuously improved and updated by the machine learning community, benefiting from ongoing research and development."
+},
+"Disadvantages": {
+"Domain Specificity": " Pre-trained models may not always be suitable for highly domain-specific image classification tasks, as they have been trained on general datasets.",
+"Limited Customization": " There may be limitations in customizing pre-trained models for very specific requirements, which might necessitate retraining from scratch.",
+"Resource Demands": " Although more efficient than training from scratch, fine-tuning pre-trained models can still require significant computational resources.",
+"Overhead in Storage": " Storing pre-trained models and their associated weights can consume substantial storage space.",
+"Interpretability": " Like other deep learning models, pre-trained models may lack interpretability, making it challenging to explain their classification decisions."
+}
+}
