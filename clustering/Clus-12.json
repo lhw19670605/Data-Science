@@ -1,0 +1,18 @@
+{
+"Title": "Gaussian Mixture Model", 
+"Summary": "The Gaussian Mixture Model (GMM) is a probabilistic model used for clustering data. It represents a dataset as a mixture of multiple Gaussian distributions, each associated with a cluster. GMM clustering aims to find the parameters of these Gaussians (mean, variance, and weight) that best explain the underlying data distribution. It's a soft clustering method, as it assigns data points to clusters with probabilities, allowing for mixed membership.",
+"Advantages": {
+"Soft Assignments": " GMM provides soft, probabilistic cluster assignments, reflecting the degree of data points' membership in multiple clusters.",
+"Versatile for Cluster Shapes": " GMM can model clusters of different shapes, including elliptical and non-spherical clusters.",
+"No Predefined Cluster Number": " It does not require specifying the number of clusters in advance, making it suitable for situations where the optimal cluster count is unknown.",
+"Effective for Overlapping Clusters": " GMM can naturally represent clusters that overlap or have complex structures.",
+"Statistical Foundation": " GMM is rooted in statistical theory and offers a likelihood-based approach to clustering."
+},
+"Disadvantages": {
+"Sensitivity to Initialization": " GMM is sensitive to the initializations of parameters, and starting from different initial points can lead to different results.",
+"Computational Complexity": " It can be computationally expensive, especially for high-dimensional datasets, due to the iterative nature of parameter estimation.",
+"Determining Cluster Number": " Like many clustering methods, GMM requires users to specify the number of clusters (K) in advance, which can be challenging.",
+"Scalability": " GMM may not be well-suited for very large datasets due to the need for estimating parameters for multiple Gaussians.",
+"Assumes Gaussian Distributions": " GMM assumes that clusters follow Gaussian distributions, which may not be appropriate for data with non-Gaussian distributions."
+}
+}

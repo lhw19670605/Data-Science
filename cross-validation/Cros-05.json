@@ -1,0 +1,16 @@
+{
+"Title": "Leave-One-Out", 
+"Summary": "Leave-One-Out Cross-Validation (LOOCV) is a cross-validation technique used to assess the performance of machine learning models. In LOOCV, each data point in the dataset is treated as the testing set once, while the remaining data is used for training. This process is repeated for each data point, resulting in as many iterations as there are data points in the dataset.",
+"Advantages": {
+"Comprehensive Evaluation": " LOOCV provides an extremely comprehensive evaluation of a model's performance by testing it on nearly all possible combinations of training and testing data.",
+"Low Bias": " LOOCV leads to low bias in performance estimates because it considers a wide variety of training and testing scenarios.",
+"Effective for Small Datasets": " It can be effective for small datasets where traditional cross-validation methods may not be practical due to limited data.",
+"Accurate Model Assessment": " LOOCV tends to provide a highly accurate assessment of a model's performance as it utilizes almost all available data for testing."
+},
+"Disadvantages": {
+"Computational Intensity": " LOOCV can be highly computationally intensive, especially for large datasets, as it requires a large number of iterations, potentially making it impractical in terms of time and resources.",
+"Variance in Estimates": " In some cases, LOOCV can lead to high variance in performance estimates, as it can be sensitive to the specific data point left out for testing.",
+"Data Leakage Risk": " If not implemented carefully, LOOCV can introduce data leakage, especially if the dataset is not properly shuffled or randomized before starting the cross-validation process.",
+"Time-Consuming": " The process can be time-consuming, which may be a limitation for certain real-time or high-throughput applications."
+}
+}

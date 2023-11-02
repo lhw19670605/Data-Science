@@ -1,0 +1,16 @@
+{
+"Title": "MDS", 
+"Summary": "Multidimensional Scaling (MDS) is a dimensionality reduction technique used to transform high-dimensional data into a lower-dimensional space while preserving the pairwise dissimilarities or distances between data points. MDS aims to represent the data in a way that maintains the original relationships and structure present in the high-dimensional space.",
+"Advantages": {
+"Preservation of Relationships": " MDS is designed to preserve the pairwise distances or dissimilarities between data points, making it well-suited for maintaining data relationships and clusters.",
+"Non-Linearity Handling": " MDS can capture non-linear relationships and patterns in the data, which is valuable in scenarios where linear techniques may not suffice.",
+"Visualization": " MDS is useful for data visualization, as it allows for the representation of high-dimensional data in a lower-dimensional space that can be easily visualized and interpreted.",
+"Interpretability": " The lower-dimensional representation produced by MDS retains meaningful information about the original data, enhancing interpretability."
+},
+"Disadvantages": {
+"Computational Complexity": " The computation of MDS can be computationally intensive, especially for large datasets or high-dimensional data.",
+"Sensitivity to Noise": " MDS can be sensitive to noise in the data, which may affect the quality of the lower-dimensional representation.",
+"Initialization Sensitivity": " The quality of the results may depend on the initialization of the mapping, introducing variability in the outcomes.",
+"Data Sparsity": " MDS may not perform well with very sparse or high-dimensional data, where preserving pairwise distances becomes more challenging."
+}
+}

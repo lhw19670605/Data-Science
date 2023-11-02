@@ -1,0 +1,18 @@
+{
+"Title": "Mini Batch K-Means", 
+"Summary": "Mini Batch K-Means is a variation of the traditional K-Means clustering algorithm designed to improve efficiency, particularly for large datasets. Instead of using the entire dataset in each iteration, Mini Batch K-Means randomly selects a subset or mini-batch of data points to update cluster centroids. This stochastic approach speeds up the convergence of the algorithm while still providing reasonably accurate cluster assignments.",
+"Advantages": {
+"Efficiency": " Mini Batch K-Means is significantly faster than the standard K-Means, making it suitable for large datasets and real-time applications.",
+"Scalability": " It can handle high-dimensional data and datasets with millions of data points without excessive memory usage.",
+"Competitive Quality": " While it converges faster, Mini Batch K-Means often produces clustering results similar in quality to those of standard K-Means.",
+"Online Learning": " Mini Batch K-Means can be used for online or streaming data, updating the clusters as new data arrives.",
+"Parallelization": " The mini-batch approach allows for parallelization, making it suitable for distributed computing environments."
+},
+"Disadvantages": {
+"Reduced Accuracy": " The use of mini-batches can lead to less accurate clustering results, especially when the mini-batch size is small.",
+"Sensitivity to Mini-Batch Size": " The choice of mini-batch size can impact the quality of clustering, and finding an optimal size may require experimentation.",
+"Convergence Issues": " In some cases, Mini Batch K-Means may not converge to a global minimum, and the final clustering can be suboptimal.",
+"Initialization Dependency": " Like K-Means, Mini Batch K-Means is sensitive to the initial placement of centroids, which can affect results.",
+"Not Suitable for All Datasets": " It may not work well for datasets with highly imbalanced clusters or non-convex shapes."
+}
+}

@@ -1,0 +1,16 @@
+{
+"Title": "Embedding", 
+"Summary": "Embedding Encoding is a data preprocessing technique used for categorical variables, particularly in the context of deep learning and neural networks. It involves converting categorical variables into dense, continuous vectors called embeddings. These embeddings are learned during the model training process, allowing the network to discover meaningful representations of categories.",
+"Advantages": {
+"Learned Representations": " Embedding Encoding allows the model to learn meaningful representations of categorical variables, capturing relationships between categories based on the training data.",
+"Flexibility": " Embeddings can adapt to the data and discover complex relationships, making them suitable for tasks where the relationships between categories are not simple.",
+"Reduced Dimensionality": " Embedding vectors are typically lower-dimensional compared to one-hot encoding, reducing the model's complexity and memory requirements.",
+"Generalization": " Embeddings can generalize well to unseen categories or categories with few samples, making them versatile for various datasets."
+},
+"Disadvantages": {
+"Data-Intensive": " Learning embeddings requires a substantial amount of training data, and they may not be effective for small datasets.",
+"Computationally Intensive": " Training models with embeddings can be computationally intensive, requiring more resources and time.",
+"Complexity": " The training process introduces complexity, which may not be necessary for all types of data and models.",
+"Interpretability": " Embeddings may lack interpretability, making it challenging to understand the meaning of learned representations."
+}
+}

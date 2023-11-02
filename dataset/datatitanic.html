@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--Html sub directory -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Titanic data set</title>
+	<link rel="stylesheet" type="text/css" href="../css/data-style.css">
+
+	<style>
+       .selected {
+            color: darkred; /* 设置当前选定的颜色，你可以更改为你想要的颜色 */
+       }
+       .selected a {
+            color: darkred;
+       }
+   </style>
+
+</head>
+<body>
+    <button>
+        <a href="../index.html" class="button-link">Home</a>
+    </button>
+	<h1>Titanic Data Set</h1>
+	<header>
+		<div class="header">
+           <div class="head_left">
+                <img src="titanic-1.webp" alt="titanic" class="width80-image"/>
+            </div>
+            <div class="head_right">
+            	<p>The RMS Titanic was a British passenger liner that sank in the North Atlantic Ocean in the early morning hours of 15 April 1912, after it collided with an iceberg during its maiden voyage from Southampton to New York City. There were an estimated 2,224 passengers and crew aboard the ship, and more than 1,500 died, making it one of the deadliest commercial peacetime maritime disasters in modern history. The RMS Titanic was the largest ship afloat at the time it entered service and was the second of three Olympic-class ocean liners operated by the White Star Line. The Titanic was built by the Harland and Wolff shipyard in Belfast. Thomas Andrews, her architect, died in the disaster.</p>
+            </div>
+        </div>
+    </header>
+	
+	<article role="banner">
+		<div class="layout">
+			<div class="feature">
+				<h2>Overview</h2>
+				<ol>
+					<p>These are the names of the columns in the DataFrame. Here are brief explanations of each data point:</p>
+					<li><p><span style="color: darkblue; font-weight: bold;">PassengerId:</span> a numerical identifier for every passenger on the Titanic.</p></li>
+					<li><p><span style="color: darkblue; font-weight: bold;">Survived:</span> a binary identifier that indicates whether or not the passenger survived the Titanic crash. This variable will hold a value of 1 if they survived and 0 if they did not.</p></li>
+					<li><p><span style="color: darkblue; font-weight: bold;">Pclass:</span> the passenger class of the passenger in question. This can hold a value of 1, 2, or 3, depending on where the passenger was located in the ship.</p></li>
+					<li><p><span style="color: darkblue; font-weight: bold;">Name:</span> the passenger's name.`</p></li>
+					<li><p><span style="color: darkblue; font-weight: bold;">Sex:</span> male or female.</p></li>
+					<li><p><span style="color: darkblue; font-weight: bold;">Age:</span> the age (in years) of the passenger.</p></li>
+					<li><p><span style="color: darkblue; font-weight: bold;">SibSp:</span> the number of siblings and spouses aboard the ship.</p></li>
+					<li><p><span style="color: darkblue; font-weight: bold;">Parch:</span> the number of parents and children aboard the ship.</p></li>
+					<li><p><span style="color: darkblue; font-weight: bold;">Ticket:</span> the passenger's ticket number.</p></li>
+					<li><p><span style="color: darkblue; font-weight: bold;">Fare:</span> how much the passenger paid for their ticket on the Titanic.</p></li>
+					<li><p><span style="color: darkblue; font-weight: bold;">Cabin:</span> the passenger's cabin number.</p></li>
+					<li><p><span style="color: darkblue; font-weight: bold;">Embarked:</span> the port where the passenger embarked (C = Cherbourg, Q = Queenstown, S = Southampton)</p></li>
+				</ol>
+			</div>
+			<div class="content">
+			    <h2>Data Analysis</h2>
+			    <p id="algorithm-summary">The training-set has 891 examples and 11 features + the target variable (survived). 2 of the features are floats, 5 are integers and 5 are objects.</p>
+
+			    <h3>The rates of survival(1) and non-survival(0)</h3>
+			    <div class="center">
+			   	 	<img src="titanic-2.png" alt="titanic"/>
+				</div>
+				<p>As you can see, we have many more incidences of non-survivors than we do of survivors.</p>
+
+				<h3>The rates of survival(1) and non-survival(0) of male and female</h3>
+			    <div class="center">
+			   	 	<img src="titanic-3.png" alt="titanic"/>
+				</div>
+				<p>As you can see, passengers with a Sex of Male were much more likely to be non-survivors than passengers with a Sex of Female.</p>
+
+				<h3>The rates of survival(1) and non-survival(0) of Pclass varible</h3>
+			    <div class="center">
+			   	 	<img src="titanic-4.png" alt="titanic"/>
+				</div>
+				<p>The most noticeable observation from this plot is that passengers with a Pclass value of 3 - which indicates the third class, which was the cheapest and least luxurious - were much more likely to die when the Titanic crashed.</p>
+
+				<h3>The Age Distribution of Titanic Passengers</h3>
+			    <div class="center">
+			   	 	<img src="titanic-5.png" alt="titanic"/>
+				</div>
+				<p>As you can see, there is a concentration of Titanic passengers with an Age value between 20 and 40.</p>
+
+				<h3>The Ticket Price Distribution of Titanic Passengers</h3>
+			    <div class="center">
+			   	 	<img src="titanic-6.png" alt="titanic"/>
+				</div>
+				<p>As you can see, there are three distinct groups of Fare prices within the Titanic data set. This makes sense because there are also three unique values for the Pclass variable. The difference Fare groups correspond to the different Pclass categories.</p>
+
+				<h3>The distribution of missing values</h3>
+			    <div class="center">
+			   	 	<img src="titanic-7.png" alt="titanic"/>
+				</div>
+				<p>In this visualization, the white lines indicate missing values in the dataset. You can see that the Age and Cabin columns contain the majority of the missing data in the Titanic data set.</p>
+				<p>The Age column in particular contains a small enough amount of missing that that we can fill in the missing data using some form of mathematics. On the other hand, the Cabin data is missing enough data that we could probably remove it from our model entirely.</p>
+
+				<h3>The relationship of Pclass with Age</h3>
+			    <div class="center">
+			   	 	<img src="titanic-8.png" alt="titanic"/>
+				</div>
+				<p>As you can see, the passengers with a Pclass value of 1 (the most expensive passenger class) tend to be the oldest while the passengers with a Pclass value of 3 (the cheapest) tend to be the youngest. </p>
+				
+
+			</div>
+		</div>       
+	</article>
+	<script src="../js/sub-page1.js"></script>
+</body>
+</html>

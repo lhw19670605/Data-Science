@@ -1,0 +1,16 @@
+{
+"Title": "ICA", 
+"Summary": "Independent Component Analysis (ICA) is a dimensionality reduction technique used to transform high-dimensional data into a lower-dimensional space by seeking statistically independent components or sources within the data. ICA aims to uncover hidden factors or sources that contribute to observed data, making it suitable for blind source separation and feature extraction.",
+"Advantages": {
+"Statistical Independence": " ICA focuses on finding independent components, which can reveal hidden factors or sources in the data, even in the presence of mixed signals.",
+"Non-Linearity Handling": " ICA can capture non-linear relationships and complex patterns in the data, making it useful in various real-world scenarios.",
+"Blind Source Separation": " ICA is particularly valuable for blind source separation, where mixed signals need to be separated into their original sources.",
+"Feature Extraction": " ICA can be used for feature extraction, revealing relevant components in the data that contribute to observed patterns."
+},
+"Disadvantages": {
+"Underdetermined Problem": " ICA can be an underdetermined problem, meaning there may be multiple valid solutions, and selecting the appropriate one can be challenging.",
+"Non-Uniqueness": " The identified independent components may not have unique interpretations, making it difficult to assign meaningful labels to them.",
+"Data Preprocessing": " Effective implementation of ICA often requires careful data preprocessing and the removal of noise and artifacts.",
+"Computationally Intensive": " The computation of ICA can be computationally intensive, especially for large datasets and high-dimensional data."
+}
+}

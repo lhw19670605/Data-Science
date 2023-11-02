@@ -1,0 +1,16 @@
+{
+"Title": "Projection Pursuit", 
+"Summary": "Projection Pursuit is a dimensionality reduction technique used to transform high-dimensional data into a lower-dimensional space by iteratively searching for interesting or informative projections of the data. It aims to find projections that reveal hidden structures, patterns, or clusters within the data.",
+"Advantages": {
+"Non-Linear Relationships": " Projection Pursuit can capture non-linear relationships and complex patterns in the data, which is valuable when linear techniques may not suffice.",
+"Revealing Hidden Structures": " It is designed to discover hidden structures and relationships within the data, making it useful for exploratory data analysis.",
+"Data Visualization": " Projection Pursuit can be used for data visualization, as it seeks to reveal meaningful projections that are easier to interpret.",
+"Customization": " The technique allows for customization by specifying the criteria for interesting projections, providing flexibility in data exploration."
+},
+"Disadvantages": {
+"Computational Complexity": " The search for interesting projections can be computationally intensive, particularly for large datasets and high-dimensional data.",
+"Subjectivity": " The definition of \"interesting\" projections is often subjective and may require domain expertise or specific criteria.",
+"Initialization Sensitivity": " The quality of results may depend on the initial conditions and criteria set for interesting projections.",
+"Data Sparsity": " Projection Pursuit may face challenges when dealing with very sparse or high-dimensional data."
+}
+}

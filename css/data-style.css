@@ -1,0 +1,144 @@
+/* Styles for all media */
+body, h1, h2, h3, h4, h5, p {
+        font-family:cnn_sans_display, helveticaneue, Helvetica, Arial, Utkal, sans-serif;
+        color: #333333;
+}
+
+a {
+  text-decoration: none; /* 去掉下划线 */
+}
+
+a img {
+  width: 25px; /* 设置图像的宽度 */
+  height: 25px; /* 设置图像的高度 */
+  border: 1px solid #333; /* 设置边框样式 */
+}
+
+p {
+  line-height: 1.2; 
+  margin: 10px 0; /* 设置段落间距为 10px，上下各 10px，左右为 0 */
+}
+/*-------------header layout ---------*/
+.header {
+  margin: 0 auto;
+  min-width: 1200px; /* 设置最小宽度为 1200px */
+  display: flex;
+}
+
+.head_left {
+  width: 50%; /* 占据 25% 的固定宽度 */
+  margin: 0px 0px 0px 50px;
+  padding: 20px 0 20px 0;
+  /*border: 1px solid #808080;*/
+}
+
+.head_right {
+  width:50%;
+  text-align: left;
+  padding: 20px 100px 20px 20px;
+  margin: 20px 50px 20px 0;
+  /*border: 1px solid #808080;*/
+  
+}
+
+/*-------------artical layout ---------*/
+.layout {
+  margin: 0 auto;
+  min-width: 1200px; /* 设置最小宽度为 1200px */
+  display: flex;
+}
+
+.feature {
+  flex: 0 0 40%; /* 占据 25% 的固定宽度 */
+  padding: 0 20px;
+  border-top: 1px solid #808080;
+  border-right: 1px solid #808080;
+  border-bottom: 1px solid #808080;
+}
+
+
+.content {
+  flex: 1; /* 占据剩余空间的 62.5% */
+  text-align: left;
+  padding: 0 80px 0 80px;
+  /*border: 1px solid #F0F;*/
+  border-top: 1px solid #808080;
+  border-bottom: 1px solid #808080;
+}
+
+/*---- image --------*/
+img {
+    /*border: 1px solid blue;
+    border-radius: 5px;*/
+    margin: 10px 40px; /* shuxiang居中 */
+    height: 200px;
+}
+
+.width80-image {
+    display: flex;
+    align-items: left;
+    justify-content: left; /* 可选，使内容在水平方向上居中对齐 */
+    width: 80%;
+    height: 200px; /* 设置父容器高度，可以根据需要调整 */
+}
+
+/*----------- algorithms ---------*/
+.alg a {
+    color: #333333;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+
+
+.alg li {
+    padding: 5px 0px;
+}
+
+/*----------- index ---------*/
+.index a {
+    color: #333333;
+}
+
+.index li {
+    /*list-style: none;*/
+    padding: 5px 0px;
+}
+
+.alg a:hover,
+.index a:hover {
+  color: darkred;
+  text-decoration: underline;
+}
+
+.alg li:hover,
+.index li:hover {
+  color: darkred;
+}
+
+.content p {
+    padding: 0 0 0 20px;
+}
+
+
+#algorithm-example {
+    font-style: italic; /* 斜体 */
+    background-color: #eee; /* 灰色背景色 */
+    padding:0 0 0 40px;
+}
+/*---------- content -------*/
+.custom-color {
+    color: darkblue;
+}
+
+pre code {
+  background-color: #eee;
+  /*border: 1px solid #999;*/
+  display: block;
+  padding: 5px 10px 5px 30px;
+}

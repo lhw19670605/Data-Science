@@ -1,0 +1,18 @@
+{
+"Title": "KNeighborsClassifier", 
+"Summary": "The KNeighborsClassifier is a type of instance-based learning algorithm used for classification tasks. It falls under the category of lazy learners because it doesn't learn a model during training but rather memorizes the training data. During prediction, it classifies a new data point by comparing it to the k-nearest neighbors in the training dataset.",
+"Advantages": {
+"Simplicity": " KNeighborsClassifier is easy to understand and implement. It's a simple algorithm suitable for quick classification tasks.",
+"No Assumptions": " This algorithm makes no assumptions about the underlying data distribution, which means it can work well for both linear and nonlinear relationships.",
+"Adaptability": " It can adapt to changes in the dataset, making it useful for dynamic or evolving data.",
+"Nonparametric": " KNeighborsClassifier is a nonparametric algorithm, meaning it doesn't make assumptions about the shape or parameters of the decision boundary.",
+"No Training Phase": " Since there's no explicit training phase, it can handle datasets with a large number of features efficiently."
+},
+"Disadvantages": {
+"Computationally Expensive": " The algorithm's prediction can be computationally expensive, especially when dealing with large datasets and a high number of neighbors (large k values).",
+"Sensitive to Distance Metric": " The choice of distance metric can significantly impact the algorithm's performance. Selecting an inappropriate distance metric may lead to suboptimal results.",
+"Curse of Dimensionality": " As the number of features (dimensions) in the dataset increases, the algorithm's performance can degrade due to the curse of dimensionality.",
+"Imbalanced Data": " KNeighborsClassifier may perform poorly on imbalanced datasets where one class greatly outnumbers the others.",
+"Memory Consumption": " The algorithm stores the entire training dataset, which can lead to high memory consumption for large datasets."
+}
+}

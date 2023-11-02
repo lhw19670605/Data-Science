@@ -1,0 +1,16 @@
+{
+"Title": "Target Encoding", 
+"Summary": "Target Encoding, also known as Mean Encoding, is a data preprocessing technique primarily used in classification tasks. It involves encoding categorical variables by replacing each category with the mean of the target variable for that category. Target Encoding is designed to capture the relationship between categorical features and the target variable, making it a valuable tool in predictive modeling.",
+"Advantages": {
+"Utilizes Target Information": " Target Encoding leverages information from the target variable, which can lead to more informative representations of categorical features.",
+"Dimension Reduction": " Target Encoding typically reduces the dimensionality of categorical variables compared to one-hot encoding, potentially improving model performance.",
+"Effective for Classification": " It is particularly effective for classification tasks where understanding the relationship between categories and the target variable is crucial.",
+"Handles Noise": " Target Encoding can help smooth noisy or sparse categorical data by incorporating the target variable's information."
+},
+"Disadvantages": {
+"Risk of Overfitting": " Target Encoding can lead to overfitting if not applied carefully. It's essential to consider the size of the dataset and the number of samples within each category.",
+"Sensitive to Data Distribution": " The effectiveness of Target Encoding depends on the distribution of the target variable within categories. It may not perform well with imbalanced classes or uneven distributions.",
+"Data Leakage": " If not used appropriately within cross-validation or model evaluation, Target Encoding can introduce data leakage, as it utilizes the target variable in the encoding process.",
+"Handling New Categories": " Dealing with new categories not seen during training can be challenging, as there are no mean values available for these categories."
+}
+}

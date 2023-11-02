@@ -1,0 +1,18 @@
+{
+"Title": "K-Means", 
+"Summary": "K-Means Clustering is a popular unsupervised machine learning algorithm used for partitioning a dataset into groups, or clusters, based on the similarity of data points. The algorithm seeks to find K centroids, where K is a user-defined parameter, and assigns each data point to the nearest centroid, forming K clusters. It iteratively updates the centroids to minimize the total intra-cluster variance, making data points within a cluster as similar as possible, while keeping clusters distinct.",
+"Advantages": {
+"Simplicity": " K-Means is straightforward and easy to understand, making it a quick and efficient clustering method.",
+"Scalability": " It can handle large datasets with a reasonable amount of computational resources.",
+"Versatility": " K-Means can be applied to various types of data, including numerical, categorical, and mixed data.",
+"Speed": " It is computationally efficient, making it suitable for real-time or interactive applications.",
+"Good for spherical clusters": " K-Means works well when clusters are roughly spherical in shape and have a similar size."
+},
+"Disadvantages": {
+"Sensitivity to Initialization": " The algorithm's results can be highly dependent on the initial placement of centroids, and different initializations can lead to different outcomes.",
+"Requires Predefined K": " Determining the right value for K (the number of clusters) can be challenging and may require domain knowledge or multiple runs with different K values.",
+"Assumption of Equal Variance": " K-Means assumes that clusters have roughly equal variance, which may not hold in real-world data.",
+"Sensitive to Outliers": " Outliers can significantly impact the results, as K-Means aims to minimize variance.",
+"Hard Assignments": " K-Means assigns each data point to a single cluster, which might not reflect the natural grouping of some data."
+}
+}

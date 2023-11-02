@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--Html sub directory -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Classification</title>
+	<link rel="stylesheet" type="text/css" href="../css/item-style.css">
+
+	<style>
+       .selected {
+            color: darkred; /* 设置当前选定的颜色，你可以更改为你想要的颜色 */
+       }
+       .selected a {
+            color: darkred;
+       }
+   </style>
+	<script>
+	  window.addEventListener('load', function() {
+	    //var listItems = document.querySelectorAll('li.alg');
+	    var olElement = document.querySelector('ol.alg'); // 获取类名为 "A" 的 <ol> 元素
+        var listItems = olElement.querySelectorAll('li');
+
+	    listItems.forEach(function(item) {
+	      item.addEventListener('click', function() {
+	        // 移除所有列表项的选定状态
+	        listItems.forEach(function(li) {
+	          li.classList.remove('selected');
+	        });
+
+	        // 将当前点击的列表项标记为选定
+	        item.classList.add('selected');
+	      });
+	    });
+	  });
+	</script>
+
+</head>
+<body>
+    <button>
+        <a href="../index.html" class="button-link">Home</a>
+    </button>
+	<h1>Classification</h1>
+	<header>
+		<div class="header">
+            <div class="head_left">
+                <img src="../img/classification.png" alt="Classification" class="width80-image"/>
+            </div>
+            <div class="head_right">
+            	<p>Classification is a fundamental concept in machine learning, representing the task of assigning a label or category to an input data point based on its features. In essence, it is about training a model to distinguish between different predefined classes, enabling it to make predictions for new, unseen data. The process involves training a machine learning algorithm on a labeled dataset, where each data point is associated with a known class or category. Common classification tasks include spam email detection, sentiment analysis of text, medical diagnosis, and image recognition, to name just a few. The accuracy and effectiveness of classification models have made them indispensable in various domains, from healthcare and finance to e-commerce and autonomous vehicles. Classification algorithms, including decision trees, support vector machines, and neural networks, have evolved to handle increasingly complex and high-dimensional data, contributing significantly to the wide adoption of machine learning for solving real-world problems.</p>
+            </div>
+        </div>
+    </header>
+	
+	<article role="banner">
+		<div class="layout">
+			<div class="navigation-bar" id="algorithm-list">
+				<h2>Algorithms</h2>
+				<ol class="alg">
+					<li data-json="../classification/Clas-01.json"><a href="#">Logistic Regression</a></li>
+					<li data-json="../classification/Clas-02.json"><a href="#">DecisionTreeClassifier</a></li>
+					<li data-json="../classification/Clas-03.json"><a href="#">RandomForestClassifier</a></li>
+					<li data-json="../classification/Clas-04.json"><a href="#">CatBoostClassifier</a></li>
+					<li data-json="../classification/Clas-05.json"><a href="#">AdaBoostClassifier</a></li>
+					<li data-json="../classification/Clas-06.json"><a href="#">BaggingClassifier</a></li>
+					<li data-json="../classification/Clas-07.json"><a href="#">ExtraTreesClassifier</a></li>
+					<li data-json="../classification/Clas-08.json"><a href="#">GradientBoostingClassifier</a></li>
+					<li data-json="../classification/Clas-09.json"><a href="#">HistGradientBoostingClassifier</a></li>
+					<li data-json="../classification/Clas-10.json"><a href="#">XGBClassifier</a></li>
+					<li data-json="../classification/Clas-11.json"><a href="#">LGBMClassifier</a></li>
+					<li data-json="../classification/Clas-12.json"><a href="#">MLPClassifier</a></li>
+					<li data-json="../classification/Clas-13.json"><a href="#">KNeighborsClassifier</a></li>
+					<li data-json="../classification/Clas-14.json"><a href="#">SVC</a></li>
+					<li data-json="../classification/Clas-15.json"><a href="#">GaussianNB</a></li>
+					<li data-json="../classification/Clas-16.json"><a href="#">BernoulliNB</a></li>
+					<li data-json="../classification/Clas-17.json"><a href="#">MultinomialNB</a></li>
+					<li data-json="../classification/Clas-18.json"><a href="#">K-Nearest Neighbor</a></li>
+				</ol>
+			</div>
+			<div class="content" id="algorithm-details">
+				<h2 id="algorithm-title">Logistic Regression</h2>
+				<h3 id="sum">Summary</h3>
+			    <p id="algorithm-summary">Logistic Regression is a statistical method used for binary and multiclass classification tasks in machine learning. It is a type of regression analysis that models the probability of a binary outcome based on one or more predictor variables. The output of logistic regression is transformed using the logistic function, which maps the predicted values into a range between 0 and 1, representing the probability of belonging to a particular class. <br><br>Logistic Regression is a simple and interpretable algorithm that is widely used in various fields, including medicine, finance, and social sciences. It can handle both categorical and numerical input features and is particularly useful for problems where the relationship between predictors and the response variable is not linear.</p>
+
+				<h3 id="adv">Advantages</h3>
+				<div id="algorithm-advantages">
+				    <p><span style="color: darkblue; font-weight: bold;">Interpretability:</span> Logistic Regression provides clear and interpretable results, making it easy to understand the impact of each predictor on the outcome.</p>
+				    <p><span style="color: darkblue; font-weight: bold;">Efficiency:</span> It is computationally efficient and can handle large datasets with ease.</p>
+				    <p><span style="color: darkblue; font-weight: bold;">Works well with small datasets:</span> Logistic Regression can perform well with relatively small amounts of data, making it a suitable choice for many real-world applications.</p>
+				    <p><span style="color: darkblue; font-weight: bold;">Natural probability output</span>: The logistic function provides probability estimates, allowing you to make decisions based on probability thresholds.</p>
+				    <p><span style="color: darkblue; font-weight: bold;">Robust to noise:</span> It is robust to noise and can handle outliers gracefully.</p>
+				    <p><span style="color: darkblue; font-weight: bold;">Feature selection:</span> Logistic Regression can help identify the most important features for classification.</p>
+			    </div>
+
+			    <h3 id="dis">Disadvantages</h3>
+			    <div id="algorithm-disadvantages">
+				    <p><span style="color: darkblue; font-weight: bold;">Assumption of linearity:</span> Logistic Regression assumes that the relationship between predictors and the log-odds of the outcome is linear. If this assumption is violated, the model's performance may suffer.</p>
+				    <p><span style="color: darkblue; font-weight: bold;">Limited expressiveness:</span> It may not capture complex, nonlinear relationships in the data as effectively as more advanced algorithms like decision trees or neural networks.</p>
+				    <p><span style="color: darkblue; font-weight: bold;">High bias or underfitting:</span> Logistic Regression may underfit the data if the true relationship between predictors and the outcome is highly nonlinear.</p>
+				    <p><span style="color: darkblue; font-weight: bold;">Not suitable for multiclass problems:</span> While binary logistic regression is common, extending it to multiclass problems requires additional techniques like one-vs-all or softmax regression.</p>
+				    <p><span style="color: darkblue; font-weight: bold;">Sensitive to outliers:</span> Extreme outliers can influence the parameter estimates and predictions in logistic regression.</p>
+				    <p><span style="color: darkblue; font-weight: bold;">Independence of observations:</span> Logistic Regression assumes that observations are independent of each other, which may not hold true for some datasets.</p>
+			    </div>
+
+			    <h3 id="example">Example</h3>
+            	<p id="algorithm-example">Examples of Logistic Regression usage...</p>
+
+			</div>
+			<div class="location" id="algorithm-index">
+				<h2>Index</h2>
+				<ul class="index" id="algorithm-index-list">
+					<li><a href="#sum">Summary</a></li>
+					<li><a href="#adv">Advantages</a></li>
+					<li><a href="#dis">Disadvantages</a></li>
+					<li><a href="#example">Example</a></li>
+				</ul>
+			</div>
+		</div>       
+	</article>
+	<script src="../js/sub-page.js"></script>
+</body>
+</html>

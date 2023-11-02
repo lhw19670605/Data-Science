@@ -1,0 +1,16 @@
+{
+"Title": "Word2Vec", 
+"Summary": "Word2Vec is a natural language processing technique used to convert words or phrases into numerical vectors, representing the semantic meaning and relationships between words in a continuous vector space. It is a popular method for word embedding, which captures the context and similarity of words based on their co-occurrence patterns.",
+"Advantages": {
+"Semantic Understanding": " Word2Vec provides meaningful representations of words by capturing their semantic relationships and similarities, making it effective in understanding the meaning of words.",
+"Continuous Vector Space": " Unlike traditional one-hot encoding or bag-of-words representations, Word2Vec creates continuous vector representations, enabling mathematical operations and calculations between word vectors.",
+"Word Similarity": " Word2Vec can measure the similarity between words by calculating the cosine similarity between their vector representations. It is often used to find similar words or phrases.",
+"Word Analogies": " Word2Vec allows for word analogy tasks, such as \"king - man + woman = queen,\" demonstrating its ability to capture relationships between words."
+},
+"Disadvantages": {
+"Data-Intensive Training": " Training Word2Vec models can be computationally intensive and require large text corpora to generate accurate word embeddings.",
+"Limited to Word Level": " Word2Vec operates at the word level and may not capture contextual information for phrases or sentences, requiring additional techniques like doc2vec or contextual embeddings.",
+"Fixed Vocabulary": " Word2Vec models have a fixed vocabulary, and out-of-vocabulary words may pose challenges unless handled through techniques like subword embeddings.",
+"Context Window": " The quality of Word2Vec embeddings depends on the size of the context window, which needs to be selected appropriately for the specific task."
+}
+}

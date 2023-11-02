@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="li1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="column" id="algorithm-list">
+            <!-- 列出算法的列表 -->
+            <ul>
+                <li data-json="li4.json"><a href="#" data-algorithm="logistic_regression">Logistic Regression</a></li>
+                <li data-json="li3.json"><a href="#" data-algorithm="decision_tree">Decision Tree Classifier</a></li>
+                <li data-json="li3.json"><a href="#" data-algorithm="svc">SVC</a></li>
+                <!-- 添加更多算法 -->
+            </ul>
+        </div>
+        <div class="column" id="algorithm-details">
+            <!-- 显示算法的详细信息 -->
+            <h2 id="algorithm-title">Algorithm Title</h2>
+            <h3 id="algorithm-summary-title">Summary</h3>
+            <p id="algorithm-summary"></p>
+            <h3 id="algorithm-advantages-title">Advantages</h3>
+            <p id="algorithm-advantages"></p>
+            <h3 id="algorithm-disadvantages-title">Disadvantages</h3>
+            <p id="algorithm-disadvantages"></p>
+            <h3 id="algorithm-examples-title">Examples</h3>
+            <p id="algorithm-examples"></p>
+        </div>
+        <div class="column" id="algorithm-index">
+            <!-- 显示算法的索引 -->
+            <h2>Index</h2>
+            <ul id="algorithm-index-list">
+                <!-- 这里将使用JavaScript动态生成索引 -->
+            </ul>
+        </div>
+    </div>
+    <script src="li1.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+"Title": "Label Encoding", 
+"Summary": "Label Encoding is a data preprocessing technique used to convert categorical variables into numerical labels or codes. Each category or level of a categorical variable is assigned a unique integer label, allowing machine learning algorithms that require numerical input to work with categorical data.",
+"Advantages": {
+"Reduced Dimensionality": " Label Encoding typically results in lower dimensionality compared to One-Hot Encoding, making it more memory-efficient and faster for model training.",
+"Preservation of Ordinal Information": " Label Encoding can capture ordinal relationships between categories when such relationships exist, as the labels are assigned based on their order or significance.",
+"Simplicity": " It is a straightforward and simple encoding technique that is easy to implement and understand.",
+"Interpretability": " The transformed data is interpretable, as it uses numerical labels that maintain the meaning of the original categories."
+},
+"Disadvantages": {
+"Loss of Information": " Label Encoding may introduce ordinal relationships when there are none in the data, potentially leading to incorrect model assumptions.",
+"Arbitrary Assignments": " The assignment of numerical labels is arbitrary and depends on the encoding order, which can impact model results.",
+"Incompatibility with Some Algorithms": " Label Encoding is not suitable for algorithms that assume numerical variables have meaningful relationships, as it might lead to misleading interpretations.",
+"Collinearity": " The use of numerical labels implies a relationship between categories, which may introduce multicollinearity in some models."
+}
+}

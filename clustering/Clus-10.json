@@ -1,0 +1,18 @@
+{
+"Title": "Hierarchical Clustering", 
+"Summary": "Hierarchical Clustering is a family of clustering algorithms used to create a hierarchical representation of data clusters. It organizes data into a tree-like structure, also known as a dendrogram, where each data point starts in its own cluster and is successively merged into larger clusters based on their similarity. Hierarchical clustering is agglomerative (bottom-up) or divisive (top-down), depending on whether it starts with individual data points or the entire dataset.",
+"Advantages": {
+"Hierarchy of Clusters": " Hierarchical clustering provides a clear and interpretable hierarchy of clusters, allowing users to explore data structure at multiple levels of granularity.",
+"No Need for Predefined Clusters": " It does not require specifying the number of clusters in advance, making it particularly useful when the optimal cluster count is unknown.",
+"Flexible Visualization": " Dendrograms offer a visual representation of the data's hierarchical structure, aiding in cluster interpretation and selection.",
+"Suitable for Different Data Types": " Hierarchical clustering can be applied to various data types, including numerical, categorical, and mixed data.",
+"Agglomerative and Divisive Options": " The choice of agglomerative or divisive hierarchical clustering allows for different perspectives on data clustering."
+},
+"Disadvantages": {
+"Computational Complexity": " Hierarchical clustering can be computationally expensive, especially for large datasets, as it involves pairwise distance calculations and tree construction.",
+"Sensitivity to Distance Metric": " The choice of distance metric significantly influences the clustering results, and selecting an appropriate metric can be challenging.",
+"Limited Scalability": " For very large datasets, hierarchical clustering may become impractical due to memory and computational constraints.",
+"Difficulty in Merging and Splitting Decisions": " Agglomerative and divisive hierarchical methods require decisions on when to merge or split clusters, which can be subjective.",
+"Fixed Tree Structure": " Once the dendrogram is constructed, the structure cannot be easily modified, limiting adaptability to different clustering perspectives."
+}
+}

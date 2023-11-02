@@ -1,0 +1,16 @@
+{
+"Title": "K-Fold", 
+"Summary": "K-Fold Cross-Validation is a widely used technique for assessing the performance of machine learning models. It involves dividing the dataset into K subsets or \"folds.\" The model is trained and tested K times, with each fold serving as the testing set once, while the remaining K-1 folds are used for training. This process helps evaluate the model's performance and robustness by averaging the results across multiple iterations.",
+"Advantages": {
+"Robust Performance Estimation": " K-Fold Cross-Validation provides a more reliable estimate of a model's performance because it averages results from multiple testing sets, reducing the impact of variability.",
+"Effective Use of Data": " It maximizes the use of available data for both training and testing, making it suitable for smaller datasets.",
+"Reduced Overfitting Risk": " By training the model on various subsets of data, K-Fold Cross-Validation helps reduce the risk of overfitting compared to a single train-test split.",
+"Parameter Tuning": " It is useful for hyperparameter tuning because it allows assessing the model's performance across different parameter values."
+},
+"Disadvantages": {
+"Computationally Intensive": " K-Fold Cross-Validation involves training and testing the model K times, which can be computationally intensive, especially for large datasets or complex models.",
+"Time-Consuming": " The process can be time-consuming, making it less practical for certain real-time or high-throughput applications.",
+"Complexity": " Implementing K-Fold Cross-Validation requires additional code and effort compared to a simple hold-out validation.",
+"Incompatibility with Certain Models": " Some models or algorithms may not work well with K-Fold Cross-Validation, especially if they assume a sequential or temporal relationship in the data."
+}
+}

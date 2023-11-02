@@ -1,0 +1,18 @@
+{
+"Title": "Expectation-Maxmization", 
+"Summary": "The Expectation-Maximization (EM) algorithm is a statistical approach used for clustering and density estimation. It is a general framework for various probabilistic models, with the Gaussian Mixture Model (GMM) being a common application in clustering. EM iteratively refines the parameters of the probabilistic model to maximize the likelihood of the data given the model. In the context of clustering, EM assigns data points to clusters with probabilistic assignments, allowing for mixed membership",
+"Advantages": {
+"Soft Assignments": " EM provides soft, probabilistic cluster assignments, which capture the degree of data points' membership in multiple clusters.",
+"Flexibility in Data Modeling": " It can model clusters with various shapes, sizes, and orientations, making it suitable for complex datasets.",
+"Handles Overlapping Clusters": " EM can naturally represent overlapping clusters or clusters with complex structures.",
+"Statistical Foundation": " EM is grounded in statistical theory and provides a likelihood-based approach to clustering.",
+"Effective for Gaussian Mixture Model": " EM is especially effective when the underlying data distribution is a mixture of Gaussian distributions."
+},
+"Disadvantages": {
+"Sensitivity to Initialization": " EM is sensitive to initializations, and starting from different initial points can lead to different results.",
+"Determining Cluster Number": " Like many clustering methods, EM requires the user to specify the number of clusters (K) in advance.",
+"Scalability": " EM may become computationally expensive for large datasets, as it involves estimating model parameters iteratively.",
+"Convergence Issues": " EM may not always converge to a global optimum, leading to suboptimal solutions.",
+"Not Ideal for Non-Gaussian Data": " While EM can handle non-Gaussian data, it is particularly effective for Gaussian-like clusters, and may not perform well when data distributions significantly deviate from this assumption."
+}
+}

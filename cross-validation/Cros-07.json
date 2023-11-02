@@ -1,0 +1,16 @@
+{
+"Title": "Time Series", 
+"Summary": "Time Series Cross-Validation is a specialized cross-validation technique used for assessing the performance of predictive models on time series data. Unlike traditional cross-validation, which randomly partitions the data, Time Series Cross-Validation respects the temporal structure of the data. It involves iteratively splitting the time series into training and testing sets in a sequential manner. This approach is particularly important when dealing with data that exhibits temporal dependencies and trends.",
+"Advantages": {
+"Preserves Temporal Order": " Time Series Cross-Validation preserves the temporal order of data, which is essential for evaluating models on time series with dependencies and trends.",
+"Reflects Real-World Use": " It emulates the real-world deployment of models, where predictions are made sequentially in time, making it a more realistic evaluation approach.",
+"Account for Seasonality": " Time Series Cross-Validation allows for assessing how well a model performs during different seasons or time periods.",
+"Evaluates Model Robustness": " It helps assess how well a model generalizes to unseen future data points and identifies potential overfitting."
+},
+"Disadvantages": {
+"Less Data for Training": " As the time series progresses, the training set becomes progressively smaller, which may limit the model's ability to learn and generalize.",
+"Inefficient for Large Datasets": " Time Series Cross-Validation can be computationally intensive and time-consuming, especially for large time series data.",
+"Model Selection Challenges": " Selecting the appropriate time series model and hyperparameters can be more complex due to the sequential nature of the cross-validation.",
+"Lack of Randomness": " Unlike random splits in traditional cross-validation, Time Series Cross-Validation lacks randomness, potentially leading to biased performance estimates."
+}
+}

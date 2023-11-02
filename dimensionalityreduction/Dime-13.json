@@ -1,0 +1,16 @@
+{
+"Title": "QDA", 
+"Summary": "Quadratic Discriminant Analysis (QDA) is a dimensionality reduction and classification technique used to transform high-dimensional data into a lower-dimensional space while maximizing class separability. Unlike Linear Discriminant Analysis (LDA), QDA allows for the modeling of class-specific covariance structures, accommodating more complex relationships between features and classes.",
+"Advantages": {
+"Flexible Covariance Modeling": " QDA can capture complex relationships between features and classes by modeling distinct covariance structures for each class, making it suitable for data with non-linear separability.",
+"Effective in Non-Linear Cases": " QDA is well-suited for situations where the decision boundaries between classes are non-linear, as it can better adapt to such scenarios compared to LDA.",
+"Feature Selection": " QDA automatically selects a subset of features that contribute most to class separation, enhancing model simplicity and interpretability.",
+"Well-Separated Classes": " In cases where classes are well-separated, QDA can provide more accurate and distinct boundaries compared to LDA."
+},
+"Disadvantages": {
+"Data Requirement": " QDA typically requires a relatively large number of samples per class to accurately estimate class-specific covariance matrices. In cases of imbalanced data, it can lead to suboptimal results.",
+"Sensitivity to Outliers": " QDA can be sensitive to outliers, as they may affect the estimation of covariance matrices and, consequently, class boundaries.",
+"Computationally Intensive": " The estimation and computation of class-specific covariance matrices can be computationally intensive, especially for large datasets or high-dimensional data.",
+"Supervised Nature": " QDA is a supervised technique, requiring class labels for dimensionality reduction, which limits its applicability to unsupervised problems."
+}
+}

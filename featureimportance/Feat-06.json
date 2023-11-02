@@ -1,0 +1,17 @@
+{
+"Title": "Internal (Linear regression, RF)", 
+"Summary": "Internal feature importance refers to the feature importance metrics that are derived directly from machine learning algorithms like Linear Regression and Random Forest. These algorithms offer intrinsic ways to evaluate the significance of individual features in the context of their specific models.",
+"Advantages": {
+"Model Specific": " Internal feature importance metrics are specific to the machine learning model used. For instance, Linear Regression may provide feature coefficients, while Random Forest may provide Gini impurity or mean decrease in impurity scores.",
+"Interpretability": " Depending on the algorithm, the results can be interpretable. For example, linear regression coefficients directly represent the impact of features on the target variable.",
+"No Additional Complexity": " Internal feature importance does not require additional computations or external tools, as it's integrated into the modeling process.",
+"Directly Aligned with Model": " These metrics are directly aligned with the model's structure and assumptions, making them appropriate for understanding feature importance in the given context."
+},
+"Disadvantages": {
+"Model Dependence": " Internal feature importance metrics vary between different models. Therefore, the choice of model may impact the results.",
+"Limited to Model's Assumptions": " Internal feature importance metrics are based on the assumptions of the model. For example, Linear Regression assumes linear relationships, which may not hold for all datasets.",
+"Lack of Robustness": " Some internal metrics, like Random Forest's mean decrease in impurity, may be biased or less robust in the presence of correlated features.",
+"Limited Coverage": " These metrics may not account for interactions between features, and their focus is primarily on individual feature importance.",
+"May Not Capture Nonlinear Relationships": " Linear regression and other linear models are not well-suited to capture nonlinear relationships, which may be present in the data."
+}
+}

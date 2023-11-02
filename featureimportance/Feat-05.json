@@ -1,0 +1,18 @@
+{
+"Title": "PCA", 
+"Summary": "PCA, or Principal Component Analysis, is a dimensionality reduction technique commonly used in machine learning to assess feature importance by analyzing the variance and relationships within the data. While PCA is primarily used for dimensionality reduction, it indirectly provides insights into feature importance.",
+"Advantages": {
+"Dimensionality Reduction": " PCA reduces the dimensionality of the dataset by projecting it onto a lower-dimensional subspace while retaining the most significant information, indirectly highlighting the most important features.",
+"Unsupervised": " PCA is an unsupervised technique, making it applicable to a wide range of datasets and problems without requiring labeled target variables.",
+"Multicollinearity Handling": " PCA can help identify and address multicollinearity, which occurs when features are highly correlated. By retaining only the principal components, it eliminates multicollinearity issues.",
+"Data Visualization": " PCA allows data visualization in a reduced-dimensional space, making it easier to identify patterns and relationships within the data.",
+"Enhanced Interpretability": " The principal components in PCA are linear combinations of the original features, making them easier to interpret and provide insights into feature importance."
+},
+"Disadvantages": {
+"Linearity Assumption": " PCA assumes linear relationships between features, which may not always hold in real-world datasets with complex, nonlinear interactions.",
+"Loss of Interpretability": " While PCA enhances interpretability for principal components, it can obscure the importance of individual original features, making it challenging to relate back to the original data.",
+"Loss of Information": " PCA reduces dimensionality by eliminating less significant components, potentially leading to a loss of information if the variance explained by these components is important.",
+"Model Complexity": " When used in combination with machine learning models, PCA may lead to more complex models that are harder to interpret.",
+"Data Transformation": " PCA transforms the data, which can make it challenging to interpret results or assess feature importance in the original feature space."
+}
+}

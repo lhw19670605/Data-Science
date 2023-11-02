@@ -1,0 +1,18 @@
+{
+"Title": "K-Nearest Neighbor", 
+"Summary": "K-Nearest Neighbor (KNN) is a supervised machine learning algorithm used for classification and regression tasks. It operates on the principle of proximity, where an object's class or value is determined by the classes or values of its nearest neighbors in the feature space. KNN is a simple yet powerful algorithm that can be used for both classification and regression tasks.",
+"Advantages": {
+"Simplicity": " KNN is easy to understand and implement. It is an intuitive algorithm suitable for quick classification and regression tasks.",
+"Flexibility": " KNN can be applied to a variety of data types and does not make strong assumptions about the data distribution.",
+"Adaptability": " It can be easily adapted to multi-class classification and regression tasks by considering the neighbors' values or classes.",
+"No Training Phase": " KNN doesn't have a training phase. It simply memorizes the training data, making it efficient for real-time or dynamic applications.",
+"Nonparametric": " KNN is nonparametric, meaning it doesn't make assumptions about the shape or parameters of the decision boundary."
+},
+"Disadvantages": {
+"Computationally Expensive": " The algorithm's prediction can be computationally expensive, especially when dealing with large datasets and a high number of neighbors (large k values).",
+"Sensitivity to K-Value": " The choice of the k-value can significantly impact the algorithm's performance. Selecting the right k is crucial and can be data-dependent.",
+"Curse of Dimensionality": " As the number of features (dimensions) in the dataset increases, the algorithm's performance can degrade due to the curse of dimensionality.",
+"Imbalanced Data": " KNN may not perform well on imbalanced datasets where one class greatly outnumbers the others.",
+"Local Decision Boundaries": " KNN produces local decision boundaries that may not capture global patterns in the data."
+}
+}

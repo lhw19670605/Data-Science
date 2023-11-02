@@ -1,0 +1,18 @@
+{
+"Title": "Minimum Spanning Tree", 
+"Summary": "Minimum Spanning Tree (MST) Clustering is a clustering method that leverages graph theory to partition data points into clusters by finding the minimum spanning tree of the data. The minimum spanning tree is a graph that connects all data points with the minimum total edge weight while avoiding the formation of cycles. In MST clustering, clusters are identified by cutting branches of the minimum spanning tree, and connected components represent distinct clusters.",
+"Advantages": {
+"Hierarchical Clustering": " MST clustering can be used for hierarchical clustering, allowing the identification of clusters at different levels of granularity.",
+"No Predefined Cluster Number": " It doesn't require specifying the number of clusters in advance, making it useful for data where the optimal cluster count is unknown.",
+"Robust to Outliers": " MST clustering is robust to outliers, as it tends to connect outliers to the main body of data.",
+"Distance Metric Agnostic": " MST clustering can work with various distance metrics, making it versatile for different types of data.",
+"Interpretable Structure": " The minimum spanning tree structure is interpretable, providing insights into data connectivity."
+},
+"Disadvantages": {
+"Sensitivity to Distance Metric": " The choice of distance metric significantly affects clustering results, and selecting an appropriate metric can be challenging.",
+"Scalability": " For large datasets, the computation of the minimum spanning tree can become computationally expensive.",
+"Flat Clusters Only": " MST clustering is better suited for identifying flat or convex-shaped clusters; it may not work well for more complex, non-convex clusters.",
+"Difficulty with Varying Cluster Densities": " It may not handle datasets with varying cluster densities effectively.",
+"Limited Flexibility": " The hierarchical nature of MST clustering may limit its adaptability to certain clustering requirements or applications."
+}
+}

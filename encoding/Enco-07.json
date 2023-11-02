@@ -1,0 +1,16 @@
+{
+"Title": "Mean Encoding", 
+"Summary": "Mean Encoding, also known as Target Encoding or Probability Encoding, is a data preprocessing technique used for categorical variables in the context of classification tasks. It involves encoding each category in a categorical variable by calculating the mean of the target variable (usually binary classification) for each category. This technique aims to capture the relationship between the categorical variable and the target variable.",
+"Advantages": {
+"Utilizes Target Information": " Mean Encoding leverages target variable information, making it potentially more informative compared to traditional label encoding or one-hot encoding.",
+"Reduces Dimensionality": " Mean Encoding typically results in lower dimensionality compared to one-hot encoding, which can be advantageous for machine learning models.",
+"Effective for Classification": " It is particularly effective for binary classification tasks, where it can help capture the relationship between categories and the probability of a particular outcome.",
+"Smooths Noisy Data": " Mean Encoding can be effective in handling noisy or sparse categorical data, as it incorporates information about the target variable to reduce noise."
+},
+"Disadvantages": {
+"Risk of Overfitting": " Mean Encoding can lead to overfitting if not applied carefully. When the number of samples within a category is small, the calculated means may not be statistically significant.",
+"Sensitivity to Data Distribution": " The effectiveness of Mean Encoding depends on the distribution of the target variable within categories. It may not perform well when there are imbalanced classes or uneven distributions.",
+"Data Leakage": " If Mean Encoding is performed on the entire dataset, it may introduce data leakage if used improperly in cross-validation or model evaluation.",
+"Handling New Categories": " It can be challenging to handle new categories that were not seen during training, as there won't be mean values for these categories."
+}
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--Html sub directory -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Classification</title>
+	<link rel="stylesheet" type="text/css" href="../css/item-style.css">
+
+	<style>
+       .selected {
+            color: darkred; /* 设置当前选定的颜色，你可以更改为你想要的颜色 */
+       }
+       .selected a {
+            color: darkred;
+       }
+   </style>
+	<script>
+	  window.addEventListener('load', function() {
+	    //var listItems = document.querySelectorAll('li.alg');
+	    var olElement = document.querySelector('ol.alg'); // 获取类名为 "A" 的 <ol> 元素
+        var listItems = olElement.querySelectorAll('li');
+
+	    listItems.forEach(function(item) {
+	      item.addEventListener('click', function() {
+	        // 移除所有列表项的选定状态
+	        listItems.forEach(function(li) {
+	          li.classList.remove('selected');
+	        });
+
+	        // 将当前点击的列表项标记为选定
+	        item.classList.add('selected');
+	      });
+	    });
+	  });
+	</script>
+
+</head>
+<body>
+    <button>
+        <a href="../index.html" class="button-link">Home</a>
+    </button>
+	<h1>Feature Importance</h1>
+	<header>
+		<div class="header">
+            <div class="head_left">
+                <img src="../img/feature_importance.png" alt="Feature Importance" class="width80-image"/>
+            </div>
+            <div class="head_right">
+            	<p>Feature importance is a critical concept in machine learning, particularly in the context of building predictive models. It refers to the determination of which features or variables in a dataset have the most significant impact on the model's predictions. By quantifying the importance of each feature, data scientists can gain insights into the relationships between variables and understand which factors are the most influential in making accurate predictions. Feature importance methods can vary, but some common techniques include tree-based algorithms such as Random Forest and gradient boosting, which assign importance scores to features based on their contribution to the model's predictive power. Understanding feature importance not only helps in feature selection and dimensionality reduction but also provides valuable insights into the underlying dynamics of the data. This knowledge allows data scientists to refine their models, improve their performance, and gain a deeper understanding of the driving factors behind the predictions made by machine learning algorithms.</p>
+            </div>
+        </div>
+    </header>
+	
+	<article role="banner">
+		<div class="layout">
+			<div class="navigation-bar" id="algorithm-list">
+				<h2>Algorithms</h2>
+				<ol class="alg">
+					<li data-json="../featureimportance/Feat-01.json"><a href="#">Permutation Importance</a></li>
+					<li data-json="../featureimportance/Feat-02.json"><a href="#">XGBoost</a></li>
+					<li data-json="../featureimportance/Feat-03.json"><a href="#">Recursive Feature Eliminate</a></li>
+					<li data-json="../featureimportance/Feat-04.json"><a href="#">ANOVA</a></li>
+					<li data-json="../featureimportance/Feat-05.json"><a href="#">PCA</a></li>
+					<li data-json="../featureimportance/Feat-06.json"><a href="#">Internal(Linear regression, RF)</a></li>
+					<li data-json="../featureimportance/Feat-07.json"><a href="#">CHI2</a></li>
+					<li data-json="../featureimportance/Feat-08.json"><a href="#">Correlation</a></li>
+					<li data-json="../featureimportance/Feat-09.json"><a href="#">Leave-one-out</a></li>
+				</ol>
+			</div>
+
+			<div class="content" id="algorithm-details">
+				<h2 id="algorithm-title">Permutation Importance</h2>
+				<h3 id="sum">Summary</h3>
+			    <p id="algorithm-summary">Permutation Importance is a technique used to assess the importance of features in machine learning models. It involves the process of permuting or shuffling the values of a single feature and observing the impact on the model's performance. The drop in model performance after shuffling the feature reflects its importance in making predictions.</p>
+
+				<h3 id="adv">Advantages</h3>
+				<div id="algorithm-advantages">
+				    <p><span style="color: darkblue; font-weight: bold;">Model-Agnostic:</span> Permutation Importance is model-agnostic, meaning it can be applied to any machine learning algorithm, whether it's a decision tree, random forest, neural network, or any other model.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Interpretability:</span> It provides a straightforward and interpretable measure of feature importance, making it easy to understand which features have the most impact on model predictions.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Identifies Key Features:</span> Permutation Importance can identify critical features that significantly affect the model's performance, helping in feature selection and understanding the data.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Robustness:</span> It is robust to correlated features, making it useful when dealing with datasets containing interrelated variables.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Reduces Overfitting:</span> By assessing feature importance based on the model's performance, Permutation Importance can help in detecting and mitigating overfitting.</p>
+			    </div>
+
+			    <h3 id="dis">Disadvantages</h3>
+			    <div id="algorithm-disadvantages">
+				    <p><span style="color: darkblue; font-weight: bold;">Computationally Intensive:</span> Permutation Importance can be computationally expensive, especially for models with a large number of features or when conducting a permutation test.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Dependent on Scoring Metric:</span> The choice of scoring metric (e.g., accuracy, AUC, etc.) can impact the results, and different metrics may lead to different assessments of feature importance.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Doesn't Capture Feature Interactions:</span> Permutation Importance evaluates features independently and does not capture interactions between features, which can be important in some cases.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Randomness:</span> The results of Permutation Importance can vary when performed multiple times due to the random nature of the shuffling process.</p>
+			    </div>
+
+			    <h3 id="example">Example</h3>
+            	<p id="algorithm-example">Examples of Permutation Importance usage...</p>
+			</div>
+			<div class="location" id="algorithm-index">
+				<h2>Index</h2>
+				<ul class="index" id="algorithm-index-list">
+					<li><a href="#sum">Summary</a></li>
+					<li><a href="#adv">Advantages</a></li>
+					<li><a href="#dis">Disadvantages</a></li>
+					<li><a href="#example">Example</a></li>
+				</ul>
+			</div>
+		</div>       
+	</article>
+	<script src="../js/sub-page.js"></script>
+</body>
+</html>

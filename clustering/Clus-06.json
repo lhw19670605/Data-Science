@@ -1,0 +1,18 @@
+{
+"Title": "DBSCAN", 
+"Summary": "DBSCAN is a density-based clustering algorithm that groups data points into clusters based on their density in the feature space. It defines clusters as areas of high data point density, separated by areas of lower density, and is capable of identifying clusters of arbitrary shapes. DBSCAN categorizes data points into three categories: core points (points in high-density areas), border points (points on the edge of clusters), and noise points (isolated points).",
+"Advantages": {
+"Automatic Cluster Discovery": " DBSCAN can discover clusters of varying shapes and sizes without requiring the user to specify the number of clusters in advance.",
+"Robust to Outliers": " It is robust to outliers because noise points are considered as separate entities rather than being forced into clusters.",
+"No Assumptions about Cluster Shape": " DBSCAN doesn't assume that clusters are spherical or have equal sizes, making it suitable for a wide range of datasets.",
+"Efficient": " DBSCAN is often more computationally efficient than hierarchical clustering methods, such as agglomerative clustering.",
+"Works with Different Data Types": " It can be applied to both numerical and categorical data, with appropriate distance metrics."
+},
+"Disadvantages": {
+"Sensitivity to Parameters": " Choosing the appropriate values for the epsilon (neighborhood radius) and the minimum number of points required to form a dense region can be challenging.",
+"Difficulty with Varying Density": " DBSCAN may struggle to identify clusters in datasets with varying density across regions.",
+"Limited to Euclidean Space": " It primarily works well in Euclidean spaces and may not be suitable for high-dimensional spaces without proper data preprocessing.",
+"May Produce Fragile Clusters": " Clusters can be sensitive to the ordering of data points, and small variations in data order may lead to different clusterings.",
+"Memory Intensive for Large Datasets": " For large datasets, the requirement to store pairwise distances between data points can become memory-intensive."
+}
+}

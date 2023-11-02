@@ -1,0 +1,16 @@
+{
+"Title": "Hold-Out", 
+"Summary": "Hold-Out Cross-Validation is a common method for assessing the performance of a machine learning model. It involves splitting the dataset into two subsets: a training set used to train the model, and a testing set used to evaluate its performance. Typically, a fixed proportion of the data is assigned to the training set, and the remainder is allocated to the testing set. Hold-Out Cross-Validation is often used when the dataset is sufficiently large, and the split is done only once.",
+"Advantages": {
+"Simplicity": " Hold-Out Cross-Validation is straightforward to implement and understand, making it an accessible choice for model assessment.",
+"Computational Efficiency": " Since it involves a single split, it is computationally efficient, especially when working with large datasets.",
+"No Information Leakage": " There is no risk of information leakage between the training and testing sets since they are disjoint.",
+"Suitable for Large Datasets": " It is particularly useful when working with large datasets where a smaller testing set is still representative."
+},
+"Disadvantages": {
+"Variance in Results": " The choice of the training-testing split can lead to variability in model performance, making the evaluation less stable.",
+"Limited Use of Data": " A significant portion of the data is used solely for testing, potentially reducing the amount available for training, especially with smaller datasets.",
+"Inadequate Assessment": " The performance of the model may be sensitive to the specific instances in the testing set, which might not be fully representative of the data's characteristics.",
+"Not Suitable for Small Datasets": " Hold-Out Cross-Validation may not be ideal for small datasets, as the testing set's size becomes too limited for reliable assessment."
+}
+}

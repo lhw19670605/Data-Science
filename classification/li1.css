@@ -1,0 +1,73 @@
+/* styles.css */
+/* 添加您的样式 */
+/*------------- layout ---------*/
+.blue-text{
+	color:darkgreen !important;
+}
+
+.container {
+  margin: 0 auto;
+  min-width: 960px; /* 设置最小宽度为 1200px */
+  display: flex;
+}
+
+#algorithm-list {
+  flex: 0 0 25%; /* 占据 25% 的固定宽度 */
+  padding: 0 20px;
+  border-top: 1px solid #808080;
+  border-right: 1px solid #808080;
+  border-bottom: 1px solid #808080;
+}
+
+#algorithm-details {
+  flex: 1; /* 占据剩余空间的 62.5% */
+  text-align: left;
+  padding: 0 40px;
+  /*border: 1px solid #F0F;*/
+  border-top: 1px solid #808080;
+  border-bottom: 1px solid #808080;
+}
+
+#algorithm-index {
+  flex: 0 0 12.5%; /* 占据 12.5% 的固定宽度 */
+  padding: 0 20px;
+  border-top: 1px solid #808080;
+  border-left: 1px solid #808080;
+  border-bottom: 1px solid #808080;
+}
+
+#algorithm-list a {
+	color: red;
+}
+
+.column1 {
+  flex: 0 0 25%; /* 占据 25% 的固定宽度 */
+  padding: 0 20px;
+  border-top: 1px solid #808080;
+  border-right: 3px solid #808080;
+  border-bottom: 2px solid #808080;
+}
+
+.column2 {
+  flex: 1; /* 占据剩余空间的 62.5% */
+  text-align: left;
+  padding: 0 20px;
+  /*border: 1px solid #F0F;*/
+  border-top: 1px solid #808080;
+  border-bottom: 2px solid #808080;
+}
+
+.column3 {
+  flex: 0 0 12.5%; /* 占据 12.5% 的固定宽度 */
+  padding: 0 20px;
+  border-top: 1px solid #808080;
+  border-left: 3px solid #808080;
+  border-bottom: 2px solid #808080;
+}
+
+.column2 a {
+	color: red;
+}
+
+
+

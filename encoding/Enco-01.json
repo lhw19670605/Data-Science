@@ -1,0 +1,16 @@
+{
+"Title": "One-Hot Encoding", 
+"Summary": "One-Hot Encoding is a data preprocessing technique used to represent categorical variables as binary vectors. Each category or level of a categorical variable is converted into a binary vector where only one element is \"hot\" (set to 1), while the rest are \"cold\" (set to 0). It is commonly employed in machine learning and data analysis to handle categorical data, making it suitable for various algorithms that require numerical input.",
+"Advantages": {
+"Preservation of Category Information": " One-Hot Encoding preserves the information about the categories in the data, ensuring that each category is uniquely represented.",
+"Compatibility with Machine Learning Algorithms": " Many machine learning algorithms require numerical input, and One-Hot Encoding allows the incorporation of categorical variables into these algorithms.",
+"Independence of Categories": " Each binary variable in the One-Hot Encoding is independent of the others, which helps prevent misconceptions about the ordinality or continuity of categories.",
+"Interpretability": " One-Hot Encoding results in clear, interpretable data representations that are easy to understand and analyze."
+},
+"Disadvantages": {
+"Dimensionality Increase": " One-Hot Encoding significantly increases the dimensionality of the data, particularly when dealing with categorical variables with many levels, which can lead to the curse of dimensionality and computational challenges.",
+"Sparse Data": " The resulting one-hot vectors are often sparse, as most of the values are 0. This can lead to increased memory and storage requirements.",
+"Loss of Information": " One-Hot Encoding does not capture any ordinal or hierarchical relationships between categories. It treats all categories as equally dissimilar, which may not always reflect the real data relationships.",
+"Collinearity": " The binary variables created through One-Hot Encoding are inherently collinear, as the presence of one category implies the absence of others. This collinearity can impact some linear models."
+}
+}

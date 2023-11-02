@@ -1,0 +1,16 @@
+{
+"Title": "CCA", 
+"Summary": "Canonical Correlation Analysis (CCA) is a dimensionality reduction technique that seeks to find linear combinations of variables in two datasets while maximizing the correlation between these combinations. It is used to uncover relationships and dependencies between two sets of variables or datasets.",
+"Advantages": {
+"Multivariate Analysis": " CCA is well-suited for multivariate data analysis, as it can handle multiple sets of variables simultaneously, revealing relationships and dependencies across these sets.",
+"Data Integration": " CCA can be used to integrate and analyze data from different sources, finding common patterns and associations between them.",
+"Reduced Dimensionality": " CCA transforms high-dimensional data into lower-dimensional representations, simplifying complex datasets while preserving important information.",
+"Interpretability": " The resulting canonical variables are interpretable and can provide insights into the relationships between different variables in the datasets."
+},
+"Disadvantages": {
+"Supervision": " CCA is often a supervised technique and requires knowledge of the relationship between datasets or the existence of dependent variables. This limits its applicability in unsupervised scenarios.",
+"Complexity": " Implementing CCA can involve complex mathematical computations, which may require expertise in the field.",
+"Linear Assumption": " CCA assumes linear relationships between variables, which may not hold in cases of highly non-linear data.",
+"Overfitting": " If the sample size is limited relative to the number of variables, CCA may overfit the data and provide unstable results."
+}
+}

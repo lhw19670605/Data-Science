@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--Html sub directory -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Classification</title>
+	<link rel="stylesheet" type="text/css" href="../css/item-style.css">
+
+	<style>
+       .selected {
+            color: darkred; /* 设置当前选定的颜色，你可以更改为你想要的颜色 */
+       }
+       .selected a {
+            color: darkred;
+       }
+   </style>
+	<script>
+	  window.addEventListener('load', function() {
+	    //var listItems = document.querySelectorAll('li.alg');
+	    var olElement = document.querySelector('ol.alg'); // 获取类名为 "A" 的 <ol> 元素
+        var listItems = olElement.querySelectorAll('li');
+
+	    listItems.forEach(function(item) {
+	      item.addEventListener('click', function() {
+	        // 移除所有列表项的选定状态
+	        listItems.forEach(function(li) {
+	          li.classList.remove('selected');
+	        });
+
+	        // 将当前点击的列表项标记为选定
+	        item.classList.add('selected');
+	      });
+	    });
+	  });
+	</script>
+
+</head>
+<body>
+    <button>
+        <a href="../index.html" class="button-link">Home</a>
+    </button>
+	<h1>Dimensionality Reduction</h1>
+	<header>
+		<div class="header">
+            <div class="head_left">
+                <img src="../img/dimensionality-reduction.png" alt="Dimensionality Reduction" class="width80-image"/>
+            </div>
+            <div class="head_right">
+            	<p>Dimensionality reduction is a crucial technique in the field of machine learning that addresses the challenge of high-dimensional data. It involves the process of reducing the number of features or variables in a dataset, while preserving the essential information and structure. The primary goal of dimensionality reduction is to simplify complex datasets, making them more manageable for analysis and modeling, and often to improve the efficiency and effectiveness of machine learning algorithms. High-dimensional data can suffer from the curse of dimensionality, which can lead to increased computational complexity, overfitting, and reduced model performance. Dimensionality reduction methods, such as Principal Component Analysis (PCA) and t-distributed Stochastic Neighbor Embedding (t-SNE), have been pivotal in various applications, from image and text processing to genetic data analysis. By reducing the number of dimensions while retaining the most critical information, these techniques enable data scientists and machine learning practitioners to gain valuable insights and build more accurate and efficient models.</p>
+            </div>
+        </div>
+    </header>
+	
+	<article role="banner">
+		<div class="layout">
+			<div class="navigation-bar" id="algorithm-list">
+				<h2>Algorithms</h2>
+				<ol class="alg">
+					<li data-json="../dimensionalityreduction/Dime-01.json"><a href="#">PCA</a></li>
+					<li data-json="../dimensionalityreduction/Dime-02.json"><a href="#">PCR</a></li>
+					<li data-json="../dimensionalityreduction/Dime-03.json"><a href="#">PLSR</a></li>
+					<li data-json="../dimensionalityreduction/Dime-04.json"><a href="#">Sammon Mapping</a></li>
+					<li data-json="../dimensionalityreduction/Dime-05.json"><a href="#">MDS</a></li>
+					<li data-json="../dimensionalityreduction/Dime-06.json"><a href="#">Projection Pursuit</a></li>
+					<li data-json="../dimensionalityreduction/Dime-07.json"><a href="#">LDA</a></li>
+					<li data-json="../dimensionalityreduction/Dime-08.json"><a href="#">ICA</a></li>
+					<li data-json="../dimensionalityreduction/Dime-09.json"><a href="#">NMF</a></li>
+					<li data-json="../dimensionalityreduction/Dime-10.json"><a href="#">RDA</a></li>
+					<li data-json="../dimensionalityreduction/Dime-11.json"><a href="#">MDA</a></li>
+					<li data-json="../dimensionalityreduction/Dime-12.json"><a href="#">PLSDA</a></li>
+					<li data-json="../dimensionalityreduction/Dime-13.json"><a href="#">QDA</a></li>
+					<li data-json="../dimensionalityreduction/Dime-14.json"><a href="#">CCA</a></li>
+					<li data-json="../dimensionalityreduction/Dime-15.json"><a href="#">Diffusion Map</a></li>
+					<li data-json="../dimensionalityreduction/Dime-16.json"><a href="#">t-DSNE</a></li>
+				</ol>
+			</div>
+
+			<div class="content" id="algorithm-details">
+				<h2 id="algorithm-title">PCA</h2>
+				<h3 id="sum">Summary</h3>
+			    <p id="algorithm-summary">Principal Component Analysis (PCA), is a technique used in data analysis and machine learning for reducing the dimensionality of data while preserving as much relevant information as possible. It does this by transforming the original features into a new set of linearly uncorrelated features called principal components.</p>
+
+				<h3 id="adv">Advantages</h3>
+				<div id="algorithm-advantages">
+				    <p><span style="color: darkblue; font-weight: bold;">Dimensionality Reduction:</span> PCA reduces the number of features in the dataset, making it more manageable and easier to work with, particularly when dealing with high-dimensional data.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Noise Reduction:</span> PCA can help reduce noise and redundancy in data, improving the overall signal-to-noise ratio.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Visualization:</span> PCA is useful for data visualization, as it projects data into a lower-dimensional space, making it easier to understand and interpret.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Collinearity Handling:</span> PCA can address issues related to multicollinearity by reducing the correlation between features.</p>
+
+			    </div>
+
+			    <h3 id="dis">Disadvantages</h3>
+			    <div id="algorithm-disadvantages">
+				    <p><span style="color: darkblue; font-weight: bold;">Information Loss:</span> While PCA reduces dimensionality, it may also lead to some information loss, as not all of the original variance is retained in the reduced feature space.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Interpretability:</span> The principal components produced by PCA may not have a direct, interpretable meaning, making it challenging to understand the contribution of individual features.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Assumption of Linearity:</span> PCA assumes that the relationships between variables are linear, which may not always be the case in real-world data.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Computational Complexity:</span> Implementing PCA can be computationally intensive, particularly for large datasets.</p>
+			    </div>
+
+			    <h3 id="example">Example</h3>
+            	<p id="algorithm-example">Examples of Principal Component Analysis usage...</p>
+			</div>
+			<div class="location" id="algorithm-index">
+				<h2>Index</h2>
+				<ul class="index" id="algorithm-index-list">
+					<li><a href="#sum">Summary</a></li>
+					<li><a href="#adv">Advantages</a></li>
+					<li><a href="#dis">Disadvantages</a></li>
+					<li><a href="#example">Example</a></li>
+				</ul>
+			</div>
+		</div>       
+	</article>
+	<script src="../js/sub-page.js"></script>
+</body>
+</html>

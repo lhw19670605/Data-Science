@@ -1,0 +1,16 @@
+{
+"Title": "Monte Carlo", 
+"Summary": "Monte Carlo Cross Validation (MCCV) is a resampling technique used for assessing the performance of machine learning models. Unlike traditional cross-validation methods that partition the dataset into folds, MCCV generates multiple random subsets of the data for training and testing. Each subset, often referred to as a \"run,\" is created through random sampling with replacement, and the model is trained and tested on each of these runs. MCCV allows for a more robust evaluation by introducing randomness and variability into the assessment process.",
+"Advantages": {
+"Robust to Variability": " MCCV accounts for the variability in performance estimates by introducing randomness through random sampling, making it suitable for datasets with complex structures.",
+"Effective for Small Datasets": " It is particularly useful for small datasets where traditional cross-validation methods may result in unstable estimates.",
+"Comprehensive Assessment": " MCCV provides a comprehensive assessment by evaluating the model on multiple random subsets, ensuring a broad exploration of the data.",
+"Resilient to Bias": " MCCV tends to have lower bias in performance estimates due to its random and less systematic nature."
+},
+"Disadvantages": {
+"Computational Intensity": " MCCV can be computationally intensive as it requires training and testing the model multiple times, with each run being randomly sampled.",
+"Time-Consuming": " The process can be time-consuming, making it less practical for real-time or high-throughput applications.",
+"Inefficiency": " MCCV may not be the most efficient method when a more structured assessment approach is appropriate, and there is prior knowledge about the data.",
+"Complex Implementation": " Implementing MCCV requires additional coding effort and is more complex compared to standard cross-validation methods."
+}
+}

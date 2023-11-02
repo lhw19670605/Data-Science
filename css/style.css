@@ -1,0 +1,305 @@
+/* Styles for all media */
+a {
+  text-decoration: none; /* 去掉下划线 */
+}
+
+body, h1, h2, h3, h4, h5 {
+        font-family:cnn_sans_display, helveticaneue, Helvetica, Arial, Utkal, sans-serif;
+        color: #333333;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+/*---- page   layout----*/ 
+.main-page {
+  margin: 0 auto;
+  min-width: 1200px; /* 设置最小宽度为 1200px */
+  display: flex;
+}
+
+.left {
+  flex: 0 0 25%; /* 占据 25% 的固定宽度 */
+  padding: 0 24px;
+  border-right: 3px solid #808080;
+  border-bottom: 2px solid #808080;
+}
+
+.middle {
+  flex: 1; /* 占据剩余空间的 62.5% */
+  text-align: left;
+  padding: 0 24px;
+  /*border: 1px solid #F0F;*/
+  border-bottom: 2px solid #808080;
+}
+
+.right {
+  flex: 0 0 12.5%; /* 占据 12.5% 的固定宽度 */
+  padding: 0 24px;
+  border-left: 3px solid #808080;
+  border-bottom: 2px solid #808080;
+}
+
+/*    navigate.     
+nav {
+    justify-self: middle;
+}*/
+/*---------menu---------*/
+
+.nav {
+    position: relative;
+    /*display: inline-block;*/
+    background-color: rgba(0, 128, 0, 0.8); /* 半透明的绿色 */
+    border-radius: 5px;
+    min-height: 1.0em;
+    /*overflow: auto;*/
+    padding: 10px 10px 5px 0px;
+    margin: 0 20px 0 20px;
+    right:0;
+    
+}
+
+.submenu {
+    display: none;
+    background-color: white;
+    position: absolute;
+    border: 2px solid #D3D3D3;
+    border-radius: 5px;
+    /*position: relative;*/
+    top: 30px;  /*或者使用 bottom: 10px; */
+    min-width: 120px;
+    padding:10px;
+}
+
+.nav .submenu {
+  z-index: 100;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    
+}
+
+.nav li {
+  display: inline-block;
+  margin-bottom: 10px;
+  border-right: solid;
+  border-color: white;
+  box-sizing: border-box;
+}
+
+.nav a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  width:120px;
+}
+
+.nav li:last-child {
+  border-right: none; /* 最后一个元素不需要右边框 */
+}
+
+.submenu li {
+  border-right: none;
+  display: block;
+  
+}
+
+.submenu a {
+  display: block;
+  text-decoration: none;
+  text-align: left;
+  color: rgba(0, 128, 0, 1);
+  width:auto;
+  text-align:auto;
+}
+
+.nav a:hover,
+.submenu a:hover 
+{
+  color: #666;
+}
+
+/*.nav li:hover .submenu {
+  display: block;
+}*/
+
+.nav li:hover .submenu,
+.nav .submenu:hover {
+  display: block;
+}
+
+/* navigate */
+.nav-main {
+    border-bottom: 1px solid #c8c8c8;
+    text-align: left;
+    background-color: rgba(0, 128, 0, 0.8); /* 半透明的绿色 */
+    padding: 20px 20px 20px 40px;
+}
+
+.nav-main a {
+    /*border-left: 1px solid #c8c8c8; */
+    display: inline-block;
+    padding: .2em 0.5em .2em;
+    /*cursor: move;*/
+    color: white;
+    width:200px;
+}
+
+.terms {
+    border-bottom: 1px solid #c8c8c8;
+    text-align: left;
+    background-color: rgba(211, 211, 211, 0.8); /* 半透明的绿色 */
+    padding: 20px 20px 20px 40px;
+}
+
+.terms a {
+    display: inline-block;
+    padding: .2em 0.5em .2em;
+    /*cursor: move;*/
+    color: #333333;
+    width:200px;
+}
+
+.nav-main a:hover,  
+.terms a:hover {
+  color: #333333;
+  text-decoration: underline;
+  /*cursor: move;*/
+}
+
+
+/*---- image --------*/
+img {
+        border: 2px solid blue;
+        border-radius: 15px;
+}
+
+.full-width-image {
+    width: 100%; /* 设置图像宽度为100%，以填满父容器的宽度 */
+    height: 250px; /* auto;  让高度自适应，以保持图像的原始宽高比 */
+}
+
+/*------ ebooks and web ----------*/
+.ebooks a , .web a, .data a{
+    color: #333333;
+} 
+
+.ebooks li, .web li {
+    padding: 5px 0px;
+} 
+
+
+.ebooks li{
+        list-style: none;
+        background:url(../img/book.png) no-repeat 0,-3px;
+        background-size: 20px;
+        padding-left:30px;
+}
+
+.web, .data {
+    list-style-type: none;
+}
+
+#github{
+        /*list-style: none;*/
+        background:url(../img/GitHub.png) no-repeat 0,-3px;
+        background-size: 20px;
+        padding-left:30px;
+}
+
+#kaggle{
+        /*list-style: none;*/
+        background:url(../img/kagg.png) no-repeat 0,-3px;
+        background-size: 20px;
+        padding-left:30px;
+}
+
+#streamlit{
+        /*list-style: none;*/
+        background:url(../img/streamlit.ico) no-repeat 0,-3px;
+        background-size: 20px;
+        padding-left:30px;
+}
+
+#w3school{
+        /*list-style: none;*/
+        background:url(../img/w3school.ico) no-repeat 0,-3px;
+        background-size: 20px;
+        padding-left:30px;
+}
+
+.ebooks a:hover,
+.web a:hover, 
+.data a:hover {
+  color: darkblue;
+  text-decoration: underline;
+}
+
+
+/*-------news and articals ---------*/
+.news, .articles {
+  padding: 0,20px,0,0;
+}
+
+.news a, .articles a {
+  color: #333333;
+}
+
+.news li, .articles li {
+   list-style: none;
+   padding: 5px 0px;
+} 
+
+.news li{
+        list-style: none;
+        background:url(../img/news3.jpg) no-repeat 0,-3px;
+        background-size: 20px;
+        padding-left:30px;
+}
+
+.articles li{
+        list-style: none;
+        background:url(../img/dia3.png) no-repeat 0,-4px;
+        background-size: 20px;
+        padding-left:30px;
+}
+
+.news a:hover,
+.articles a:hover {
+  color: darkblue;
+  text-decoration: underline;
+}
+
+/* 定义样式类以去除右边线 */
+.remove-right-border {
+  border-right: none;
+}
+
+/* 定义样式类以去除右边线 */
+.remove-left-border {
+  border-left: none;
+}
+
+.popup {
+            display: none;
+            position: absolute;
+            width: 600px;
+            height: auto;
+            background: #f9f9f9;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+.close-btn {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            cursor: pointer;
+            color: #555;
+}

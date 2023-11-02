@@ -1,0 +1,18 @@
+{
+"Title": "Correlation", 
+"Summary": "Correlation feature importance is a technique used to assess the relationship between features and a target variable in a dataset by measuring the strength and direction of the correlation. It provides insights into how features are related to the target variable.",
+"Advantages": {
+"Quantifies Relationships": " Correlation provides a numerical measure of the relationship between features and the target variable, offering a clear understanding of the strength and direction of the association.",
+"Interpretability": " Correlation results are easy to interpret. Positive correlations indicate a positive impact on the target, while negative correlations suggest a negative impact.",
+"No Assumptions About Linearity": " Correlation does not assume linearity and can capture both linear and nonlinear relationships between features and the target variable.",
+"Useful for Continuous and Ordinal Data": " Correlation can be applied to datasets with continuous and ordinal data, making it versatile in assessing feature importance.",
+"Quick to Compute": " Calculating correlations is computationally efficient, and the results are readily available."
+},
+"Disadvantages": {
+"Limited to Bivariate Analysis": " Correlation measures typically assess the relationship between two variables at a time, which may not capture complex interactions among multiple features.",
+"Does Not Detect Causation": " Correlation indicates association but does not imply causation. A high correlation between two variables does not necessarily mean one causes the other.",
+"Not Suitable for Categorical Data": " Correlation is primarily designed for continuous and ordinal data and may not be applicable to purely categorical data.",
+"Sensitive to Outliers": " Correlation can be influenced by outliers in the data, potentially leading to misleading results.",
+"Multiple Testing Consideration": " When analyzing multiple features, adjustments for multiple testing may be needed to avoid false positives."
+}
+}

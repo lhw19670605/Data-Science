@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--Html sub directory -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Classification</title>
+	<link rel="stylesheet" type="text/css" href="../css/item-style.css">
+
+	<style>
+       .selected {
+            color: darkred; /* 设置当前选定的颜色，你可以更改为你想要的颜色 */
+       }
+       .selected a {
+            color: darkred;
+       }
+   </style>
+	<script>
+	  window.addEventListener('load', function() {
+	    //var listItems = document.querySelectorAll('li.alg');
+	    var olElement = document.querySelector('ol.alg'); // 获取类名为 "A" 的 <ol> 元素
+        var listItems = olElement.querySelectorAll('li');
+
+	    listItems.forEach(function(item) {
+	      item.addEventListener('click', function() {
+	        // 移除所有列表项的选定状态
+	        listItems.forEach(function(li) {
+	          li.classList.remove('selected');
+	        });
+
+	        // 将当前点击的列表项标记为选定
+	        item.classList.add('selected');
+	      });
+	    });
+	  });
+	</script>
+
+</head>
+<body>
+    <button>
+        <a href="../index.html" class="button-link">Home</a>
+    </button>
+	<h1>Cross Validation</h1>
+	<header>
+		<div class="header">
+            <div class="head_left">
+                <img src="../img/Cross-Validation.jpg" alt="Cross Validation" class="width80-image"/>
+            </div>
+            <div class="head_right">
+            	<p>Machine learning cross-validation is a crucial technique used to assess and validate the performance of predictive models. It addresses the challenge of evaluating a model's generalization abilities by testing it on unseen data. Cross-validation involves dividing the dataset into multiple subsets, typically into a training set and a validation set. The model is then trained on one subset and validated on another, and this process is repeated multiple times, with different subsets used for training and validation in each iteration. This method helps in detecting and mitigating issues such as overfitting, where a model performs well on training data but poorly on new data. Common cross-validation methods include k-fold cross-validation and leave-one-out cross-validation. By providing a more robust assessment of a model's performance, cross-validation is an essential practice in machine learning to ensure that the model's predictive power extends beyond the training data.</p>
+            </div>
+        </div>
+    </header>
+	
+	<article role="banner">
+		<div class="layout">
+			<div class="navigation-bar" id="algorithm-list">
+				<h2>Algorithms</h2>
+				<ol class="alg">
+					<li data-json="../cross-validation/Cros-01.json"><a href="#">Hold-Out</a></li>
+					<li data-json="../cross-validation/Cros-02.json"><a href="#">K-Fold</a></li>
+					<li data-json="../cross-validation/Cros-03.json"><a href="#">Stratified K-Fold</a></li>
+					<li data-json="../cross-validation/Cros-04.json"><a href="#">Leave-P-Out</a></li>
+					<li data-json="../cross-validation/Cros-05.json"><a href="#">Leave-one-Out</a></li>
+					<li data-json="../cross-validation/Cros-06.json"><a href="#">Monte Carlo</a></li>
+					<li data-json="../cross-validation/Cros-07.json"><a href="#">Time Series</a></li>
+				</ol>
+			</div>
+
+			<div class="content" id="algorithm-details">
+				<h2 id="algorithm-title">Hold-Out</h2>
+				<h3 id="sum">Summary</h3>
+			    <p id="algorithm-summary">Hold-Out Cross-Validation is a common method for assessing the performance of a machine learning model. It involves splitting the dataset into two subsets: a training set used to train the model, and a testing set used to evaluate its performance. Typically, a fixed proportion of the data is assigned to the training set, and the remainder is allocated to the testing set. Hold-Out Cross-Validation is often used when the dataset is sufficiently large, and the split is done only once.</p>
+
+				<h3 id="adv">Advantages</h3>
+				<div id="algorithm-advantages">
+				    <p><span style="color: darkblue; font-weight: bold;">Simplicity:</span> Hold-Out Cross-Validation is straightforward to implement and understand, making it an accessible choice for model assessment.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Computational Efficiency:</span> Since it involves a single split, it is computationally efficient, especially when working with large datasets.</p>
+					<p><span style="color: darkblue; font-weight: bold;">No Information Leakage:</span> There is no risk of information leakage between the training and testing sets since they are disjoint.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Suitable for Large Datasets:</span> It is particularly useful when working with large datasets where a smaller testing set is still representative.</p>
+			    </div>
+
+			    <h3 id="dis">Disadvantages</h3>
+			    <div id="algorithm-disadvantages">
+				    <p><span style="color: darkblue; font-weight: bold;">Variance in Results:</span> The choice of the training-testing split can lead to variability in model performance, making the evaluation less stable.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Limited Use of Data:</span> A significant portion of the data is used solely for testing, potentially reducing the amount available for training, especially with smaller datasets.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Inadequate Assessment:</span> The performance of the model may be sensitive to the specific instances in the testing set, which might not be fully representative of the data's characteristics.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Not Suitable for Small Datasets:</span> Hold-Out Cross-Validation may not be ideal for small datasets, as the testing set's size becomes too limited for reliable assessment.</p>
+			    </div>
+
+			    <h3 id="example">Example</h3>
+            	<p id="algorithm-example">Examples of Hold-Out Cross-Validation usage...</p>
+			</div>
+			<div class="location" id="algorithm-index">
+				<h2>Index</h2>
+				<ul class="index" id="algorithm-index-list">
+					<li><a href="#sum">Summary</a></li>
+					<li><a href="#adv">Advantages</a></li>
+					<li><a href="#dis">Disadvantages</a></li>
+					<li><a href="#example">Example</a></li>
+				</ul>
+			</div>
+		</div>       
+	</article>
+	<script src="../js/sub-page.js"></script>
+</body>
+</html>

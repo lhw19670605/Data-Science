@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--Html sub directory -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Classification</title>
+	<link rel="stylesheet" type="text/css" href="../css/item-style.css">
+
+	<style>
+       .selected {
+            color: darkred; /* 设置当前选定的颜色，你可以更改为你想要的颜色 */
+       }
+       .selected a {
+            color: darkred;
+       }
+   </style>
+	<script>
+	  window.addEventListener('load', function() {
+	    //var listItems = document.querySelectorAll('li.alg');
+	    var olElement = document.querySelector('ol.alg'); // 获取类名为 "A" 的 <ol> 元素
+        var listItems = olElement.querySelectorAll('li');
+
+	    listItems.forEach(function(item) {
+	      item.addEventListener('click', function() {
+	        // 移除所有列表项的选定状态
+	        listItems.forEach(function(li) {
+	          li.classList.remove('selected');
+	        });
+
+	        // 将当前点击的列表项标记为选定
+	        item.classList.add('selected');
+	      });
+	    });
+	  });
+	</script>
+
+</head>
+<body>
+    <button>
+        <a href="../index.html" class="button-link">Home</a>
+    </button>
+	<h1>Recommendation</h1>
+	<header>
+		<div class="header">
+            <div class="head_left">
+                <img src="../img/recommendation.jpg" alt="Recommendation" class="width80-image"/>
+            </div>
+            <div class="head_right">
+            	<p>Recommendation systems, a pivotal application of machine learning, play a crucial role in the digital age by offering personalized suggestions to users. These systems are designed to analyze and predict user preferences, making tailored recommendations for various items, be it movies, music, products, or content. The primary goal of recommendation systems is to enhance user experience by offering items that are likely to be of interest to them, based on their historical behavior and similarities with other users. There are two main types of recommendation systems: collaborative filtering, which relies on user behavior and preferences, and content-based filtering, which uses item attributes to make suggestions. With the explosion of online content and e-commerce platforms, recommendation systems have become indispensable, aiding users in discovering new and relevant content while helping businesses boost customer engagement, sales, and customer satisfaction. Machine learning techniques such as matrix factorization, deep learning, and reinforcement learning are often employed to create increasingly accurate and effective recommendation systems.</p>
+            </div>
+        </div>
+    </header>
+	
+	<article role="banner">
+		<div class="layout">
+			<div class="navigation-bar" id="algorithm-list">
+				<h2>Algorithms</h2>
+				<ol class="alg">
+					<li data-json="../recommendation/Reco-01.json"><a href="#">Collaborative Filtering</a></li>
+					<li data-json="../recommendation/Reco-02.json"><a href="#">Matrix Factorization</a></li>
+					<li data-json="../recommendation/Reco-03.json"><a href="#">Logistic Regression</a></li>
+					<li data-json="../recommendation/Reco-04.json"><a href="#">Gradient Boosting Decision Tree + Logistic Regression</a></li>
+					<li data-json="../recommendation/Reco-05.json"><a href="#">Factorization Machines</a></li>
+					<li data-json="../recommendation/Reco-06.json"><a href="#">Field-aware Factorization Machine</a></li>
+					<li data-json="../recommendation/Reco-07.json"><a href="#">Deep Crossing</a></li>
+				</ol>
+			</div>
+
+			<div class="content" id="algorithm-details">
+				<h2 id="algorithm-title">Collaborative Filtering</h2>
+				<h3 id="sum">Summary</h3>
+			    <p id="algorithm-summary">Collaborative Filtering (CF) is a popular recommendation technique that is based on the idea that users who have shown similar preferences in the past are likely to have similar preferences in the future. CF methods make personalized recommendations by analyzing the behavior and preferences of a large number of users.</p>
+
+				<h3 id="adv">Advantages</h3>
+				<div id="algorithm-advantages">
+				    <p><span style="color: darkblue; font-weight: bold;">Personalized Recommendations:</span> CF provides personalized recommendations to users based on their historical interactions and preferences.</p>
+					<p><span style="color: darkblue; font-weight: bold;">User Behavior Analysis:</span> CF algorithms analyze user behavior, such as user ratings and interactions, to make recommendations, which can lead to more accurate suggestions.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Scalability:</span> CF methods can scale well to a large number of users and items, making them suitable for large recommendation systems.</p>
+					<p><span style="color: darkblue; font-weight: bold;">No Need for Item Information:</span> CF does not require detailed information about the items being recommended, which can be a significant advantage when item information is scarce or hard to obtain.</p>
+
+			    </div>
+
+			    <h3 id="dis">Disadvantages</h3>
+			    <div id="algorithm-disadvantages">
+				    <p><span style="color: darkblue; font-weight: bold;">Cold Start Problem:</span> CF methods often struggle with the "cold start" problem, where new items or users with little to no historical data are challenging to recommend for.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Sparsity:</span> In many recommendation systems, user-item interaction data is sparse, meaning that not all users have interacted with all items. This sparsity can lead to challenges in making accurate recommendations.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Scalability Issues:</span> While CF methods can scale well, they may still face scalability issues as the user and item base grows very large.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Privacy Concerns:</span> CF methods require access to user data, which can raise privacy concerns, and users may be uncomfortable with their data being used for recommendations.</p>
+			    </div>
+
+			    <h3 id="example">Example</h3>
+            	<p id="algorithm-example">Examples of Collaborative Filtering usage...</p>
+			</div>
+			<div class="location" id="algorithm-index">
+				<h2>Index</h2>
+				<ul class="index" id="algorithm-index-list">
+					<li><a href="#sum">Summary</a></li>
+					<li><a href="#adv">Advantages</a></li>
+					<li><a href="#dis">Disadvantages</a></li>
+					<li><a href="#example">Example</a></li>
+				</ul>
+			</div>
+		</div>       
+	</article>
+	<script src="../js/sub-page.js"></script>
+</body>
+</html>

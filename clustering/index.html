@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!--Html sub directory -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Classification</title>
+	<link rel="stylesheet" type="text/css" href="../css/item-style.css">
+
+	<style>
+       .selected {
+            color: darkred; /* 设置当前选定的颜色，你可以更改为你想要的颜色 */
+       }
+       .selected a {
+            color: darkred;
+       }
+   </style>
+	<script>
+	  window.addEventListener('load', function() {
+	    //var listItems = document.querySelectorAll('li.alg');
+	    var olElement = document.querySelector('ol.alg'); // 获取类名为 "A" 的 <ol> 元素
+        var listItems = olElement.querySelectorAll('li');
+
+	    listItems.forEach(function(item) {
+	      item.addEventListener('click', function() {
+	        // 移除所有列表项的选定状态
+	        listItems.forEach(function(li) {
+	          li.classList.remove('selected');
+	        });
+
+	        // 将当前点击的列表项标记为选定
+	        item.classList.add('selected');
+	      });
+	    });
+	  });
+	</script>
+
+</head>
+<body>
+    <button>
+        <a href="../index.html" class="button-link">Home</a>
+    </button>
+	<h1>Clustering</h1>
+	<header>
+		<div class="header">
+            <div class="head_left">
+                <img src="../img/clustering.jpg" alt="Clustering" class="width80-image"/>
+            </div>
+            <div class="head_right">
+            	<p>Clustering is a fundamental technique within the broader realm of machine learning. It is the process of categorizing data points into groups based on their similarities, without any prior knowledge of their labels. In essence, clustering algorithms identify hidden patterns or structures within datasets, organizing similar data points into clusters while keeping dissimilar ones apart. This unsupervised learning approach is invaluable in a wide range of applications, from customer segmentation in marketing to anomaly detection in network security. Common clustering algorithms include K-means, hierarchical clustering, DBSCAN, and Gaussian mixture models. By automatically uncovering underlying data structures, clustering plays a pivotal role in data exploration, pattern recognition, and knowledge extraction.</p>
+            </div>
+        </div>
+    </header>
+	
+	<article role="banner">
+		<div class="layout">
+			<div class="navigation-bar" id="algorithm-list">
+				<h2>Algorithms</h2>
+				<ol class="alg">
+					<li data-json="../clustering/Clus-01.json"><a href="#">K-Means</a></li>
+					<li data-json="../clustering/Clus-02.json"><a href="#">K Medians</a></li>
+					<li data-json="../clustering/Clus-03.json"><a href="#">BIRCH</a></li>
+					<li data-json="../clustering/Clus-04.json"><a href="#">Fuzzy C-Means</a></li>
+					<li data-json="../clustering/Clus-05.json"><a href="#">Mini Batch K-Means</a></li>
+					<li data-json="../clustering/Clus-06.json"><a href="#">DBSCAN</a></li>
+					<li data-json="../clustering/Clus-07.json"><a href="#">Mean-shift</a></li>
+					<li data-json="../clustering/Clus-08.json"><a href="#">Optics Algorithm</a></li>
+					<li data-json="../clustering/Clus-09.json"><a href="#">Expectation Maximization</a></li>
+					<li data-json="../clustering/Clus-10.json"><a href="#">Hierarchical Clustering</a></li>
+					<li data-json="../clustering/Clus-11.json"><a href="#">Minimum Spanning Tree</a></li>
+					<li data-json="../clustering/Clus-12.json"><a href="#">Gaussian Mixture Model</a></li>
+				</ol>
+			</div>
+
+
+			<div class="content" id="algorithm-details">
+				<h2 id="algorithm-title">K-Means</h2>
+				<h3 id="sum">Summary</h3>
+			    <p id="algorithm-summary">K-Means Clustering is a popular unsupervised machine learning algorithm used for partitioning a dataset into groups, or clusters, based on the similarity of data points. The algorithm seeks to find K centroids, where K is a user-defined parameter, and assigns each data point to the nearest centroid, forming K clusters. It iteratively updates the centroids to minimize the total intra-cluster variance, making data points within a cluster as similar as possible, while keeping clusters distinct.</p>
+
+				<h3 id="adv">Advantages</h3>
+				<div id="algorithm-advantages">
+				    <p><span style="color: darkblue; font-weight: bold;">Simplicity:</span> K-Means is straightforward and easy to understand, making it a quick and efficient clustering method.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Scalability:</span> It can handle large datasets with a reasonable amount of computational resources.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Versatility:</span> K-Means can be applied to various types of data, including numerical, categorical, and mixed data.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Speed:</span> It is computationally efficient, making it suitable for real-time or interactive applications.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Good for spherical clusters:</span> K-Means works well when clusters are roughly spherical in shape and have a similar size.</p>
+			    </div>
+
+			    <h3 id="dis">Disadvantages</h3>
+			    <div id="algorithm-disadvantages">
+				    <p><span style="color: darkblue; font-weight: bold;">Sensitivity to Initialization:</span> The algorithm's results can be highly dependent on the initial placement of centroids, and different initializations can lead to different outcomes.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Requires Predefined K:</span> Determining the right value for K (the number of clusters) can be challenging and may require domain knowledge or multiple runs with different K values.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Assumption of Equal Variance:</span> K-Means assumes that clusters have roughly equal variance, which may not hold in real-world data.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Sensitive to Outliers:</span> Outliers can significantly impact the results, as K-Means aims to minimize variance.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Hard Assignments:</span> K-Means assigns each data point to a single cluster, which might not reflect the natural grouping of some data.</p>
+			    </div>
+
+			    <h3 id="example">Example</h3>
+            	<p id="algorithm-example">Examples of K-Means  usage...</p>
+			</div>
+			<div class="location" id="algorithm-index">
+				<h2>Index</h2>
+				<ul class="index" id="algorithm-index-list">
+					<li><a href="#sum">Summary</a></li>
+					<li><a href="#adv">Advantages</a></li>
+					<li><a href="#dis">Disadvantages</a></li>
+					<li><a href="#example">Example</a></li>
+				</ul>
+			</div>
+		</div>       
+	</article>
+	<script src="../js/sub-page.js"></script>
+</body>
+</html>

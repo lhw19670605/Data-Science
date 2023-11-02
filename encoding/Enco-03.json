@@ -1,0 +1,16 @@
+{
+"Title": "TF-IDF", 
+"Summary": "TF-IDF (Term Frequency-Inverse Document Frequency) is a numerical representation technique used primarily in natural language processing and text analysis. It aims to evaluate the importance of a term within a document relative to a corpus of documents. TF-IDF assigns a weight to each term in a document, considering both its frequency within the document (TF) and its rarity in the entire corpus (IDF).",
+"Advantages": {
+"Term Importance": " TF-IDF captures the importance of terms in documents by emphasizing terms that are frequent within a document but rare across the entire corpus.",
+"Dimension Reduction": " It reduces the dimensionality of text data by focusing on the most discriminative terms, helping to remove noise and improve the efficiency of text-based models.",
+"Document Similarity": " TF-IDF can be used to measure document similarity or dissimilarity, aiding in tasks such as document clustering and information retrieval.",
+"Language Agnostic": " TF-IDF is language-agnostic and can be applied to text data in multiple languages."
+},
+"Disadvantages": {
+"Loss of Context": " TF-IDF does not consider the semantic meaning of words, leading to a loss of contextual information in text analysis.",
+"Sparse Data": " In sparse text data, where documents contain few terms, TF-IDF can result in sparse vectors, which may affect model performance.",
+"Sensitivity to Document Length": " Documents of varying lengths can lead to biased TF-IDF scores, as longer documents may have higher term frequencies by default.",
+"Subject to Stopwords": " Common stopwords can have a significant impact on TF-IDF scores, potentially influencing the importance of terms."
+}
+}

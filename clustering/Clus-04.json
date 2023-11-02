@@ -1,0 +1,18 @@
+{
+"Title": "Fuzzy C-Means", 
+"Summary": "Fuzzy C-Means (FCM) is an unsupervised clustering algorithm that extends the traditional K-Means algorithm by allowing data points to belong to multiple clusters to varying degrees. Instead of hard assignments, FCM assigns each data point a membership value indicating its degree of belonging to each cluster. The algorithm iteratively updates cluster centroids and membership values based on the minimization of a fuzzy objective function, which makes it suitable for situations where data points may belong to multiple clusters simultaneously.",
+"Advantages": {
+"Soft Clustering": " FCM allows for soft, probabilistic assignments, which can better represent the inherent uncertainty in real-world data.",
+"Flexibility": " FCM is not constrained by the assumption that clusters are spherical or equally sized, making it more versatile for various types of data.",
+"Robustness to Outliers": " FCM is less sensitive to outliers compared to K-Means, as it considers degrees of membership.",
+"Cluster Overlaps": " FCM can handle situations where clusters overlap or when data points exhibit multiple characteristics that belong to different clusters.",
+"Applicability to Image Segmentation": " FCM is often used for image segmentation tasks."
+},
+"Disadvantages": {
+"Sensitivity to Initializations": " The results of FCM can vary depending on the initial assignment of membership values, requiring multiple runs with different initializations.",
+"Computational Complexity": " FCM can be computationally more demanding and slower than K-Means, especially for large datasets or high dimensions.",
+"Need for Determining Parameters": " You must specify the number of clusters (K) and a fuzziness parameter (m) in advance, which can be challenging without prior knowledge.",
+"Interpretation Challenges": " The concept of fuzzy memberships can be less intuitive for interpretation compared to hard assignments in K-Means.",
+"Potential for Empty Clusters": " FCM may lead to empty or near-empty clusters, depending on the choice of parameters."
+}
+}

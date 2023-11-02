@@ -1,0 +1,16 @@
+{
+"Title": "GloVe", 
+"Summary": "GloVe, which stands for Global Vectors for Word Representation, is a natural language processing technique used to create word embeddings by considering the global statistical properties of words in a large text corpus. It is designed to capture semantic relationships between words based on their co-occurrence statistics.",
+"Advantages": {
+"Semantic Understanding": " GloVe provides word embeddings that encode meaningful semantic relationships between words based on their co-occurrence patterns in text data.",
+"Global Context": " Unlike some word embedding techniques, GloVe considers global co-occurrence statistics, allowing it to capture broader context and word associations.",
+"Word Similarity": " GloVe can measure the similarity between words by comparing their vector representations, making it useful for tasks like word similarity and analogy.",
+"Pretrained Models": " Pretrained GloVe models on large text corpora are available, which can save time and resources for NLP applications."
+},
+"Disadvantages": {
+"Fixed Vocabulary": " GloVe models typically have a fixed vocabulary, and out-of-vocabulary words can be challenging to handle. Special techniques are required to address this issue.",
+"Computational Resources": " Training GloVe models from scratch can be computationally intensive and require large text corpora. Pretrained models may not cover specialized or domain-specific vocabularies.",
+"Limited to Word Level": " GloVe focuses on word-level embeddings and may not capture context at the phrase or sentence level without additional techniques.",
+"Context Window Size": " The choice of the context window size during training can impact the quality of GloVe embeddings and needs to be selected carefully."
+}
+}

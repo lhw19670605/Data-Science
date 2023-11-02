@@ -1,0 +1,16 @@
+{
+"Title": "Stratified K-Fold", 
+"Summary": "Stratified K-Fold Cross-Validation is an extension of the traditional K-Fold Cross-Validation technique, specifically designed for classification problems. It aims to ensure that the distribution of target classes within each fold is representative of the overall dataset. This approach helps assess the performance of machine learning models, especially when dealing with imbalanced datasets.",
+"Advantages": {
+"Balanced Class Distribution": " Stratified K-Fold Cross-Validation ensures that each fold contains a proportional representation of target class labels, addressing the issue of imbalanced datasets.",
+"Robust Performance Estimation": " By maintaining class balance in each fold, this technique provides a more reliable estimate of a model's performance, particularly when class distributions are skewed.",
+"Effective for Classification": " It is highly effective for classification tasks where maintaining class balance is critical for accurate model assessment.",
+"Improved Generalization": " Stratified Cross-Validation helps models generalize well by presenting them with diverse class distributions during training and testing."
+},
+"Disadvantages": {
+"Computationally Intensive": " Just like traditional K-Fold Cross-Validation, Stratified K-Fold Cross-Validation involves training and testing the model multiple times, which can be computationally intensive.",
+"Time-Consuming": " The process can be time-consuming, particularly when dealing with large datasets or complex models.",
+"Complexity": " Implementing Stratified K-Fold Cross-Validation requires additional code and effort compared to simpler validation methods like hold-out validation.",
+"Not Always Needed": " It may not be necessary for well-balanced datasets where class distribution is not a concern."
+}
+}

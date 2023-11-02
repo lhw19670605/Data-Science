@@ -1,0 +1,16 @@
+{
+"Title": "t-DSNE", 
+"Summary": "t-Distributed Stochastic Neighbor Embedding (t-SNE) is a dimensionality reduction technique that focuses on visualizing and exploring high-dimensional data in a lower-dimensional space while preserving the relationships and similarities between data points. It uses a probabilistic approach to map data points into a lower-dimensional representation.",
+"Advantages": {
+"Non-Linear Embedding": " t-SNE excels at capturing non-linear relationships in the data, making it suitable for revealing complex structures and clusters.",
+"Visualization": " It is particularly useful for data visualization and exploration, providing clear visualizations that help researchers and analysts gain insights.",
+"Preservation of Local Structure": " t-SNE preserves the local relationships and pairwise similarities between data points, which is essential for maintaining data patterns.",
+"Parameter Robustness": " t-SNE is relatively robust to variations in parameters, making it easier to obtain good results with minimal parameter tuning."
+},
+"Disadvantages": {
+"Non-Deterministic": " t-SNE is non-deterministic, meaning that different runs of the algorithm on the same data may produce slightly different results, making it challenging for reproducibility.",
+"Computational Complexity": " The algorithm can be computationally intensive for large datasets and high dimensions, which can lead to long processing times.",
+"Curse of Dimensionality": " t-SNE may face challenges with the curse of dimensionality, where the method's performance deteriorates as the dimensionality of the data increases.",
+"Interpretability": " While t-SNE is excellent for visualization, the resulting lower-dimensional representation may not be as interpretable as other techniques designed for feature selection."
+}
+}

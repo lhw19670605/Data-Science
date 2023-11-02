@@ -1,0 +1,16 @@
+{
+"Title": "MDA", 
+"Summary": "Multiple Discriminant Analysis (MDA) is a dimensionality reduction technique that extends Linear Discriminant Analysis (LDA) by allowing for the creation of multiple discriminant functions or axes to transform high-dimensional data into a lower-dimensional space. MDA aims to maximize class separability and capture complex relationships between features and classes.",
+"Advantages": {
+"Enhanced Separation": " MDA goes beyond LDA by allowing the creation of multiple discriminant functions, which can lead to enhanced separation between classes or groups in the data.",
+"Non-Linearity Handling": " MDA can capture non-linear relationships and complex patterns in the data, making it useful in scenarios where linear techniques may not suffice.",
+"Visualization": " MDA can be used for data visualization, as it reduces data to a lower-dimensional space while preserving class information, making it easier to understand and interpret.",
+"Feature Selection": " MDA automatically selects a subset of features that contribute most to class separation, simplifying models and enhancing interpretability."
+},
+"Disadvantages": {
+"Linearity Assumption": " MDA assumes that the relationships between variables are linear, which may not hold in all real-world scenarios.",
+"Supervised Nature": " MDA requires class labels for dimensionality reduction, limiting its applicability to unsupervised problems.",
+"Data Sparsity": " MDA may not perform well with very sparse or high-dimensional data, where the preservation of class separability becomes more challenging.",
+"Computational Complexity": " The computation of MDA can be computationally intensive, especially for large datasets or high-dimensional data."
+}
+}

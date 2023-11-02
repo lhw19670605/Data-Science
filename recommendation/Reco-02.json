@@ -1,0 +1,16 @@
+{
+"Title": "Matrix Factorization", 
+"Summary": "Matrix Factorization is a recommendation technique that aims to decompose a user-item interaction matrix into two lower-dimensional matrices, typically representing users and items. By doing so, it learns latent factors that capture user and item characteristics. Matrix Factorization is widely used for collaborative filtering-based recommendations.",
+"Advantages": {
+"Personalized Recommendations": " Matrix Factorization provides highly personalized recommendations by capturing latent user and item features.",
+"Cold Start Handling": " It can handle the cold start problem, as long as there is enough data to learn latent factors.",
+"Implicit Feedback": " Matrix Factorization can work with implicit feedback, such as user clicks, making it suitable for various recommendation scenarios.",
+"Scalability": " Depending on the optimization techniques used, Matrix Factorization can scale well for large datasets."
+},
+"Disadvantages": {
+"Data Sparsity": " It may struggle with extremely sparse data, where many users and items have few interactions, making it challenging to learn meaningful latent factors.",
+"Scalability Challenges": " Although it can scale, for very large datasets, matrix factorization methods may become computationally intensive.",
+"Cold Start for New Items": " Handling the cold start problem for new items can still be a challenge, as there may be insufficient data to learn their latent factors.",
+"Implicit Feedback Handling": " While it can work with implicit feedback, handling it effectively may require additional techniques."
+}
+}

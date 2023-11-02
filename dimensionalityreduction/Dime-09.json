@@ -1,0 +1,16 @@
+{
+"Title": "NMF", 
+"Summary": "Non-Negative Matrix Factorization (NMF) is a dimensionality reduction technique used to transform high-dimensional data into a lower-dimensional space by factorizing a non-negative matrix into two lower-dimensional non-negative matrices. NMF is particularly suitable for data where the features are inherently non-negative and represents a decomposition approach for extracting underlying patterns and features.",
+"Advantages": {
+"Non-Negativity": " NMF enforces non-negativity constraints on the factorization, making it suitable for data where negative values are not meaningful, such as in text analysis and image processing.",
+"Interpretable Components": " The factors obtained through NMF often have meaningful interpretations, which enhances the interpretability of the reduced representation.",
+"Feature Extraction": " NMF can be used for feature extraction, revealing underlying patterns or topics in data, making it valuable for tasks like topic modeling and image decomposition.",
+"Sparse Representation": " NMF tends to produce sparse factor matrices, which can help in identifying a small number of relevant features contributing to observed data."
+},
+"Disadvantages": {
+"Linearity Assumption": " NMF assumes a linear relationship between features and data, which may not hold in all real-world scenarios with highly non-linear data.",
+"Initialization Sensitivity": " The quality of NMF results can be sensitive to the initialization of factor matrices, which can introduce variability in outcomes.",
+"Curse of Dimensionality": " NMF may face challenges with a small number of samples relative to the number of features, known as the \"curse of dimensionality.\"",
+"Deterministic Output": " NMF is not guaranteed to find a globally optimal solution, and different initializations may lead to different results."
+}
+}

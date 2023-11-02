@@ -1,0 +1,18 @@
+{
+"Title": "CHI2", 
+"Summary": "CHI2, or Chi-squared, is a statistical method used for assessing feature importance in classification tasks. It measures the dependence between a categorical feature and a categorical target variable by evaluating the difference between observed and expected frequencies in a contingency table.",
+"Advantages": {
+"Statistical Significance": " CHI2 provides a statistical measure of the association between categorical features and the target variable, making it suitable for identifying important features in classification tasks.",
+"Interpretability": " The results of CHI2 are easy to interpret. Higher CHI2 scores indicate stronger associations between features and the target variable.",
+"Applicability to Categorical Data": " CHI2 is well-suited for datasets with categorical features, making it a valuable tool for feature importance assessment in these scenarios.",
+"Selection of the Most Relevant Features": " CHI2 can be used to select a subset of the most relevant features, reducing dimensionality and improving model efficiency.",
+"Independence Assumption": " CHI2 assesses feature importance while assuming independence between features, which can be useful in many classification tasks."
+},
+"Disadvantages": {
+"Limited to Categorical Data": " CHI2 is primarily designed for categorical data and may not be directly applicable to datasets with continuous or mixed-type features.",
+"Does Not Capture Feature Interactions": " CHI2 assesses the individual importance of features but does not consider interactions between features, which may be important in some cases.",
+"Not Suitable for Regression": " CHI2 is specifically designed for classification tasks and is not suitable for assessing feature importance in regression problems.",
+"Assumption of Independence": " While the independence assumption can be an advantage, it may not hold in all datasets, potentially leading to inaccurate results.",
+"Sensitivity to Sample Size": " CHI2 results can be sensitive to sample size, so it's important to consider the adequacy of the dataset for reliable feature importance assessment."
+}
+}

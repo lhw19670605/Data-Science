@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--Html sub directory -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Classification</title>
+	<link rel="stylesheet" type="text/css" href="../css/item-style.css">
+
+	<style>
+       .selected {
+            color: darkred; /* 设置当前选定的颜色，你可以更改为你想要的颜色 */
+       }
+       .selected a {
+            color: darkred;
+       }
+   </style>
+	<script>
+	  window.addEventListener('load', function() {
+	    //var listItems = document.querySelectorAll('li.alg');
+	    var olElement = document.querySelector('ol.alg'); // 获取类名为 "A" 的 <ol> 元素
+        var listItems = olElement.querySelectorAll('li');
+
+	    listItems.forEach(function(item) {
+	      item.addEventListener('click', function() {
+	        // 移除所有列表项的选定状态
+	        listItems.forEach(function(li) {
+	          li.classList.remove('selected');
+	        });
+
+	        // 将当前点击的列表项标记为选定
+	        item.classList.add('selected');
+	      });
+	    });
+	  });
+	</script>
+
+</head>
+<body>
+     <button>
+        <a href="../index.html" class="button-link">Home</a>
+    </button>
+	<h1>EnCoding</h1>
+	<header>
+		<div class="header">
+            <div class="head_left">
+                <img src="../img/enCoding.png" alt="EnCoding" class="width80-image"/>
+            </div>
+            <div class="head_right">
+            	<p>Machine learning encoding, specifically feature encoding, is a fundamental step in the data preprocessing pipeline that transforms raw data into a format suitable for machine learning algorithms. This process involves converting categorical or textual data into numerical representations, as most machine learning algorithms work with numerical inputs. Encoding is crucial for ensuring that the information contained within the data is preserved and utilized effectively during model training. Common encoding techniques include one-hot encoding, label encoding, and binary encoding for categorical data, while methods like word embedding or vectorization are used to convert text data into numerical forms. Proper encoding not only enables machine learning models to process data but also plays a significant role in improving their accuracy and performance. It's a vital bridge between the real-world data and the mathematical models, ensuring that valuable insights can be derived from a wide range of data types and sources.</p>
+            </div>
+        </div>
+    </header>
+	
+	<article role="banner">
+		<div class="layout">
+			<div class="navigation-bar" id="algorithm-list">
+				<h2>Algorithms</h2>
+				<ol class="alg">
+					<li data-json="../encoding/Enco-01.json"><a href="#">One-Hot Encoding</a></li>
+					<li data-json="../encoding/Enco-02.json"><a href="#">Label Encoding</a></li>
+					<li data-json="../encoding/Enco-03.json"><a href="#">TF-IDF</a></li>
+					<li data-json="../encoding/Enco-04.json"><a href="#">Word2Vec</a></li>
+					<li data-json="../encoding/Enco-05.json"><a href="#">GloVe</a></li>
+					<li data-json="../encoding/Enco-06.json"><a href="#">Binary Encoding</a></li>
+					<li data-json="../encoding/Enco-07.json"><a href="#">Mean Encoding</a></li>
+					<li data-json="../encoding/Enco-08.json"><a href="#">Target Encoding</a></li>
+					<li data-json="../encoding/Enco-09.json"><a href="#">Embedding</a></li>
+				</ol>
+			</div>
+
+			<div class="content" id="algorithm-details">
+				<h2 id="algorithm-title">One-Hot Encoding</h2>
+				<h3 id="sum">Summary</h3>
+			    <p id="algorithm-summary">One-Hot Encoding is a data preprocessing technique used to represent categorical variables as binary vectors. Each category or level of a categorical variable is converted into a binary vector where only one element is "hot" (set to 1), while the rest are "cold" (set to 0). It is commonly employed in machine learning and data analysis to handle categorical data, making it suitable for various algorithms that require numerical input.</p>
+
+				<h3 id="adv">Advantages</h3>
+				<div id="algorithm-advantages"> 
+				    <p><span style="color: darkblue; font-weight: bold;">Preservation of Category Information:</span> One-Hot Encoding preserves the information about the categories in the data, ensuring that each category is uniquely represented.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Compatibility with Machine Learning Algorithms:</span> Many machine learning algorithms require numerical input, and One-Hot Encoding allows the incorporation of categorical variables into these algorithms.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Independence of Categories:</span> Each binary variable in the One-Hot Encoding is independent of the others, which helps prevent misconceptions about the ordinality or continuity of categories.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Interpretability:</span> One-Hot Encoding results in clear, interpretable data representations that are easy to understand and analyze.</p>
+
+			    </div>
+
+			    <h3 id="dis">Disadvantages</h3>
+			    <div id="algorithm-disadvantages">
+				    <p><span style="color: darkblue; font-weight: bold;">Dimensionality Increase:</span> One-Hot Encoding significantly increases the dimensionality of the data, particularly when dealing with categorical variables with many levels, which can lead to the curse of dimensionality and computational challenges.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Sparse Data:</span> The resulting one-hot vectors are often sparse, as most of the values are 0. This can lead to increased memory and storage requirements.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Loss of Information:</span> One-Hot Encoding does not capture any ordinal or hierarchical relationships between categories. It treats all categories as equally dissimilar, which may not always reflect the real data relationships.</p>
+					<p><span style="color: darkblue; font-weight: bold;">Collinearity:</span> The binary variables created through One-Hot Encoding are inherently collinear, as the presence of one category implies the absence of others. This collinearity can impact some linear models.</p>
+			    </div>
+
+			    <h3 id="example">Example</h3>
+            	<p id="algorithm-example">Examples of One-Hot Encoding usage...</p>
+			</div>
+			<div class="location" id="algorithm-index">
+				<h2>Index</h2>
+				<ul class="index" id="algorithm-index-list">
+					<li><a href="#sum">Summary</a></li>
+					<li><a href="#adv">Advantages</a></li>
+					<li><a href="#dis">Disadvantages</a></li>
+					<li><a href="#example">Example</a></li>
+				</ul>
+			</div>
+		</div>       
+	</article>
+	<script src="../js/sub-page.js"></script>
+</body>
+</html>

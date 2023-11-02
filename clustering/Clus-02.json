@@ -1,0 +1,16 @@
+{
+"Title": "K Medians", 
+"Summary": "K-Medians Clustering is a variation of the K-Means clustering algorithm, designed to partition a dataset into groups or clusters. However, unlike K-Means, which uses the mean (average) of data points to define cluster centroids, K-Medians uses the median. This means it's less sensitive to outliers and better suited for data with non-Gaussian distributions.",
+"Advantages": {
+"Robustness to Outliers": " K-Medians is less affected by outliers than K-Means because it uses the median, which is less sensitive to extreme values.",
+"Works with Non-Gaussian Data": " It can effectively handle data with non-Gaussian distributions, making it more versatile for various types of data.",
+"Simple and Intuitive": " K-Medians is conceptually straightforward and easy to understand, making it suitable for a wide range of users.",
+"Clustering Mixed Data": " Similar to K-Means, K-Medians can be applied to datasets with numerical, categorical, and mixed data."
+},
+"Disadvantages": {
+"Slower Convergence": " K-Medians can be computationally more expensive than K-Means, as finding medians in high-dimensional spaces can be slower.",
+"Sensitive to Initialization": " Like K-Means, K-Medians can be sensitive to the initial placement of cluster medians.",
+"Still Requires Predefined K": " You need to specify the number of clusters (K) in advance, which can be challenging in some cases.",
+"May Not Be Suitable for Large Datasets": " It may not scale well to very large datasets due to its computational requirements."
+}
+}

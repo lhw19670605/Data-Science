@@ -1,0 +1,16 @@
+{
+"Title": "PLSR", 
+"Summary": "Partial Least Squares Regression (PLSR), is a dimensionality reduction technique used in regression analysis and data modeling. It combines the concepts of multiple linear regression and principal component analysis (PCA) to handle situations where there is multicollinearity between predictors and the response variable. PLSR aims to find new variables, called latent variables or components, that maximize the covariance between predictors and the response.",
+"Advantages": {
+"Multicollinearity Handling": " PLSR is particularly effective in handling multicollinearity, where predictors are highly correlated. It reduces the dimensionality of data while preserving information related to the response variable.",
+"Improved Model Performance": " PLSR often leads to improved regression model performance by addressing multicollinearity issues and capturing relevant information for prediction.",
+"Feature Selection": " PLSR automatically selects a subset of latent variables as predictors, simplifying the model and enhancing interpretability.",
+"Predictive Power": " PLSR focuses on the relationship between predictors and the response, making it suitable for predictive modeling and regression tasks."
+},
+"Disadvantages": {
+"Interpretability": " Like PCA and PCR, the latent variables produced by PLSR may not have direct, interpretable meanings, which can limit the understanding of the contribution of original features.",
+"Loss of Information": " While PLSR reduces dimensionality, there may be some information loss as not all the original variance is retained in the latent variables.",
+"Model Complexity": " Implementing PLSR may require additional steps and computations compared to standard linear regression.",
+"Assumptions": " PLSR relies on assumptions, such as linearity, and the number of latent variables chosen must be appropriate for the model."
+}
+}

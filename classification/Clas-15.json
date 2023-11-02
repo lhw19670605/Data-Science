@@ -1,0 +1,18 @@
+{
+"Title": "GaussianNB", 
+"Summary": "Gaussian Naive Bayes, or GaussianNB, is a probabilistic machine learning algorithm used for classification tasks. It is based on the Naive Bayes theorem and is designed for situations where the features are continuous and have a Gaussian (normal) distribution. Despite its simplicity and \"naive\" assumptions, it is often surprisingly effective in various classification tasks.",
+"Advantages": {
+"Simplicity": " GaussianNB is easy to understand and implement. It's a simple algorithm suitable for quick classification tasks.",
+"Efficiency": " The algorithm is computationally efficient, making it suitable for real-time or large-scale applications.",
+"Small Data Requirement": " It performs well with relatively small datasets and doesn't require a massive amount of data for training.",
+"Multiclass Classification": " It can handle multiclass classification problems effectively.",
+"Probabilistic Predictions": " GaussianNB provides probability estimates for class membership, which can be useful for understanding model confidence."
+},
+"Disadvantages": {
+"Naive Independence Assumption": " The \"naive\" assumption of feature independence may not hold in all real-world situations. It can limit its performance on data with complex dependencies between features.",
+"Sensitivity to Data Distribution": " GaussianNB assumes that features follow a Gaussian distribution. If the data deviates significantly from this assumption, the algorithm's performance can be suboptimal.",
+"Lack of Feature Importance": " It doesn't provide feature importance rankings, which can be valuable in some applications.",
+"Limited Expressiveness": " GaussianNB is limited in its ability to capture complex decision boundaries, particularly in datasets with intricate relationships between features.",
+"Data Imbalance": " It may not perform well on imbalanced datasets where one class greatly outnumbers the others."
+}
+}
