@@ -4,10 +4,13 @@
 const algorithmDetails = document.getElementById("popup");
 
 //首先选择ol元素
-const divElement = document.querySelector('#terms');
+const Elements = document.querySelectorAll("#terms, #expert");
+//const divElement = document.querySelector("#terms");
+//const expertElement = document.querySelector("#expert");
 
 //点击li元素时从其中的li元素中得到data-json属性的值
-divElement.addEventListener('click', function(event) {
+Elements.forEach(function(element) {
+ element.addEventListener('click', function(event) {
     const jsonPath = event.target.getAttribute('data-json');
     // 使用 fetch 加载相应的 JSON 文件
     console.log("ok");
@@ -40,36 +43,15 @@ divElement.addEventListener('click', function(event) {
             }
             
         }
-      
-        /*const clickX = event.clientX;
-        const clickY = event.clientY;
-        const windowWidth = window.innerWidth;
-        const windowHeight = window.innerHeight;
-
-        if (clickX < windowWidth / 2 && clickY < windowHeight / 2) {
-            console.log('Clicked in the top left quadrant of the window.');
-            popup.style.top = `${clickY}px`;
-            popup.style.left = `${clickX}px`;
-        } else if (clickX < windowWidth / 2 && clickY >= windowHeight / 2) {
-            console.log('Clicked in the bottom left quadrant of the window.');
-            popup.style.bottom = `${clickY}px`;
-            popup.style.left = `${clickX}px`;
-        } else if (clickX >= windowWidth / 2 && clickY < windowHeight / 2) {
-            console.log('Clicked in the top right quadrant of the window.');
-            popup.style.top = `${clickY}px`;
-            popup.style.right = `${clickX}px`;
-        } else {
-            console.log('Clicked in the bottom right quadrant of the window.');
-            popup.style.bottom = `${clickY}px`;
-            popup.style.right = `${clickX}px`;
-        }*/
         showPopup();
     })
     .catch(error => {
     console.error('Error loading JSON data:', error);
 
   });
+ });
 });
+
 
 function showPopup() {
     console.log("come in show")
